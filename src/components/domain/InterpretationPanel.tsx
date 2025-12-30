@@ -18,6 +18,15 @@ const LENS_LABELS: Record<LensType, string> = {
     ZwinglianBaptistic: 'Zwinglian/Baptistic',
 };
 
+const LENS_COLORS: Record<LensType, { border: string; bg: string; badge: string }> = {
+    Consensus: { border: 'border-l-4 border-l-stone-400', bg: 'bg-stone-50', badge: 'bg-stone-100 text-stone-700' },
+    Catholic: { border: 'border-l-4 border-l-rose-500', bg: 'bg-rose-50', badge: 'bg-rose-100 text-rose-700' },
+    Orthodox: { border: 'border-l-4 border-l-amber-500', bg: 'bg-amber-50', badge: 'bg-amber-100 text-amber-700' },
+    Lutheran: { border: 'border-l-4 border-l-purple-500', bg: 'bg-purple-50', badge: 'bg-purple-100 text-purple-700' },
+    Reformed: { border: 'border-l-4 border-l-blue-500', bg: 'bg-blue-50', badge: 'bg-blue-100 text-blue-700' },
+    ZwinglianBaptistic: { border: 'border-l-4 border-l-emerald-500', bg: 'bg-emerald-50', badge: 'bg-emerald-100 text-emerald-700' },
+};
+
 export function InterpretationPanel({ interpretations }: { interpretations: Interpretation[] }) {
     const [activeLens, setActiveLens] = useState<LensType>('Consensus');
     const shouldReduceMotion = useReducedMotion();
@@ -62,8 +71,8 @@ export function InterpretationPanel({ interpretations }: { interpretations: Inte
                 </div>
             </div>
 
-            {/* Interpretation Content with Fade/Slide Transition */}
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+            {/* Interpretation Content with Fade/Slide Transition and Lens Color */}
+            <div className={`bg-white rounded-xl shadow-sm border border-stone-200 p-6 ${LENS_COLORS[activeLens].border}`}>
                 <AnimatePresence mode="wait" initial={false}>
                     <motion.div
                         key={activeLens}
@@ -73,7 +82,7 @@ export function InterpretationPanel({ interpretations }: { interpretations: Inte
                         transition={transitions.short}
                     >
                         <div className="mb-4">
-                            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-2 py-1 rounded">
+                            <span className={`text-xs font-bold uppercase tracking-widest px-2 py-1 rounded ${LENS_COLORS[activeLens].badge}`}>
                                 {LENS_LABELS[activeLens]} Perspective
                             </span>
                         </div>

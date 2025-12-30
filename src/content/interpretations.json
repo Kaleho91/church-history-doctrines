@@ -1,0 +1,114 @@
+[
+    {
+        "id": "INT_C1_CONSENSUS",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Consensus",
+        "summary": "Early Christian sources often speak of baptism with regeneration/remission vocabulary; later traditions diverge on whether that implies sacramental instrumentality, covenantal sign, or a layered account of both.",
+        "key_points": [
+            {
+                "text": "2nd–5th century writers commonly connect baptism with regeneration/remission language.",
+                "citations": [
+                    "SRC_JUSTIN_APOL61_LOGOS",
+                    "SRC_AUGUSTINE_NEWADVENT_MERITS"
+                ]
+            },
+            {
+                "text": "Medieval synthesis treats baptism as a regenerating/remitting sacrament.",
+                "citations": [
+                    "SRC_AQUINAS_NEWADVENT_Q69"
+                ]
+            },
+            {
+                "text": "Reformation debates intensify around instrumentality and timing.",
+                "citations": [
+                    "SRC_LUTHER_LC_BOC",
+                    "SRC_WCF28_REFORMEDWIKI",
+                    "SRC_SCHAFF_HCC8_ZWINGLI_SIGNS"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C1_CATHOLIC",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Catholic",
+        "summary": "Baptism is the sacrament of regeneration through water and the word; it effects new birth and incorporation into Christ and the Church.",
+        "key_points": [
+            {
+                "text": "CCC explicitly frames baptism as regeneration/new birth.",
+                "citations": [
+                    "SRC_CCC_VATICAN_ART1"
+                ]
+            },
+            {
+                "text": "Aquinas systematizes baptism’s regenerating effects using ‘laver of regeneration’ framing.",
+                "citations": [
+                    "SRC_AQUINAS_NEWADVENT_Q69"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C1_ORTHODOX",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Orthodox",
+        "summary": "Baptism is ordinarily understood sacramentally as new birth and entry into the life of Christ and His Church, supported by patristic theology and liturgical practice.",
+        "key_points": [
+            {
+                "text": "Justin’s baptismal language shows early sacramental framing of regeneration.",
+                "citations": [
+                    "SRC_JUSTIN_APOL66_CCEL"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C1_LUTHERAN",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Lutheran",
+        "summary": "Baptism truly delivers forgiveness and salvation because God’s Word and promise are joined to the water; its benefits are received in faith.",
+        "key_points": [
+            {
+                "text": "Small Catechism: baptism delivers forgiveness and salvation to those who believe the promise.",
+                "citations": [
+                    "SRC_LUTHER_SC_CPH"
+                ]
+            },
+            {
+                "text": "Large Catechism: baptism’s power is not mere water but Word + water.",
+                "citations": [
+                    "SRC_LUTHER_LC_BOC"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C1_REFORMED",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Reformed",
+        "summary": "Baptism is a divine ordinance where grace is truly exhibited to those it belongs to, but its efficacy is not mechanically tied to the moment of administration.",
+        "key_points": [
+            {
+                "text": "Westminster: efficacy not tied to the moment; grace conferred in God’s appointed time.",
+                "citations": [
+                    "SRC_WCF28_REFORMEDWIKI"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C1_ZB",
+        "claim_id": "CLM_BR_C1",
+        "lens": "ZwinglianBaptistic",
+        "summary": "Baptism is primarily a covenant sign/marker of belonging rather than a regenerating instrument that itself causes new birth.",
+        "key_points": [
+            {
+                "text": "Britannica and Schaff summarize Zwingli’s emphasis on signs rather than means of grace.",
+                "citations": [
+                    "SRC_ZWINGLI_BRITANNICA",
+                    "SRC_SCHAFF_HCC8_ZWINGLI_SIGNS"
+                ]
+            }
+        ]
+    }
+]

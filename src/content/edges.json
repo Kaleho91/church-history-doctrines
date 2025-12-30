@@ -1,0 +1,170 @@
+[
+    {
+        "id": "E1",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_JOHN_3_5",
+        "relation_type": "Defines",
+        "note": "Anchor text; later interpretation differs across lenses.",
+        "confidence": "Contested"
+    },
+    {
+        "id": "E2",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_TITUS_3_5",
+        "relation_type": "Defines",
+        "note": "‘Washing of regeneration’ strongly informs later sacramental readings.",
+        "confidence": "Medium"
+    },
+    {
+        "id": "E3",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_JUSTIN_APOL_61",
+        "relation_type": "Supports",
+        "note": "Early witness using regeneration language in baptismal context.",
+        "confidence": "High"
+    },
+    {
+        "id": "E4",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_AUGUSTINE_MERITS_INFANTS",
+        "relation_type": "Develops",
+        "note": "Connects baptism to remission/regeneration within original sin debates.",
+        "confidence": "High"
+    },
+    {
+        "id": "E5",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_AQUINAS_ST_Q69",
+        "relation_type": "Develops",
+        "note": "Medieval synthesis of baptism’s regenerating effects.",
+        "confidence": "High"
+    },
+    {
+        "id": "E6",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_LUTHER_LARGE_CATECHISM",
+        "relation_type": "Supports",
+        "note": "Word + water; retains regeneration language while emphasizing promise.",
+        "confidence": "High"
+    },
+    {
+        "id": "E7",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_WCF_28",
+        "relation_type": "Supports",
+        "note": "Real grace, not mechanically tied to the moment.",
+        "confidence": "Medium"
+    },
+    {
+        "id": "E8",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_ZWINGLI_SIGN_COVENANT",
+        "relation_type": "Challenges",
+        "note": "Covenant sign framework challenges regenerating instrumentality framing.",
+        "confidence": "High"
+    },
+    {
+        "id": "E9",
+        "claim_id": "CLM_BR_C1",
+        "node_id": "N_CCC_BAPTISM",
+        "relation_type": "Supports",
+        "note": "Explicit modern Catholic summary: baptism as regeneration.",
+        "confidence": "High"
+    },
+    {
+        "id": "E10",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_ACTS_2_38",
+        "relation_type": "Defines",
+        "note": "Anchor text connecting baptism with forgiveness; debates concern instrumentality.",
+        "confidence": "Medium"
+    },
+    {
+        "id": "E11",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_JUSTIN_APOL_66",
+        "relation_type": "Supports",
+        "note": "Explicit remission/regeneration phrasing.",
+        "confidence": "High"
+    },
+    {
+        "id": "E12",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_CYPRIAN_EPISTLE_FIDUS",
+        "relation_type": "Supports",
+        "note": "Infant baptism counsel assumes remission/forgiveness logic.",
+        "confidence": "Medium"
+    },
+    {
+        "id": "E13",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_AUGUSTINE_MERITS_INFANTS",
+        "relation_type": "Supports",
+        "note": "Remission of sins applied to infants in baptism.",
+        "confidence": "High"
+    },
+    {
+        "id": "E14",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_AQUINAS_ST_Q69",
+        "relation_type": "Supports",
+        "note": "Baptism linked to remission of sins in medieval theology.",
+        "confidence": "High"
+    },
+    {
+        "id": "E15",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_LUTHER_SMALL_CATECHISM",
+        "relation_type": "Supports",
+        "note": "‘Works forgiveness of sins’ received in faith.",
+        "confidence": "High"
+    },
+    {
+        "id": "E16",
+        "claim_id": "CLM_BR_C2",
+        "node_id": "N_CCC_BAPTISM",
+        "relation_type": "Supports",
+        "note": "Freed from sin; reborn into Christ.",
+        "confidence": "High"
+    },
+    {
+        "id": "E17",
+        "claim_id": "CLM_BR_C4",
+        "node_id": "N_1PET_3_21",
+        "relation_type": "Defines",
+        "note": "Strong salvation language with qualification; interpretive disputes follow.",
+        "confidence": "Contested"
+    },
+    {
+        "id": "E18",
+        "claim_id": "CLM_BR_C4",
+        "node_id": "N_LUTHER_SMALL_CATECHISM",
+        "relation_type": "Supports",
+        "note": "Benefit tied to believing God’s promise.",
+        "confidence": "High"
+    },
+    {
+        "id": "E19",
+        "claim_id": "CLM_BR_C4",
+        "node_id": "N_WCF_28",
+        "relation_type": "Supports",
+        "note": "Efficacy not tied to moment; conferred in God’s appointed time.",
+        "confidence": "High"
+    },
+    {
+        "id": "E20",
+        "claim_id": "CLM_BR_C5",
+        "node_id": "N_LUTHER_LARGE_CATECHISM",
+        "relation_type": "Supports",
+        "note": "Rejects ‘mere water’ causality; Word/promise central.",
+        "confidence": "High"
+    },
+    {
+        "id": "E21",
+        "claim_id": "CLM_BR_C5",
+        "node_id": "N_WCF_28",
+        "relation_type": "Supports",
+        "note": "Rejects mechanical timing; affirms real conferral.",
+        "confidence": "High"
+    }
+]

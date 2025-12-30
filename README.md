@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Church History | Doctrine Trace
+
+A modern, scholarly web application for tracing doctrinal claims through 2,000 years of church history.
+
+## Features
+
+- **Claim-First Navigation**: Search and explore atomic doctrinal claims
+- **Historical Trace**: See how claims developed from Scripture → Fathers → Medieval → Reformation
+- **Multi-Lens Interpretation**: View Catholic, Orthodox, Lutheran, Reformed, and other perspectives
+- **Consensus Analysis**: AI-powered summary of agreement vs. contested interpretations
+- **Citation System**: Full Chicago-style citations with one-click copy (Chicago & BibTeX)
+- **Premium UX**: Subtle animations, citation tooltips, reading progress, keyboard shortcuts
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Data**: Local JSON files (no database required)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── claim/[id]/        # Individual claim trace view
+│   ├── doctrine/[slug]/   # Doctrine cluster page
+│   ├── explore/           # Explore hub
+│   └── timeline/          # Historical timeline (secondary)
+├── components/
+│   └── domain/            # Feature components
+├── content/               # JSON data files
+│   ├── claims.json
+│   ├── nodes.json
+│   ├── edges.json
+│   ├── sources.json
+│   └── interpretations.json
+└── lib/
+    ├── data.ts            # Data access utilities
+    ├── types.ts           # TypeScript interfaces
+    └── motion.ts          # Animation configuration
+```
 
-## Learn More
+## Content Management
 
-To learn more about Next.js, take a look at the following resources:
+All content is in `/src/content/` as JSON files. No coding required to add new claims, sources, or interpretations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Adding a New Claim
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Add entry to `claims.json`:
+```json
+{
+  "id": "CLM_NEW_ID",
+  "cluster": "Doctrine Name",
+  "short_label": "Brief claim title",
+  "full_statement": "Complete doctrinal statement...",
+  "definition_variants": ["Alt definition 1", "Alt definition 2"]
+}
+```
 
-## Deploy on Vercel
+2. Add supporting nodes to `nodes.json`
+3. Link with edges in `edges.json`
+4. Add interpretations to `interpretations.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See existing data for examples.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Keyboard Shortcuts
+
+- `?` - Show shortcuts overlay
+- `ESC` - Close drawer/modal
+- `1-6` - Switch lenses (on claim pages)
+- `/` - Focus search
+
+## License
+
+MIT
+
+## Contributing
+
+This is a personal research tool. For questions or suggestions, open an issue.

@@ -1,0 +1,160 @@
+[
+    {
+        "id": "N_JOHN_3_5",
+        "type": "Scripture",
+        "title": "John 3:5 — ‘born of water and Spirit’",
+        "date_range": "c. 90",
+        "region": "Eastern Mediterranean",
+        "summary": "A key anchor text later traditions read in different ways: direct baptismal reference vs broader spiritual renewal.",
+        "citations": []
+    },
+    {
+        "id": "N_TITUS_3_5",
+        "type": "Scripture",
+        "title": "Titus 3:5 — ‘washing of regeneration’",
+        "date_range": "c. 60–70",
+        "region": "Eastern Mediterranean",
+        "summary": "Frequently cited as a direct link between salvation, washing, and renewal by the Holy Spirit.",
+        "citations": []
+    },
+    {
+        "id": "N_ACTS_2_38",
+        "type": "Scripture",
+        "title": "Acts 2:38 — baptism ‘for the forgiveness of sins’",
+        "date_range": "c. 80–90",
+        "region": "Eastern Mediterranean",
+        "summary": "Connects repentance, baptism, forgiveness; debates focus on how baptism relates to the forgiveness it proclaims.",
+        "citations": []
+    },
+    {
+        "id": "N_1PET_3_21",
+        "type": "Scripture",
+        "title": "1 Peter 3:21 — ‘Baptism… now saves you’",
+        "date_range": "c. 60–90",
+        "region": "Eastern Mediterranean",
+        "summary": "Strong salvation language paired with clarification that it is not mere external washing; later debates hinge on that clarification.",
+        "citations": []
+    },
+    {
+        "id": "N_JUSTIN_APOL_61",
+        "type": "Text",
+        "title": "Justin Martyr, First Apology ch. 61 — regeneration language",
+        "date_range": "c. 155",
+        "region": "Rome",
+        "summary": "Justin describes baptism in conversion as connected with being ‘regenerated’ in a context of repentance and belief.",
+        "citations": [
+            "SRC_JUSTIN_APOL61_LOGOS"
+        ]
+    },
+    {
+        "id": "N_JUSTIN_APOL_66",
+        "type": "Text",
+        "title": "Justin Martyr, First Apology ch. 66 — ‘washing… remission… regeneration’",
+        "date_range": "c. 155",
+        "region": "Rome",
+        "summary": "Justin links baptismal washing to remission of sins and regeneration in the life of the Church.",
+        "citations": [
+            "SRC_JUSTIN_APOL66_CCEL"
+        ]
+    },
+    {
+        "id": "N_CYPRIAN_EPISTLE_FIDUS",
+        "type": "Text",
+        "title": "Cyprian, Epistle to Fidus — infant baptism and forgiveness",
+        "date_range": "c. 252",
+        "region": "North Africa (Carthage)",
+        "summary": "Cyprian’s counsel on infant baptism assumes baptism is closely connected with forgiveness/remission logic.",
+        "citations": [
+            "SRC_CYPRIAN_FIDUS_BIBLEHUB"
+        ]
+    },
+    {
+        "id": "N_AUGUSTINE_MERITS_INFANTS",
+        "type": "Text",
+        "title": "Augustine — baptism of infants and remission of sins",
+        "date_range": "c. 412",
+        "region": "North Africa (Hippo)",
+        "summary": "Augustine argues baptism grants remission of sins even to infants, tying the issue to original sin and salvation debates.",
+        "citations": [
+            "SRC_AUGUSTINE_NEWADVENT_MERITS"
+        ]
+    },
+    {
+        "id": "N_AQUINAS_ST_Q69",
+        "type": "Text",
+        "title": "Aquinas, ST III q.69 — effects of baptism (‘laver of regeneration’)",
+        "date_range": "c. 1265–1274",
+        "region": "Western Europe",
+        "summary": "Aquinas systematizes baptism’s effects, citing Titus 3:5 and connecting baptism to regeneration and remission of sins.",
+        "citations": [
+            "SRC_AQUINAS_NEWADVENT_Q69"
+        ]
+    },
+    {
+        "id": "N_LUTHER_SMALL_CATECHISM",
+        "type": "Confession",
+        "title": "Luther, Small Catechism — baptism gives forgiveness and salvation",
+        "date_range": "1529",
+        "region": "German lands",
+        "summary": "Luther teaches baptism ‘works forgiveness of sins’ and gives salvation, grounded in God’s promise and received in faith.",
+        "citations": [
+            "SRC_LUTHER_SC_CPH"
+        ]
+    },
+    {
+        "id": "N_LUTHER_LARGE_CATECHISM",
+        "type": "Confession",
+        "title": "Luther, Large Catechism — Word + water; not ‘mere water’",
+        "date_range": "1529",
+        "region": "German lands",
+        "summary": "Luther rejects reducing baptism to a bare external; its power is the Word joined to water, and he uses ‘laver of regeneration’ language.",
+        "citations": [
+            "SRC_LUTHER_LC_BOC"
+        ]
+    },
+    {
+        "id": "N_WCF_28",
+        "type": "Confession",
+        "title": "Westminster Confession ch. 28 — efficacy not tied to the moment",
+        "date_range": "1646",
+        "region": "British Isles",
+        "summary": "Westminster affirms real conferral of grace by the Spirit but denies a mechanical tie to the moment of administration.",
+        "citations": [
+            "SRC_WCF28_REFORMEDWIKI"
+        ]
+    },
+    {
+        "id": "N_ZWINGLI_SIGN_COVENANT",
+        "type": "Person",
+        "title": "Zwingli — baptism as covenant sign (summary)",
+        "date_range": "1525",
+        "region": "Zurich (Swiss Confederacy)",
+        "summary": "Zwingli emphasizes baptism as covenant sign/marker rather than traditional regenerating instrumentality.",
+        "citations": [
+            "SRC_ZWINGLI_BRITANNICA",
+            "SRC_SCHAFF_HCC8_ZWINGLI_SIGNS"
+        ]
+    },
+    {
+        "id": "N_ARTICLE_27_39ART",
+        "type": "Confession",
+        "title": "Thirty-Nine Articles, Article 27 — ‘sign of regeneration… as by an instrument’",
+        "date_range": "1563",
+        "region": "England",
+        "summary": "Anglican formularies describe baptism as more than a badge: a sign of regeneration/new birth ‘as by an instrument’ when rightly received.",
+        "citations": [
+            "SRC_39ART_ART27_PDF"
+        ]
+    },
+    {
+        "id": "N_CCC_BAPTISM",
+        "type": "Confession",
+        "title": "Catechism of the Catholic Church — baptism as regeneration through water and the word",
+        "date_range": "1992",
+        "region": "Global (Catholic Church)",
+        "summary": "The Catechism summarizes baptism as regeneration/new birth and liberation from sin, with incorporation into Christ and the Church.",
+        "citations": [
+            "SRC_CCC_VATICAN_ART1"
+        ]
+    }
+]

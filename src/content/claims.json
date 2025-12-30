@@ -1,0 +1,54 @@
+[
+  {
+    "id": "CLM_BR_C1",
+    "cluster": "Baptism & New Birth",
+    "short_label": "Baptism ordinarily effects regeneration",
+    "full_statement": "Baptism is ordinarily an instrument through which God grants regeneration (new birth), not merely a symbolic representation.",
+    "definition_variants": [
+      "Regeneration as the beginning of new spiritual life (new birth).",
+      "Regeneration as covenantal incorporation + new status (adoption/identity).",
+      "Regeneration as a grace ordinarily given through baptism, with exceptions (e.g., desire, martyrdom)."
+    ]
+  },
+  {
+    "id": "CLM_BR_C2",
+    "cluster": "Baptism & New Birth",
+    "short_label": "Baptism ordinarily remits sins",
+    "full_statement": "Baptism is ordinarily connected with the remission of sins (including, in some traditions, original sin).",
+    "definition_variants": [
+      "Remission of sins as real cleansing/forgiveness granted by God.",
+      "Remission of sins as promised forgiveness received in faith through a sign.",
+      "Remission of sins as tied to baptism but not to the moment of administration."
+    ]
+  },
+  {
+    "id": "CLM_BR_C3",
+    "cluster": "Baptism & New Birth",
+    "short_label": "Baptism incorporates into Christ/Church",
+    "full_statement": "Baptism is ordinarily connected with incorporation into Christ and visible membership in the Church.",
+    "definition_variants": [
+      "Incorporation as visible entry into the covenant community.",
+      "Incorporation as spiritual union with Christ (variously related to faith, election, and sacramental theology)."
+    ]
+  },
+  {
+    "id": "CLM_BR_C4",
+    "cluster": "Baptism & New Birth",
+    "short_label": "Efficacy relates to faith / timing",
+    "full_statement": "Baptism’s promised grace is related to faith and may not be tied to the exact moment of administration (depending on tradition).",
+    "definition_variants": [
+      "Faith as the means by which baptism’s promise is received.",
+      "Grace conferred in God’s appointed time, not mechanically at administration."
+    ]
+  },
+  {
+    "id": "CLM_BR_C5",
+    "cluster": "Baptism & New Birth",
+    "short_label": "Not automatic magic (no mechanical guarantee)",
+    "full_statement": "Baptism is not a mechanical guarantee that works automatically apart from God’s Word/promise, proper reception, or the broader economy of grace.",
+    "definition_variants": [
+      "Anti-‘opus operatum’ framing: the rite is not a self-acting machine.",
+      "Distinguish objective institution (valid baptism) from subjective benefit (received rightly / in faith / appointed time)."
+    ]
+  }
+]

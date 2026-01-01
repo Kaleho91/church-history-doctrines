@@ -52,6 +52,7 @@ export default async function ClaimPage({ params }: { params: Promise<{ id: stri
                 <main className="max-w-7xl mx-auto px-4 py-8">
                     <ClaimPageContent
                         claim={claim}
+                        claimId={claim.id}
                         consensusSummary={<ConsensusSummary claimId={claim.id} />}
                         traceRail={<TraceRail nodes={nodes} />}
                         interpretationPanel={<InterpretationPanel interpretations={interpretations} />}

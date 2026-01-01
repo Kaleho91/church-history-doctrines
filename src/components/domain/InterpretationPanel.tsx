@@ -28,6 +28,23 @@ const LENS_COLORS: Record<LensType, { border: string; accent: string; badge: str
 };
 
 /**
+ * PART 3: Interpretation-Level Honesty
+ * Explanatory notes derived from lens perspective
+ */
+function getLensContextNote(lens: LensType): string {
+    const notes: Record<LensType, string> = {
+        Consensus: 'This reading reflects areas of broad agreement across major Christian traditions.',
+        Catholic: 'This reading draws on magisterial teaching and sacramental theology.',
+        Orthodox: 'This reading emphasizes theosis, mystery, and patristic continuity.',
+        Lutheran: 'This reading prioritizes justification by grace through faith and the means of grace.',
+        Reformed: 'This reading emphasizes covenant theology and divine sovereignty in salvation.',
+        ZwinglianBaptistic: "This reading prioritizes memorial understanding and believer's profession.",
+    };
+    return notes[lens];
+}
+
+
+/**
  * SYSTEM 2: Lens Change = Perspective Shift
  * 
  * Switching lenses should feel like changing vantage points,
@@ -55,8 +72,8 @@ export function InterpretationPanel({ interpretations }: { interpretations: Inte
                             key={lens}
                             onClick={() => setActiveLens(lens)}
                             className={`relative text-xs px-3 py-2.5 rounded-lg font-medium text-left z-10 transition-colors ${activeLens === lens
-                                    ? LENS_COLORS[lens].accent
-                                    : 'text-stone-500 hover:text-stone-800 hover:bg-stone-50'
+                                ? LENS_COLORS[lens].accent
+                                : 'text-stone-500 hover:text-stone-800 hover:bg-stone-50'
                                 }`}
                             aria-pressed={activeLens === lens}
                         >
@@ -108,6 +125,13 @@ export function InterpretationPanel({ interpretations }: { interpretations: Inte
                                     </p>
                                 </div>
                             ))}
+                        </div>
+
+                        {/* PART 3: Interpretation-Level Contextual Note */}
+                        <div className="mt-6 pt-4 border-t border-stone-100">
+                            <p className="text-xs text-stone-400 italic leading-relaxed">
+                                {getLensContextNote(activeLens)}
+                            </p>
                         </div>
                     </motion.div>
                 </AnimatePresence>

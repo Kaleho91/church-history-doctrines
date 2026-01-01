@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { pageArrival } from '@/lib/motion';
+import { ClaimConfidenceIndicator } from './ClaimConfidenceIndicator';
 import type { Claim } from '@/lib/types';
 
 interface ClaimContentProps {
@@ -11,6 +12,7 @@ interface ClaimContentProps {
     traceRail: React.ReactNode;
     interpretationPanel: React.ReactNode;
     nodeCount: number;
+    claimId: string;
 }
 
 /**
@@ -26,6 +28,7 @@ export function ClaimPageContent({
     traceRail,
     interpretationPanel,
     nodeCount,
+    claimId,
 }: ClaimContentProps) {
     return (
         <motion.div
@@ -52,9 +55,14 @@ export function ClaimPageContent({
                     <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-900 mb-4 leading-tight tracking-tight">
                         {claim.short_label}
                     </h1>
-                    <p className="text-xl text-stone-600 leading-relaxed mb-6 font-serif">
+                    <p className="text-xl text-stone-600 leading-relaxed mb-4 font-serif">
                         {claim.full_statement}
                     </p>
+
+                    {/* PART 1: Claim-Level Confidence */}
+                    <div className="mb-6">
+                        <ClaimConfidenceIndicator claimId={claimId} />
+                    </div>
 
                     <div className="bg-stone-50 rounded-xl p-4 border border-stone-100">
                         <h3 className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-3">

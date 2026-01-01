@@ -1,0 +1,498 @@
+[
+  {
+    "id": "TR001",
+    "name": "Roman Catholic Church (Latin Rite)",
+    "family": "Catholic",
+    "communion": "Catholic Communion",
+    "primaryRegions": "Global (historically West; now worldwide)",
+    "startYear": "1st c. (institutional continuity); distinct identity solidifies over centuries",
+    "notes": "Under Bishop of Rome (pope); Latin theological tradition; recognizes 21 ecumenical councils (Catholic list).",
+    "keySources": [
+      "S005",
+      "S008",
+      "S009"
+    ],
+    "epistemicPosture": "Scripture + Tradition + Magisterium; development of doctrine under papal authority."
+  },
+  {
+    "id": "TR002",
+    "name": "Eastern Orthodox Church (Byzantine tradition)",
+    "family": "Eastern Orthodox",
+    "communion": "Eastern Orthodox Communion",
+    "primaryRegions": "Eastern Europe, Middle East, diaspora; global",
+    "startYear": "1st c.; separated from Rome in stages; 1054 watershed",
+    "notes": "Conciliar/ecclesial structure with autocephalous churches; generally recognizes seven ecumenical councils.",
+    "keySources": [
+      "S027",
+      "S028",
+      "S030"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR003",
+    "name": "Coptic Orthodox Church (Alexandrian tradition)",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "Egypt, Africa, diaspora",
+    "startYear": "1st c.; non-Chalcedonian after 451",
+    "notes": "Miaphysite Christology; seven sacraments; strong monastic heritage.",
+    "keySources": [
+      "S031",
+      "S044"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR004",
+    "name": "Armenian Apostolic Church",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "Armenia, diaspora",
+    "startYear": "Early 4th c. (Christian kingdom); non-Chalcedonian after 451",
+    "notes": "Oriental Orthodox Christology; distinct Armenian liturgy.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR005",
+    "name": "Ethiopian Orthodox Tewahedo Church",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "Ethiopia, diaspora",
+    "startYear": "4th c. (Axum)",
+    "notes": "Tewahedo ('unity') tradition; large biblical canon; strong monastic and liturgical life.",
+    "keySources": [
+      "S024"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR006",
+    "name": "Eritrean Orthodox Tewahedo Church",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "Eritrea, diaspora",
+    "startYear": "1993 autocephaly (roots in Ethiopian tradition)",
+    "notes": "Oriental Orthodox communion; related to Ethiopian tradition.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR007",
+    "name": "Syriac Orthodox Church (West Syriac)",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "Syria, Turkey, Iraq, diaspora; India (Jacobite)",
+    "startYear": "Early centuries; non-Chalcedonian after 451",
+    "notes": "West Syriac liturgy; non-Chalcedonian.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR008",
+    "name": "Malankara Orthodox Syrian Church (India)",
+    "family": "Oriental Orthodox",
+    "communion": "Oriental Orthodox Communion",
+    "primaryRegions": "India (Kerala)",
+    "startYear": "Ancient roots; modern autocephalous structure",
+    "notes": "Part of St Thomas Christian heritage; West Syriac liturgy; Oriental Orthodox communion.",
+    "keySources": [
+      "S023"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR009",
+    "name": "Assyrian Church of the East (East Syriac)",
+    "family": "Church of the East",
+    "communion": "Church of the East tradition",
+    "primaryRegions": "Iraq, Iran, Syria; diaspora",
+    "startYear": "Synod of Seleucia-Ctesiphon 410; independence 424 (traditional)",
+    "notes": "East Syriac rite; historically spread into Persia, Central Asia, India, China; recognizes unique set of sacraments (includes Holy Leaven, sign of Cross).",
+    "keySources": [
+      "S032",
+      "S033",
+      "S025"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR010",
+    "name": "Chaldean Catholic Church (East Syriac, Catholic)",
+    "family": "Eastern Catholic",
+    "communion": "Catholic Communion",
+    "primaryRegions": "Iraq, diaspora",
+    "startYear": "1552+ (union movements; modern structure)",
+    "notes": "East Syriac rite in communion with Rome; related to Church of the East heritage.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR011",
+    "name": "Maronite Church (West Syriac, Catholic)",
+    "family": "Eastern Catholic",
+    "communion": "Catholic Communion",
+    "primaryRegions": "Lebanon, diaspora",
+    "startYear": "Early medieval (distinct identity)",
+    "notes": "West Syriac/Antiochene tradition; in communion with Rome.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR012",
+    "name": "Anglican Communion",
+    "family": "Protestant (Reformation)",
+    "communion": "Anglican Communion",
+    "primaryRegions": "UK and global (Africa, Americas, Asia, Oceania)",
+    "startYear": "16th c. (Reformation era)",
+    "notes": "Historically via Church of England; wide spectrum (evangelical to Anglo-Catholic).",
+    "keySources": [
+      "S015",
+      "S038"
+    ],
+    "epistemicPosture": "Scripture, tradition, reason; via media between Catholic and Protestant."
+  },
+  {
+    "id": "TR013",
+    "name": "Lutheran (confessional)",
+    "family": "Protestant (Reformation)",
+    "communion": "Lutheran",
+    "primaryRegions": "Europe, Americas, Africa, Asia",
+    "startYear": "1517+",
+    "notes": "Centered on justification by faith; sacraments as means of grace; Book of Concord.",
+    "keySources": [
+      "S012",
+      "S013",
+      "S037"
+    ],
+    "epistemicPosture": "Scripture + confessions; justification by grace through faith and the means of grace."
+  },
+  {
+    "id": "TR014",
+    "name": "Reformed / Presbyterian",
+    "family": "Protestant (Reformation)",
+    "communion": "Reformed",
+    "primaryRegions": "Europe, Americas, Africa, Asia",
+    "startYear": "1520s+",
+    "notes": "Covenant theology; confessional tradition (Westminster, Heidelberg, Belgic, Dort).",
+    "keySources": [
+      "S014",
+      "S041"
+    ],
+    "epistemicPosture": "Scripture alone; covenant theology and divine sovereignty in salvation."
+  },
+  {
+    "id": "TR015",
+    "name": "Methodist / Wesleyan",
+    "family": "Protestant (Reformation-derived)",
+    "communion": "Methodist",
+    "primaryRegions": "Global",
+    "startYear": "18th c.",
+    "notes": "Wesleyan-Arminian theology; emphasis on holiness; retains infant baptism; sacraments as means of grace (varies).",
+    "keySources": [
+      "S019"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR016",
+    "name": "Baptist (evangelical)",
+    "family": "Protestant (Reformation-derived)",
+    "communion": "Baptist",
+    "primaryRegions": "Global",
+    "startYear": "17th c.",
+    "notes": "Believer’s baptism; generally ordinances (not sacraments) in evangelical forms; local church polity.",
+    "keySources": [
+      "S017",
+      "S016"
+    ],
+    "epistemicPosture": "Scripture alone; believer's profession and memorial understanding of sacraments."
+  },
+  {
+    "id": "TR017",
+    "name": "Anabaptist / Mennonite",
+    "family": "Radical Reformation",
+    "communion": "Anabaptist",
+    "primaryRegions": "Europe, Americas, Africa, Asia",
+    "startYear": "1520s",
+    "notes": "Believer’s baptism; discipleship/peace emphasis; separation of church/state (varies).",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR018",
+    "name": "Pentecostal (Classical; e.g., Assemblies of God)",
+    "family": "Protestant (modern)",
+    "communion": "Pentecostal",
+    "primaryRegions": "Global (strong in Global South)",
+    "startYear": "Early 20th c.",
+    "notes": "Emphasis on baptism in the Holy Spirit; continuation of charismatic gifts; often believer’s baptism.",
+    "keySources": [
+      "S018"
+    ],
+    "epistemicPosture": "Scripture + Spirit; emphasis on gifts, experience, and charismatic renewal."
+  },
+  {
+    "id": "TR019",
+    "name": "Seventh-day Adventist",
+    "family": "Protestant (modern)",
+    "communion": "Adventist",
+    "primaryRegions": "Global",
+    "startYear": "1860s",
+    "notes": "Sabbath observance; distinctive eschatology; 28 Fundamental Beliefs.",
+    "keySources": [
+      "S020",
+      "S040"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR020",
+    "name": "Restorationist (Stone–Campbell; Churches of Christ / Christian Churches)",
+    "family": "Protestant (modern)",
+    "communion": "Restorationist",
+    "primaryRegions": "Americas; some global",
+    "startYear": "19th c.",
+    "notes": "Restoration of NT Christianity; baptism often strongly linked with conversion (varies).",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR021",
+    "name": "Non-denominational Evangelical (generic)",
+    "family": "Protestant (modern)",
+    "communion": "Evangelical",
+    "primaryRegions": "Global",
+    "startYear": "20th c. (category)",
+    "notes": "Very broad; typically sola scriptura, believer’s baptism (often), varying ecclesiology and charismatics.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR022",
+    "name": "Jehovah’s Witnesses (Non-Nicene)",
+    "family": "Non-Nicene movement",
+    "communion": "",
+    "primaryRegions": "Global",
+    "startYear": "Late 19th c.",
+    "notes": "Reject Nicene Trinity; included for boundary-marking only.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR023",
+    "name": "Latter-day Saints (Mormonism; Non-Nicene)",
+    "family": "Non-Nicene movement",
+    "communion": "",
+    "primaryRegions": "Global",
+    "startYear": "19th c.",
+    "notes": "Non-Nicene; additional scriptures; included for boundary-marking only.",
+    "keySources": [],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR024",
+    "name": "Nubian Christianity (Noubadia/Makuria/Alwa; historical)",
+    "family": "Historical African Christianity",
+    "communion": "Oriental Orthodox-leaning (ties to Alexandria)",
+    "primaryRegions": "Nile Valley (modern Sudan/Egypt)",
+    "startYear": "c. 543–600",
+    "notes": "Christian kingdoms in Nubia; later Islamization. Doctrinal stance is partly reconstructed from ties to Alexandria and imperial missions; treat as historical case-study.",
+    "keySources": [
+      "S053",
+      "S054"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR025",
+    "name": "Syro-Malabar Catholic Church (St Thomas Christians; East Syriac)",
+    "family": "Eastern Catholic (East Syriac)",
+    "communion": "Catholic",
+    "primaryRegions": "India (Kerala; global diaspora)",
+    "startYear": "1599",
+    "notes": "Thomas Christian community in communion with Rome; retains East Syriac liturgy; shaped by Portuguese interventions (1599) and later reforms.",
+    "keySources": [
+      "S058"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR026",
+    "name": "Syro-Malankara Catholic Church (West Syriac; reunion stream)",
+    "family": "Eastern Catholic (West Syriac)",
+    "communion": "Catholic",
+    "primaryRegions": "India (Kerala; global diaspora)",
+    "startYear": "1930",
+    "notes": "Reunion of a Malankara stream with Rome (20th c.); West Syriac liturgy; Catholic dogmatics with Syriac tradition.",
+    "keySources": [
+      "S060"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR027",
+    "name": "Jacobite Syrian Christian Church (India; West Syriac)",
+    "family": "Oriental Orthodox (West Syriac)",
+    "communion": "Oriental Orthodox",
+    "primaryRegions": "India (Kerala; diaspora)",
+    "startYear": "1665",
+    "notes": "Malankara community aligned with Syriac Orthodox Patriarchate; part of the post-1653 split-line.",
+    "keySources": [
+      "S059",
+      "S058"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR028",
+    "name": "Malankara Mar Thoma Syrian Church (Reformed; India)",
+    "family": "Reformed/Anglican-influenced (Indian)",
+    "communion": "Protestant",
+    "primaryRegions": "India (Kerala; diaspora)",
+    "startYear": "1889",
+    "notes": "Reformed movement within Malankara tradition; retains some Syrian liturgical heritage; theologically closer to Anglican/Reformed streams (with local distinctives).",
+    "keySources": [
+      "S059"
+    ],
+    "epistemicPosture": "Scripture alone; covenant theology and divine sovereignty in salvation."
+  },
+  {
+    "id": "TR029",
+    "name": "Church of South India (CSI; united church)",
+    "family": "United Protestant (Anglican/Methodist/etc.)",
+    "communion": "Protestant",
+    "primaryRegions": "South India",
+    "startYear": "1947",
+    "notes": "Ecumenical union church (Anglican, Methodist, etc.). Positions often resemble Anglican/protestant consensus; local diversity.",
+    "keySources": [
+      "S069",
+      "S070"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR030",
+    "name": "Jingjiao / Church of the East in China (historical)",
+    "family": "Church of the East (East Syriac)",
+    "communion": "East Syriac (historical)",
+    "primaryRegions": "China; Silk Road networks",
+    "startYear": "635",
+    "notes": "Church of the East presence in Tang China; documented by the Xi'an (Nestorian) Stele; later declines after persecutions.",
+    "keySources": [
+      "S061"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR031",
+    "name": "African Initiated Churches (AICs; umbrella)",
+    "family": "African Initiated / Independent",
+    "communion": "Varies (often Protestant/Pentecostal roots)",
+    "primaryRegions": "Sub-Saharan Africa (multiple regions)",
+    "startYear": "1880",
+    "notes": "Umbrella for independent African churches (Ethiopianism, Zionist, Aladura, etc.). Doctrine varies; use exemplars below for more specificity.",
+    "keySources": [
+      "S068",
+      "S065"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR032",
+    "name": "Zion Christian Church (ZCC; South Africa)",
+    "family": "African Initiated / Zionist",
+    "communion": "AIC (often Zionist/Pentecostal-leaning)",
+    "primaryRegions": "Southern Africa",
+    "startYear": "1924",
+    "notes": "Large Zionist AIC; healing and distinctive practices; doctrinal stance varies by local practice; often broadly Nicene but with strong indigenous expressions.",
+    "keySources": [
+      "S071"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR033",
+    "name": "Aladura Churches (West Africa; prophet-healing)",
+    "family": "African Initiated / Aladura",
+    "communion": "AIC (Protestant/Pentecostal-leaning)",
+    "primaryRegions": "Nigeria & West Africa",
+    "startYear": "1918",
+    "notes": "Prophet-healing churches emphasizing prayer, visions, healing; often trinitarian; practices vary.",
+    "keySources": [
+      "S065",
+      "S066"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR034",
+    "name": "Kimbanguist Church (DRC)",
+    "family": "African Initiated / Independent",
+    "communion": "AIC (distinctive prophet theology)",
+    "primaryRegions": "DRC & Central Africa",
+    "startYear": "1921",
+    "notes": "Independent church rooted in Simon Kimbangu movement; sources note distinctive prophet/pneumatology claims; treat many positions as qualified unless primary catechisms are consulted.",
+    "keySources": [
+      "S067"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR035",
+    "name": "Georgian Orthodox Church",
+    "family": "Eastern Orthodox",
+    "communion": "Eastern Orthodox",
+    "primaryRegions": "Georgia; Caucasus; diaspora",
+    "startYear": "330",
+    "notes": "Autocephalous Orthodox church in Georgia; distinct liturgical/language context (Georgian).",
+    "keySources": [
+      "S099"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR036",
+    "name": "Melkite Greek Catholic Church (Byzantine Catholic)",
+    "family": "Eastern Catholic",
+    "communion": "Catholic (Eastern)",
+    "primaryRegions": "Syria; Lebanon; Jordan; Israel/Palestine; diaspora",
+    "startYear": "1724",
+    "notes": "Byzantine-rite church in communion with Rome; historically tied to Antioch.",
+    "keySources": [
+      "S096",
+      "S098",
+      "S092"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR037",
+    "name": "Syriac Catholic Church (West Syriac, Catholic)",
+    "family": "Eastern Catholic",
+    "communion": "Catholic (Eastern)",
+    "primaryRegions": "Iraq; Syria; Lebanon; diaspora",
+    "startYear": "1782",
+    "notes": "West Syriac-rite church in communion with Rome; shares Syriac liturgical heritage.",
+    "keySources": [
+      "S097",
+      "S098",
+      "S092"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  },
+  {
+    "id": "TR038",
+    "name": "Ancient / Old Apostolic Church of the East (East Syriac)",
+    "family": "Church of the East",
+    "communion": "Independent (East Syriac)",
+    "primaryRegions": "Iraq; diaspora",
+    "startYear": "1968",
+    "notes": "Split from Assyrian Church of the East linked to calendar/fasting disputes; retains East Syriac tradition.",
+    "keySources": [
+      "S095"
+    ],
+    "epistemicPosture": "Holds to historic Christian orthodoxy within its distinctive tradition."
+  }
+]

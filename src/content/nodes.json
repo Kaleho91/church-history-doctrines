@@ -1,160 +1,1469 @@
 [
-    {
-        "id": "N_JOHN_3_5",
-        "type": "Scripture",
-        "title": "John 3:5 — ‘born of water and Spirit’",
-        "date_range": "c. 90",
-        "region": "Eastern Mediterranean",
-        "summary": "A key anchor text later traditions read in different ways: direct baptismal reference vs broader spiritual renewal.",
-        "citations": []
-    },
-    {
-        "id": "N_TITUS_3_5",
-        "type": "Scripture",
-        "title": "Titus 3:5 — ‘washing of regeneration’",
-        "date_range": "c. 60–70",
-        "region": "Eastern Mediterranean",
-        "summary": "Frequently cited as a direct link between salvation, washing, and renewal by the Holy Spirit.",
-        "citations": []
-    },
-    {
-        "id": "N_ACTS_2_38",
-        "type": "Scripture",
-        "title": "Acts 2:38 — baptism ‘for the forgiveness of sins’",
-        "date_range": "c. 80–90",
-        "region": "Eastern Mediterranean",
-        "summary": "Connects repentance, baptism, forgiveness; debates focus on how baptism relates to the forgiveness it proclaims.",
-        "citations": []
-    },
-    {
-        "id": "N_1PET_3_21",
-        "type": "Scripture",
-        "title": "1 Peter 3:21 — ‘Baptism… now saves you’",
-        "date_range": "c. 60–90",
-        "region": "Eastern Mediterranean",
-        "summary": "Strong salvation language paired with clarification that it is not mere external washing; later debates hinge on that clarification.",
-        "citations": []
-    },
-    {
-        "id": "N_JUSTIN_APOL_61",
-        "type": "Text",
-        "title": "Justin Martyr, First Apology ch. 61 — regeneration language",
-        "date_range": "c. 155",
-        "region": "Rome",
-        "summary": "Justin describes baptism in conversion as connected with being ‘regenerated’ in a context of repentance and belief.",
-        "citations": [
-            "SRC_JUSTIN_APOL61_LOGOS"
-        ]
-    },
-    {
-        "id": "N_JUSTIN_APOL_66",
-        "type": "Text",
-        "title": "Justin Martyr, First Apology ch. 66 — ‘washing… remission… regeneration’",
-        "date_range": "c. 155",
-        "region": "Rome",
-        "summary": "Justin links baptismal washing to remission of sins and regeneration in the life of the Church.",
-        "citations": [
-            "SRC_JUSTIN_APOL66_CCEL"
-        ]
-    },
-    {
-        "id": "N_CYPRIAN_EPISTLE_FIDUS",
-        "type": "Text",
-        "title": "Cyprian, Epistle to Fidus — infant baptism and forgiveness",
-        "date_range": "c. 252",
-        "region": "North Africa (Carthage)",
-        "summary": "Cyprian’s counsel on infant baptism assumes baptism is closely connected with forgiveness/remission logic.",
-        "citations": [
-            "SRC_CYPRIAN_FIDUS_BIBLEHUB"
-        ]
-    },
-    {
-        "id": "N_AUGUSTINE_MERITS_INFANTS",
-        "type": "Text",
-        "title": "Augustine — baptism of infants and remission of sins",
-        "date_range": "c. 412",
-        "region": "North Africa (Hippo)",
-        "summary": "Augustine argues baptism grants remission of sins even to infants, tying the issue to original sin and salvation debates.",
-        "citations": [
-            "SRC_AUGUSTINE_NEWADVENT_MERITS"
-        ]
-    },
-    {
-        "id": "N_AQUINAS_ST_Q69",
-        "type": "Text",
-        "title": "Aquinas, ST III q.69 — effects of baptism (‘laver of regeneration’)",
-        "date_range": "c. 1265–1274",
-        "region": "Western Europe",
-        "summary": "Aquinas systematizes baptism’s effects, citing Titus 3:5 and connecting baptism to regeneration and remission of sins.",
-        "citations": [
-            "SRC_AQUINAS_NEWADVENT_Q69"
-        ]
-    },
-    {
-        "id": "N_LUTHER_SMALL_CATECHISM",
-        "type": "Confession",
-        "title": "Luther, Small Catechism — baptism gives forgiveness and salvation",
-        "date_range": "1529",
-        "region": "German lands",
-        "summary": "Luther teaches baptism ‘works forgiveness of sins’ and gives salvation, grounded in God’s promise and received in faith.",
-        "citations": [
-            "SRC_LUTHER_SC_CPH"
-        ]
-    },
-    {
-        "id": "N_LUTHER_LARGE_CATECHISM",
-        "type": "Confession",
-        "title": "Luther, Large Catechism — Word + water; not ‘mere water’",
-        "date_range": "1529",
-        "region": "German lands",
-        "summary": "Luther rejects reducing baptism to a bare external; its power is the Word joined to water, and he uses ‘laver of regeneration’ language.",
-        "citations": [
-            "SRC_LUTHER_LC_BOC"
-        ]
-    },
-    {
-        "id": "N_WCF_28",
-        "type": "Confession",
-        "title": "Westminster Confession ch. 28 — efficacy not tied to the moment",
-        "date_range": "1646",
-        "region": "British Isles",
-        "summary": "Westminster affirms real conferral of grace by the Spirit but denies a mechanical tie to the moment of administration.",
-        "citations": [
-            "SRC_WCF28_REFORMEDWIKI"
-        ]
-    },
-    {
-        "id": "N_ZWINGLI_SIGN_COVENANT",
-        "type": "Person",
-        "title": "Zwingli — baptism as covenant sign (summary)",
-        "date_range": "1525",
-        "region": "Zurich (Swiss Confederacy)",
-        "summary": "Zwingli emphasizes baptism as covenant sign/marker rather than traditional regenerating instrumentality.",
-        "citations": [
-            "SRC_ZWINGLI_BRITANNICA",
-            "SRC_SCHAFF_HCC8_ZWINGLI_SIGNS"
-        ]
-    },
-    {
-        "id": "N_ARTICLE_27_39ART",
-        "type": "Confession",
-        "title": "Thirty-Nine Articles, Article 27 — ‘sign of regeneration… as by an instrument’",
-        "date_range": "1563",
-        "region": "England",
-        "summary": "Anglican formularies describe baptism as more than a badge: a sign of regeneration/new birth ‘as by an instrument’ when rightly received.",
-        "citations": [
-            "SRC_39ART_ART27_PDF"
-        ]
-    },
-    {
-        "id": "N_CCC_BAPTISM",
-        "type": "Confession",
-        "title": "Catechism of the Catholic Church — baptism as regeneration through water and the word",
-        "date_range": "1992",
-        "region": "Global (Catholic Church)",
-        "summary": "The Catechism summarizes baptism as regeneration/new birth and liberation from sin, with incorporation into Christ and the Church.",
-        "citations": [
-            "SRC_CCC_VATICAN_ART1"
-        ]
-    }
+  {
+    "id": "EV_EV001",
+    "type": "Foundational",
+    "title": "Resurrection & Pentecost; Church begins in Jerusalem",
+    "date_range": "30–33",
+    "region": "Judea (West Asia)",
+    "summary": "Start of Christian movement; core proclamation (kerygma).",
+    "keyFigures": "Jesus; Apostles",
+    "citations": []
+  },
+  {
+    "id": "EV_EV002",
+    "type": "Council (apostolic)",
+    "title": "Council of Jerusalem (Acts 15)",
+    "date_range": "49–50",
+    "region": "Jerusalem",
+    "summary": "Early decision about Gentile inclusion and law observance.",
+    "keyFigures": "Peter; James; Paul",
+    "citations": []
+  },
+  {
+    "id": "EV_EV003",
+    "type": "Persecution",
+    "title": "Neronian persecution (traditionally)",
+    "date_range": "64",
+    "region": "Rome",
+    "summary": "Early martyr narratives shape church identity.",
+    "keyFigures": "Nero; Peter; Paul (traditional martyrdom)",
+    "citations": []
+  },
+  {
+    "id": "EV_EV004",
+    "type": "Historical",
+    "title": "Destruction of the Second Temple",
+    "date_range": "70",
+    "region": "Jerusalem",
+    "summary": "Major shift for Jewish-Christian relations; diaspora dynamics.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV005",
+    "type": "Texts",
+    "title": "Apostolic Fathers (e.g., Clement, Ignatius) write",
+    "date_range": "90–110",
+    "region": "Mediterranean",
+    "summary": "Earliest post-NT witness to church order, Eucharist, martyrdom.",
+    "keyFigures": "Clement of Rome; Ignatius; Polycarp",
+    "citations": [
+      "S050"
+    ]
+  },
+  {
+    "id": "EV_EV006",
+    "type": "Text",
+    "title": "Justin Martyr describes Christian worship (First Apology)",
+    "date_range": "155",
+    "region": "Rome",
+    "summary": "Early evidence for Eucharistic worship and liturgy.",
+    "keyFigures": "Justin Martyr",
+    "citations": []
+  },
+  {
+    "id": "EV_EV007",
+    "type": "Persecution",
+    "title": "Decian persecution",
+    "date_range": "250",
+    "region": "Roman Empire",
+    "summary": "Shapes penitential discipline; debates about lapsed Christians.",
+    "keyFigures": "Decius",
+    "citations": []
+  },
+  {
+    "id": "EV_EV008",
+    "type": "Global expansion",
+    "title": "Armenia adopts Christianity as state religion (traditional dating)",
+    "date_range": "301",
+    "region": "Armenia (Caucasus)",
+    "summary": "Early Christian kingdom outside Rome’s core.",
+    "keyFigures": "Gregory the Illuminator; Tiridates III (trad.)",
+    "citations": []
+  },
+  {
+    "id": "EV_EV009",
+    "type": "Empire/Policy",
+    "title": "Edict of Milan (toleration)",
+    "date_range": "313",
+    "region": "Roman Empire (Europe)",
+    "summary": "Legalization of Christianity; end of major persecutions.",
+    "keyFigures": "Constantine; Licinius",
+    "citations": [
+      "S021"
+    ]
+  },
+  {
+    "id": "EV_EV010",
+    "type": "Ecumenical Council",
+    "title": "Council of Nicaea I: condemns Arianism; homoousios",
+    "date_range": "325",
+    "region": "Nicaea (Asia Minor)",
+    "summary": "Trinitarian doctrine clarified; creed foundations.",
+    "keyFigures": "Constantine; bishops",
+    "citations": []
+  },
+  {
+    "id": "EV_EV011",
+    "type": "Global expansion (Africa)",
+    "title": "Frumentius becomes first bishop; Christianity spreads in Ethiopia",
+    "date_range": "330s",
+    "region": "Axum (Ethiopia)",
+    "summary": "Major African Christian center with Alexandrian theology.",
+    "keyFigures": "Frumentius; Athanasius (trad.)",
+    "citations": [
+      "S024"
+    ]
+  },
+  {
+    "id": "EV_EV012",
+    "type": "Ecumenical Council",
+    "title": "Council of Constantinople I: expands Nicene Creed; affirms Spirit’s divinity",
+    "date_range": "381",
+    "region": "Constantinople",
+    "summary": "Standard Nicene-Constantinopolitan Creed text used broadly.",
+    "keyFigures": "Theodosius I",
+    "citations": [
+      "S001"
+    ]
+  },
+  {
+    "id": "EV_EV013",
+    "type": "Council (regional)",
+    "title": "Synod/Council of Seleucia-Ctesiphon organizes Church of the East",
+    "date_range": "410",
+    "region": "Seleucia-Ctesiphon (Persia)",
+    "summary": "Formal organization of Persian Christianity under Catholicos.",
+    "keyFigures": "",
+    "citations": [
+      "S026"
+    ]
+  },
+  {
+    "id": "EV_EV014",
+    "type": "Ecclesial development",
+    "title": "Church of the East asserts independence from 'Church of the West' (traditional)",
+    "date_range": "424",
+    "region": "Persia",
+    "summary": "Shows Rome/Byzantium vs Persia political barrier shaping ecclesiology.",
+    "keyFigures": "",
+    "citations": [
+      "S026"
+    ]
+  },
+  {
+    "id": "EV_EV015",
+    "type": "Ecumenical Council",
+    "title": "Council of Ephesus: condemns Nestorius; affirms Theotokos language",
+    "date_range": "431",
+    "region": "Ephesus",
+    "summary": "Christological definitions; seeds of East Syriac divergence.",
+    "keyFigures": "Cyril of Alexandria; Nestorius",
+    "citations": [
+      "S003"
+    ]
+  },
+  {
+    "id": "EV_EV016",
+    "type": "Ecumenical Council",
+    "title": "Council of Chalcedon: Definition of Faith; 'in two natures'",
+    "date_range": "451",
+    "region": "Chalcedon",
+    "summary": "Major split with non-Chalcedonian (Oriental Orthodox) churches.",
+    "keyFigures": "Leo I (Tome); Dioscorus",
+    "citations": [
+      "S002"
+    ]
+  },
+  {
+    "id": "EV_EV017",
+    "type": "Schism/Communion",
+    "title": "Non-Chalcedonian churches develop as Oriental Orthodox communion",
+    "date_range": "451+",
+    "region": "Egypt, Syria, Armenia, Ethiopia, India",
+    "summary": "Coptic, Armenian, Syriac, Ethiopian, Malankara lines of continuity.",
+    "keyFigures": "",
+    "citations": [
+      "S044"
+    ]
+  },
+  {
+    "id": "EV_EV018",
+    "type": "Ecumenical Council",
+    "title": "Council of Constantinople II (Fifth Ecumenical)",
+    "date_range": "553",
+    "region": "Constantinople",
+    "summary": "Further Christological controversies (Three Chapters).",
+    "keyFigures": "Justinian I",
+    "citations": []
+  },
+  {
+    "id": "EV_EV019",
+    "type": "Geopolitics",
+    "title": "Early Islamic conquests reshape Christian landscape",
+    "date_range": "632–750",
+    "region": "Middle East, North Africa, Persia",
+    "summary": "Christianity persists under Islamic rule; shifts centers of power.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV020",
+    "type": "Global expansion (Asia)",
+    "title": "Church of the East mission arrives in Tang China (Alopen)",
+    "date_range": "635",
+    "region": "Chang’an (China)",
+    "summary": "Evidence of early East Asian Christianity.",
+    "keyFigures": "Alopen (trad.)",
+    "citations": [
+      "S025"
+    ]
+  },
+  {
+    "id": "EV_EV021",
+    "type": "Ecumenical Council",
+    "title": "Council of Constantinople III: dyothelitism (two wills)",
+    "date_range": "680–681",
+    "region": "Constantinople",
+    "summary": "Refines Chalcedonian Christology; rejects monothelitism.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV022",
+    "type": "Controversy",
+    "title": "Iconoclast Controversy",
+    "date_range": "726–843",
+    "region": "Byzantine Empire",
+    "summary": "Leads to Nicaea II and theology of icons.",
+    "keyFigures": "Leo III; Irene; iconodules",
+    "citations": [
+      "S036"
+    ]
+  },
+  {
+    "id": "EV_EV023",
+    "type": "Ecumenical Council",
+    "title": "Second Council of Nicaea: restores icons; veneration vs adoration",
+    "date_range": "787",
+    "region": "Nicaea",
+    "summary": "Key for Orthodox/Catholic icon theology; disputed in some Protestant contexts.",
+    "keyFigures": "Irene; Tarasius",
+    "citations": [
+      "S004",
+      "S036"
+    ]
+  },
+  {
+    "id": "EV_EV024",
+    "type": "Mission/Conversion",
+    "title": "Baptism of Rus’ (traditional dating)",
+    "date_range": "988",
+    "region": "Kievan Rus’ (Eastern Europe)",
+    "summary": "Eastern Orthodox Christianity spreads to Slavic world.",
+    "keyFigures": "Vladimir I (trad.)",
+    "citations": []
+  },
+  {
+    "id": "EV_EV025",
+    "type": "Schism",
+    "title": "East–West Schism (mutual excommunications; later lifted 1965)",
+    "date_range": "1054",
+    "region": "Rome & Constantinople",
+    "summary": "Catholic vs Eastern Orthodox divide institutionalizes.",
+    "keyFigures": "Leo IX; Michael Cerularius",
+    "citations": [
+      "S022"
+    ]
+  },
+  {
+    "id": "EV_EV026",
+    "type": "Geopolitics/Church history",
+    "title": "Crusades (broad period)",
+    "date_range": "1095–1291",
+    "region": "Levant",
+    "summary": "Deepens East-West tensions; impacts Middle Eastern churches.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV027",
+    "type": "Geopolitics",
+    "title": "Fourth Crusade sacks Constantinople",
+    "date_range": "1204",
+    "region": "Constantinople",
+    "summary": "Major rupture between Latins and Greeks; lasting trauma.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV028",
+    "type": "Council (union attempt)",
+    "title": "Council of Florence attempts East-West reunion; includes filioque definitions",
+    "date_range": "1439",
+    "region": "Florence",
+    "summary": "Later referenced in Catholic theology; largely rejected in Orthodox reception.",
+    "keyFigures": "",
+    "citations": [
+      "S010",
+      "S029"
+    ]
+  },
+  {
+    "id": "EV_EV029",
+    "type": "Geopolitics",
+    "title": "Fall of Constantinople to Ottomans",
+    "date_range": "1453",
+    "region": "Constantinople",
+    "summary": "Orthodox center under Ottoman rule; shifts Christian geopolitics.",
+    "keyFigures": "",
+    "citations": []
+  },
+  {
+    "id": "EV_EV030",
+    "type": "Reformation",
+    "title": "Martin Luther’s 95 Theses (traditional starting point)",
+    "date_range": "1517",
+    "region": "Wittenberg (Europe)",
+    "summary": "Catalyst for Western Reformation and denominational pluralization.",
+    "keyFigures": "Martin Luther",
+    "citations": []
+  },
+  {
+    "id": "EV_EV031",
+    "type": "Confession",
+    "title": "Augsburg Confession presented",
+    "date_range": "1530",
+    "region": "Augsburg",
+    "summary": "Foundational Lutheran confession.",
+    "keyFigures": "Melanchthon",
+    "citations": [
+      "S012"
+    ]
+  },
+  {
+    "id": "EV_EV032",
+    "type": "Reformation",
+    "title": "Act of Supremacy (break with Rome; Church of England)",
+    "date_range": "1534",
+    "region": "England",
+    "summary": "Anglican tradition emerges.",
+    "keyFigures": "Henry VIII",
+    "citations": [
+      "S015"
+    ]
+  },
+  {
+    "id": "EV_EV033",
+    "type": "Council",
+    "title": "Council of Trent (Catholic Reform)",
+    "date_range": "1545–1563",
+    "region": "Trent",
+    "summary": "Responds to Reformation; defines justification, sacraments, etc.",
+    "keyFigures": "",
+    "citations": [
+      "S034",
+      "S035"
+    ]
+  },
+  {
+    "id": "EV_EV034",
+    "type": "Confession/Council",
+    "title": "Synod of Dort (Canons of Dort)",
+    "date_range": "1618–1619",
+    "region": "Dordrecht",
+    "summary": "Defines Reformed response to Remonstrants; TULIP later summary.",
+    "keyFigures": "",
+    "citations": [
+      "S041"
+    ]
+  },
+  {
+    "id": "EV_EV035",
+    "type": "Confession",
+    "title": "Westminster Confession produced",
+    "date_range": "1646",
+    "region": "Westminster",
+    "summary": "Major Reformed/Presbyterian standard.",
+    "keyFigures": "",
+    "citations": [
+      "S014"
+    ]
+  },
+  {
+    "id": "EV_EV036",
+    "type": "Revival movement",
+    "title": "First Great Awakening",
+    "date_range": "1730s–1740s",
+    "region": "Britain & North America",
+    "summary": "Evangelical revivalism; affects denominational trajectories.",
+    "keyFigures": "George Whitefield; Jonathan Edwards",
+    "citations": []
+  },
+  {
+    "id": "EV_EV037",
+    "type": "Revival movement",
+    "title": "Second Great Awakening",
+    "date_range": "1790s–1840s",
+    "region": "United States (and beyond)",
+    "summary": "Rise of new movements; emphasis on conversion; influences holiness/restorationist streams.",
+    "keyFigures": "Charles Finney (etc.)",
+    "citations": []
+  },
+  {
+    "id": "EV_EV038",
+    "type": "Modern movement",
+    "title": "Seventh-day Adventist Church organizes (formal denomination)",
+    "date_range": "1860s",
+    "region": "United States",
+    "summary": "Distinctive sabbatarian/eschatological Protestant tradition.",
+    "keyFigures": "",
+    "citations": [
+      "S020"
+    ]
+  },
+  {
+    "id": "EV_EV039",
+    "type": "Council",
+    "title": "First Vatican Council defines papal primacy/infallibility",
+    "date_range": "1870",
+    "region": "Rome",
+    "summary": "High point of papal authority definitions; ecumenical flashpoint.",
+    "keyFigures": "Pius IX",
+    "citations": [
+      "S008",
+      "S009"
+    ]
+  },
+  {
+    "id": "EV_EV040",
+    "type": "Modern movement",
+    "title": "Azusa Street Revival",
+    "date_range": "1906",
+    "region": "Los Angeles",
+    "summary": "Catalyst for global Pentecostalism.",
+    "keyFigures": "William J. Seymour",
+    "citations": []
+  },
+  {
+    "id": "EV_EV041",
+    "type": "Council",
+    "title": "Second Vatican Council",
+    "date_range": "1962–1965",
+    "region": "Rome",
+    "summary": "Modern Catholic renewal; ecumenism; liturgical reforms.",
+    "keyFigures": "John XXIII; Paul VI",
+    "citations": []
+  },
+  {
+    "id": "EV_EV042",
+    "type": "Ecumenical milestone",
+    "title": "Mutual lifting of 1054 excommunications (Paul VI & Athenagoras)",
+    "date_range": "1965",
+    "region": "Rome & Constantinople",
+    "summary": "Symbolic healing step though full communion not restored.",
+    "keyFigures": "Paul VI; Athenagoras I",
+    "citations": [
+      "S022"
+    ]
+  },
+  {
+    "id": "EV_EV043",
+    "type": "Expansion",
+    "title": "Byzantine/Coptic missions and Nubian conversion; kingdoms of Noubadia, Makuria, Alwa become Christian",
+    "date_range": "c. 543–580",
+    "region": "Nubia (Nile Valley)",
+    "summary": "Shows early ‘global South’ Christian polities outside Roman/Byzantine core; later influences African Christianity conversations.",
+    "keyFigures": "Byzantine/Coptic missionaries",
+    "citations": [
+      "S053",
+      "S054"
+    ]
+  },
+  {
+    "id": "EV_EV044",
+    "type": "Political-religious boundary",
+    "title": "Baqt treaty between Makuria and Muslim Egypt (long-lasting political arrangement)",
+    "date_range": "651",
+    "region": "Nubia / Egypt",
+    "summary": "Explains long survival of Nubian Christian kingdoms after Islamic expansion; helps trace later Islamization dynamics.",
+    "keyFigures": "Makurian kings; Rashidun/Umayyad-era authorities",
+    "citations": [
+      "S054"
+    ]
+  },
+  {
+    "id": "EV_EV045",
+    "type": "Decline",
+    "title": "Gradual decline and Islamization of Nubian Christian kingdoms; Makuria falls; Alwa declines later",
+    "date_range": "9th–15th c.",
+    "region": "Nubia",
+    "summary": "Shows how political/economic forces can extinguish a once-flourishing Christian tradition (not just ‘doctrinal failure’).",
+    "keyFigures": "Mamluk sultans; Nubian dynasties",
+    "citations": [
+      "S054"
+    ]
+  },
+  {
+    "id": "EV_EV046",
+    "type": "Monastic/missional",
+    "title": "Era of the Nine Saints: monastic expansion and consolidation of Ethiopian Christianity",
+    "date_range": "late 5th c.",
+    "region": "Ethiopia (Aksum)",
+    "summary": "Helps explain the distinctive ‘Tewahedo’ profile: monasticism, translation, and formation of a stable local tradition.",
+    "keyFigures": "Nine Saints (tradition)",
+    "citations": [
+      "S055",
+      "S056"
+    ]
+  },
+  {
+    "id": "EV_EV047",
+    "type": "Mission/Union crisis",
+    "title": "Jesuit mission attempts union with Rome; conversion of Emperor Susenyos (1622) followed by backlash; expulsion (1632)",
+    "date_range": "1555–1632",
+    "region": "Ethiopia",
+    "summary": "Case study in ‘union vs continuity’: how political conversion pressures can trigger violent religious instability and later harden boundaries.",
+    "keyFigures": "Jesuits; Susenyos; Fasilides",
+    "citations": [
+      "S057",
+      "S056"
+    ]
+  },
+  {
+    "id": "EV_EV048",
+    "type": "Mission",
+    "title": "Arrival of Church of the East (Jingjiao) missionaries in Chang’an (Xi’an)",
+    "date_range": "635",
+    "region": "China (Tang)",
+    "summary": "Demonstrates early Asian Christian presence via Syriac networks; challenges ‘Christianity arrived late’ narratives about Asia.",
+    "keyFigures": "Alopen (tradition)",
+    "citations": [
+      "S061"
+    ]
+  },
+  {
+    "id": "EV_EV049",
+    "type": "Inscription/document",
+    "title": "Xi’an (Nestorian) Stele erected, narrating Christianity’s arrival and imperial reception in China",
+    "date_range": "781",
+    "region": "China (Tang)",
+    "summary": "Gives a concrete dated artifact for Church of the East presence in China and its self-description.",
+    "keyFigures": "Jingjiao community",
+    "citations": [
+      "S061"
+    ]
+  },
+  {
+    "id": "EV_EV050",
+    "type": "Persecution",
+    "title": "Huichang persecution: suppression of foreign religions contributes to decline of Jingjiao communities",
+    "date_range": "845",
+    "region": "China (Tang)",
+    "summary": "Explains discontinuity of early East Syriac presence; helps interpret later ‘re-introductions’ of Christianity.",
+    "keyFigures": "Emperor Wuzong",
+    "citations": [
+      "S061"
+    ]
+  },
+  {
+    "id": "EV_EV051",
+    "type": "Synod / colonial intervention",
+    "title": "Synod of Diamper (Udayamperoor): Portuguese/Jewuit-led synod brings Thomas Christians under Roman authority",
+    "date_range": "1599",
+    "region": "India (Kerala)",
+    "summary": "Major fork: Latinization pressure and jurisdictional conflict set up later fractures (1653 and beyond).",
+    "keyFigures": "Archbishop Aleixo de Menezes; Jesuits",
+    "citations": [
+      "S058",
+      "S059"
+    ]
+  },
+  {
+    "id": "EV_EV052",
+    "type": "Schism trigger",
+    "title": "Coonan Cross Oath: mass resistance by Thomas Christians against Portuguese Padroado control",
+    "date_range": "1653",
+    "region": "India (Kerala)",
+    "summary": "A clear ‘bifurcation moment’ producing multiple later lines: Syro-Malabar, Malankara Orthodox/Jacobite, Mar Thoma, Syro-Malankara, etc.",
+    "keyFigures": "Archdeacon Thomas; local clergy/laity",
+    "citations": [
+      "S059",
+      "S060"
+    ]
+  },
+  {
+    "id": "EV_EV053",
+    "type": "Alignment",
+    "title": "Arrival of Syriac Orthodox bishop (Mar Gregorios) and consolidation of West Syriac line in Malankara",
+    "date_range": "1665",
+    "region": "India (Kerala)",
+    "summary": "Explains why part of Malankara becomes West Syriac (Oriental Orthodox) rather than East Syriac.",
+    "keyFigures": "Mar Gregorios (tradition)",
+    "citations": [
+      "S061",
+      "S062"
+    ]
+  },
+  {
+    "id": "EV_EV054",
+    "type": "Union/reunion",
+    "title": "Syro-Malankara Catholic Church begins (reunion stream with Rome)",
+    "date_range": "1930",
+    "region": "India (Kerala)",
+    "summary": "Adds a ‘reunion’ branch distinct from Syro-Malabar and Malankara OO lines.",
+    "keyFigures": "Geevarghese Ivanios (tradition)",
+    "citations": [
+      "S062"
+    ]
+  },
+  {
+    "id": "EV_EV055",
+    "type": "Mission controversy",
+    "title": "Chinese Rites Controversy: conflict over Confucian/ancestor rites in Catholic missions",
+    "date_range": "17th–18th c.",
+    "region": "China",
+    "summary": "Key case for how ‘inculturation’ debates can shape doctrine/practice boundaries and later Catholic policy.",
+    "keyFigures": "Jesuits; Dominicans; Franciscans",
+    "citations": [
+      "S062",
+      "S064"
+    ]
+  },
+  {
+    "id": "EV_EV056",
+    "type": "Papal decision",
+    "title": "Benedict XIV’s bull *Ex quo singulari* forbids certain accommodation practices",
+    "date_range": "1742",
+    "region": "Catholic missions (China/India)",
+    "summary": "Acts as a boundary marker for acceptable local rites; reverberates in mission theology and later policy reversal (20th c.).",
+    "keyFigures": "Benedict XIV",
+    "citations": [
+      "S063",
+      "S064"
+    ]
+  },
+  {
+    "id": "EV_EV057",
+    "type": "Policy shift",
+    "title": "Vatican policy change permits certain Chinese rites under conditions (reversal after 1742 era)",
+    "date_range": "1939",
+    "region": "Catholic missions (China)",
+    "summary": "Shows that some ‘practice-boundary’ decisions are revisited; important for legitimacy scoring of ‘novel’ vs ‘revived’ practices.",
+    "keyFigures": "Congregation for the Propagation of the Faith (Propaganda Fide)",
+    "citations": [
+      "S064"
+    ]
+  },
+  {
+    "id": "EV_EV058",
+    "type": "Movement",
+    "title": "Ethiopianism and early African church self-governance movements (roots of AICs)",
+    "date_range": "late 19th–early 20th c.",
+    "region": "Southern Africa",
+    "summary": "A key origin point for later African independent denominations and colonial-era schisms.",
+    "keyFigures": "African clergy/laity; Black Atlantic influences",
+    "citations": [
+      "S068"
+    ]
+  },
+  {
+    "id": "EV_EV059",
+    "type": "Movement",
+    "title": "Aladura movement begins (prayer/healing; independent prophet-healing churches)",
+    "date_range": "c. 1918",
+    "region": "Nigeria (Yoruba regions)",
+    "summary": "Helps trace charismatic healing emphases to early 20th-century West African contexts (distinct from Azusa-only narratives).",
+    "keyFigures": "Yoruba Christian elites; prophets",
+    "citations": [
+      "S065"
+    ]
+  },
+  {
+    "id": "EV_EV060",
+    "type": "Denomination",
+    "title": "Cherubim & Seraphim society forms within Aladura stream",
+    "date_range": "1925–26",
+    "region": "Nigeria",
+    "summary": "Concrete branch point within Aladura tradition; adds specificity to ‘AIC’ umbrella.",
+    "keyFigures": "Moses Orimolade Tunolase; Christiana Abiodun Akinsowon",
+    "citations": [
+      "S066"
+    ]
+  },
+  {
+    "id": "EV_EV061",
+    "type": "Movement/denomination",
+    "title": "Simon Kimbangu’s movement begins; later forms the Kimbanguist Church",
+    "date_range": "1921",
+    "region": "DRC (then Belgian Congo)",
+    "summary": "Key African independent tradition; often discussed in relation to colonial authority, prophecy, and distinctive theology.",
+    "keyFigures": "Simon Kimbangu",
+    "citations": [
+      "S067"
+    ]
+  },
+  {
+    "id": "EV_EV062",
+    "type": "Institutional",
+    "title": "Georgian church autocephaly (early tradition)",
+    "date_range": "480",
+    "region": "Caucasus",
+    "summary": "Adds a Caucasus center to the map; shows early autocephalous development outside the Latin/Greek core.",
+    "keyFigures": "St Nino; Georgian church",
+    "citations": [
+      "S099"
+    ]
+  },
+  {
+    "id": "EV_EV063",
+    "type": "Conversion/State",
+    "title": "Christianity introduced in Aksum under Ezana",
+    "date_range": "330",
+    "region": "Ethiopia (Aksum)",
+    "summary": "Anchors Ethiopian Christianity in late antiquity and ties later doctrinal/liturgical continuity to Aksumite roots.",
+    "keyFigures": "King Ezana",
+    "citations": [
+      "S076",
+      "S074"
+    ]
+  },
+  {
+    "id": "EV_EV064",
+    "type": "Conversion/Region",
+    "title": "Nubia’s three Christian kingdoms (Nobatia, Makuria, Alwa)",
+    "date_range": "550",
+    "region": "Nubia",
+    "summary": "Prevents 'Nubia = one church' flattening; supports tracing differences across the three kingdoms.",
+    "keyFigures": "Missionaries; local kings",
+    "citations": [
+      "S077",
+      "S078",
+      "S079"
+    ]
+  },
+  {
+    "id": "EV_EV065",
+    "type": "Diplomacy",
+    "title": "Baqt treaty between Christian Nubia (Makuria) and Muslim Egypt",
+    "date_range": "652",
+    "region": "Nubia/Egypt",
+    "summary": "Explains how Christian institutions survived for centuries under treaty dynamics; key for 'decline' narratives.",
+    "keyFigures": "Makurian king; Abd Allah ibn Sa'd",
+    "citations": [
+      "S080"
+    ]
+  },
+  {
+    "id": "EV_EV066",
+    "type": "Mission/Expansion",
+    "title": "Arrival of Church of the East mission (Jingjiao) in China",
+    "date_range": "635",
+    "region": "China (Tang)",
+    "summary": "Pins the China storyline to a dated, material witness and an established mission corridor.",
+    "keyFigures": "Alopen; Tang court",
+    "citations": [
+      "S081"
+    ]
+  },
+  {
+    "id": "EV_EV067",
+    "type": "Artifact/Memory",
+    "title": "Jingjiao (Xi’an) Stele erected (Chinese+Syriac)",
+    "date_range": "781",
+    "region": "China (Tang)",
+    "summary": "Provides a primary artifact for doctrine/liturgy/terminology in early Chinese Christianity.",
+    "keyFigures": "Jingjiao community",
+    "citations": [
+      "S081"
+    ]
+  },
+  {
+    "id": "EV_EV068",
+    "type": "Mission/Expansion",
+    "title": "Syriac Christianity expands along Silk Road networks",
+    "date_range": "600",
+    "region": "Central Asia",
+    "summary": "Adds Central Asia as a sustained Christian region and explains linguistic/ritual transmission paths.",
+    "keyFigures": "Church of the East communities",
+    "citations": [
+      "S082",
+      "S083"
+    ]
+  },
+  {
+    "id": "EV_EV069",
+    "type": "Council/Polity",
+    "title": "Synod of Diamper formalizes union with Rome for Thomas Christians",
+    "date_range": "1599",
+    "region": "India (Kerala)",
+    "summary": "Major bifurcation trigger: authority, rite pressure, and later split-lines.",
+    "keyFigures": "Aleixo de Menezes",
+    "citations": [
+      "S084"
+    ]
+  },
+  {
+    "id": "EV_EV070",
+    "type": "Schism/Protest",
+    "title": "Coonan Cross Oath rejects Portuguese/JJesuit authority",
+    "date_range": "1653",
+    "region": "India (Kerala)",
+    "summary": "Anchor point for Puthenkoor line and later Malankara family; crucial to Kerala micro-splits.",
+    "keyFigures": "Archdeacon Thomas",
+    "citations": [
+      "S085"
+    ]
+  },
+  {
+    "id": "EV_EV071",
+    "type": "Discipline/Inculturation",
+    "title": "Ex illa die restricts Chinese rites",
+    "date_range": "1715",
+    "region": "China/Europe",
+    "summary": "Primary-text anchor for 'civil vs religious' boundary decisions in missions.",
+    "keyFigures": "Clement XI",
+    "citations": [
+      "S087"
+    ]
+  },
+  {
+    "id": "EV_EV072",
+    "type": "Discipline/Inculturation",
+    "title": "Ex quo singulari reaffirms restrictions",
+    "date_range": "1742",
+    "region": "China/Europe",
+    "summary": "Locks restriction line; shows how discipline can be strongly enforced across centuries.",
+    "keyFigures": "Benedict XIV",
+    "citations": [
+      "S088",
+      "S086"
+    ]
+  },
+  {
+    "id": "EV_EV073",
+    "type": "Discipline/Inculturation",
+    "title": "Plane compertum est allows participation in certain rites",
+    "date_range": "1939",
+    "region": "China/Europe",
+    "summary": "Shows reversal/clarification: state rites deemed civil; adds nuance to 'doctrine vs discipline'.",
+    "keyFigures": "Propaganda Fide; Pius XII approval",
+    "citations": [
+      "S089",
+      "S090",
+      "S091"
+    ]
+  },
+  {
+    "id": "EV_EV074",
+    "type": "Polity/Leadership",
+    "title": "Native Ethiopian abuna appointed (Basil)",
+    "date_range": "1950",
+    "region": "Ethiopia",
+    "summary": "Modern institutional milestone; shows internal leadership transition (not only external patriarchal links).",
+    "keyFigures": "Abuna Basil",
+    "citations": [
+      "S074"
+    ]
+  },
+  {
+    "id": "EV_EV075",
+    "type": "Polity/Leadership",
+    "title": "Ethiopian patriarchate established",
+    "date_range": "1959",
+    "region": "Ethiopia",
+    "summary": "Clarifies communion relationships and modern autocephaly claims.",
+    "keyFigures": "EOTC; Coptic ties",
+    "citations": [
+      "S074"
+    ]
+  },
+  {
+    "id": "EV_EV076",
+    "type": "Schism/Calendar",
+    "title": "Old Apostolic/Ancient Church of the East emerges from split",
+    "date_range": "1968",
+    "region": "Iraq/India diaspora",
+    "summary": "Internal differentiation within East Syriac tradition; prevents flattening 'Church of the East'.",
+    "keyFigures": "Church of the East leadership",
+    "citations": [
+      "S095"
+    ]
+  },
+  {
+    "id": "EV_EV077",
+    "type": "Revival/Movement",
+    "title": "Aladura movement begins (prayer/healing churches)",
+    "date_range": "1918",
+    "region": "Nigeria",
+    "summary": "Key AIC family; expands doctrine mapping beyond Western denominational categories.",
+    "keyFigures": "Aladura leaders",
+    "citations": [
+      "S103"
+    ]
+  },
+  {
+    "id": "EV_EV078",
+    "type": "Revival/Movement",
+    "title": "Kimbanguist movement begins",
+    "date_range": "1921",
+    "region": "DRC (Congo)",
+    "summary": "Major AIC lineage; introduces authority/prophecy questions into doctrine atlas.",
+    "keyFigures": "Simon Kimbangu",
+    "citations": [
+      "S104"
+    ]
+  },
+  {
+    "id": "EV_EV079",
+    "type": "Ecumenism",
+    "title": "Kimbanguist Church admitted to WCC",
+    "date_range": "1969",
+    "region": "Global",
+    "summary": "Shows AIC ecumenical recognition path; impacts modern identity and doctrine statements.",
+    "keyFigures": "WCC; Kimbanguist",
+    "citations": [
+      "S104"
+    ]
+  },
+  {
+    "id": "EV_EV080",
+    "type": "Persecution/Continuity",
+    "title": "Hidden Christians persist underground (Kakure Kirishitan)",
+    "date_range": "1650",
+    "region": "Japan",
+    "summary": "Adds East Asia continuity line; helps explain hybridization/retention under persecution.",
+    "keyFigures": "Japanese hidden Christian communities",
+    "citations": [
+      "S105"
+    ]
+  },
+  {
+    "id": "DOC_DOC001",
+    "type": "Early church manual",
+    "title": "Didache (Teaching of the Twelve Apostles)",
+    "date_range": "1st/2nd c.",
+    "region": "",
+    "summary": "Key topics: Baptism; Eucharist; ethics; church order",
+    "tradition": "Early Christian",
+    "citations": [
+      "S050"
+    ]
+  },
+  {
+    "id": "DOC_DOC002",
+    "type": "Creed",
+    "title": "Nicene-Constantinopolitan Creed",
+    "date_range": "381",
+    "region": "",
+    "summary": "Key topics: Trinity; Christ; Spirit; one baptism; resurrection",
+    "tradition": "Nicene Christianity",
+    "citations": [
+      "S001"
+    ]
+  },
+  {
+    "id": "DOC_DOC003",
+    "type": "Ecumenical council",
+    "title": "Council of Ephesus",
+    "date_range": "431",
+    "region": "",
+    "summary": "Key topics: Christology; Theotokos; condemnation of Nestorius",
+    "tradition": "Conciliar",
+    "citations": [
+      "S003"
+    ]
+  },
+  {
+    "id": "DOC_DOC004",
+    "type": "Ecumenical council",
+    "title": "Council of Chalcedon (Definition of Faith)",
+    "date_range": "451",
+    "region": "",
+    "summary": "Key topics: Christology (two natures); ecclesial canons",
+    "tradition": "Chalcedonian",
+    "citations": [
+      "S002"
+    ]
+  },
+  {
+    "id": "DOC_DOC005",
+    "type": "Ecumenical council",
+    "title": "Second Council of Nicaea",
+    "date_range": "787",
+    "region": "",
+    "summary": "Key topics: Icons; veneration vs adoration",
+    "tradition": "Chalcedonian",
+    "citations": [
+      "S004"
+    ]
+  },
+  {
+    "id": "DOC_DOC006",
+    "type": "Patristic work",
+    "title": "Augustine: City of God",
+    "date_range": "413–426",
+    "region": "",
+    "summary": "Key topics: Church & empire; providence; history; politics",
+    "tradition": "Latin patristic",
+    "citations": [
+      "S049"
+    ]
+  },
+  {
+    "id": "DOC_DOC007",
+    "type": "Catechism",
+    "title": "Large Catechism (Luther)",
+    "date_range": "1529",
+    "region": "",
+    "summary": "Key topics: Ten Commandments; Creed; Lord's Prayer; Baptism; Eucharist; Confession",
+    "tradition": "Lutheran",
+    "citations": [
+      "S013",
+      "S037"
+    ]
+  },
+  {
+    "id": "DOC_DOC008",
+    "type": "Confession",
+    "title": "Augsburg Confession",
+    "date_range": "1530",
+    "region": "",
+    "summary": "Key topics: Justification; sacraments; church",
+    "tradition": "Lutheran",
+    "citations": [
+      "S012"
+    ]
+  },
+  {
+    "id": "DOC_DOC009",
+    "type": "Confession/Articles",
+    "title": "Thirty-Nine Articles of Religion",
+    "date_range": "1563/1571",
+    "region": "",
+    "summary": "Key topics: Scripture; church; sacraments; purgatory; predestination",
+    "tradition": "Anglican",
+    "citations": [
+      "S015",
+      "S038"
+    ]
+  },
+  {
+    "id": "DOC_DOC010",
+    "type": "Council decree",
+    "title": "Council of Trent (Justification)",
+    "date_range": "1547",
+    "region": "",
+    "summary": "Key topics: Justification; grace; cooperation; merit (definitions)",
+    "tradition": "Roman Catholic",
+    "citations": [
+      "S034"
+    ]
+  },
+  {
+    "id": "DOC_DOC011",
+    "type": "Council decree",
+    "title": "Council of Trent (Eucharist)",
+    "date_range": "1551",
+    "region": "",
+    "summary": "Key topics: Real presence; transubstantiation; Eucharistic worship",
+    "tradition": "Roman Catholic",
+    "citations": [
+      "S035"
+    ]
+  },
+  {
+    "id": "DOC_DOC012",
+    "type": "Confession",
+    "title": "Westminster Confession of Faith",
+    "date_range": "1646",
+    "region": "",
+    "summary": "Key topics: Scripture; covenant; sacraments; church; salvation",
+    "tradition": "Reformed/Presbyterian",
+    "citations": [
+      "S014"
+    ]
+  },
+  {
+    "id": "DOC_DOC013",
+    "type": "Synod/canons",
+    "title": "Canons of Dort",
+    "date_range": "1619",
+    "region": "",
+    "summary": "Key topics: Election; grace; perseverance",
+    "tradition": "Reformed",
+    "citations": [
+      "S041"
+    ]
+  },
+  {
+    "id": "DOC_DOC014",
+    "type": "Confession",
+    "title": "Second London Baptist Confession",
+    "date_range": "1689",
+    "region": "",
+    "summary": "Key topics: Church; ordinances; salvation; covenant",
+    "tradition": "Reformed Baptist",
+    "citations": [
+      "S016"
+    ]
+  },
+  {
+    "id": "DOC_DOC015",
+    "type": "Confession/statement",
+    "title": "Baptist Faith and Message",
+    "date_range": "2000",
+    "region": "",
+    "summary": "Key topics: Scripture; God; salvation; church; ordinances",
+    "tradition": "Baptist (SBC)",
+    "citations": [
+      "S017",
+      "S039"
+    ]
+  },
+  {
+    "id": "DOC_DOC016",
+    "type": "Statement",
+    "title": "Assemblies of God Statement of Fundamental Truths",
+    "date_range": "1916+",
+    "region": "",
+    "summary": "Key topics: Salvation; Spirit baptism; ordinances; gifts; healing; eschatology",
+    "tradition": "Pentecostal",
+    "citations": [
+      "S018"
+    ]
+  },
+  {
+    "id": "DOC_DOC017",
+    "type": "Articles",
+    "title": "UMC Articles of Religion",
+    "date_range": "18th c. roots; 2016 text online",
+    "region": "",
+    "summary": "Key topics: Trinity; Scripture; sin; sacraments; sanctification",
+    "tradition": "Methodist",
+    "citations": [
+      "S019"
+    ]
+  },
+  {
+    "id": "DOC_DOC018",
+    "type": "Statement",
+    "title": "SDA 28 Fundamental Beliefs",
+    "date_range": "Current (formal list)",
+    "region": "",
+    "summary": "Key topics: Scripture; Sabbath; sanctuary; second coming; etc.",
+    "tradition": "Seventh-day Adventist",
+    "citations": [
+      "S020",
+      "S040"
+    ]
+  },
+  {
+    "id": "DOC_DOC019",
+    "type": "Dogmatic constitution",
+    "title": "Vatican I: Pastor Aeternus",
+    "date_range": "1870",
+    "region": "",
+    "summary": "Key topics: Papal primacy; infallibility",
+    "tradition": "Roman Catholic",
+    "citations": [
+      "S008",
+      "S009"
+    ]
+  },
+  {
+    "id": "DOC_DOC020",
+    "type": "Apostolic constitution",
+    "title": "Ineffabilis Deus",
+    "date_range": "1854",
+    "region": "",
+    "summary": "Key topics: Immaculate Conception",
+    "tradition": "Roman Catholic",
+    "citations": [
+      "S010"
+    ]
+  },
+  {
+    "id": "DOC_DOC021",
+    "type": "Apostolic constitution",
+    "title": "Munificentissimus Deus",
+    "date_range": "1950",
+    "region": "",
+    "summary": "Key topics: Assumption",
+    "tradition": "Roman Catholic",
+    "citations": [
+      "S011"
+    ]
+  },
+  {
+    "id": "DOC_DOC022",
+    "type": "Synod",
+    "title": "Synod of Diamper (Udayamperoor) decrees",
+    "date_range": "1599",
+    "region": "",
+    "summary": "Key topics: Kerala split-lines; authority; liturgy; Latinization",
+    "tradition": "St Thomas Christians / Catholic (colonial)",
+    "citations": [
+      "S058"
+    ]
+  },
+  {
+    "id": "DOC_DOC023",
+    "type": "Oath/Protest",
+    "title": "Coonan Cross Oath (event text tradition)",
+    "date_range": "1653",
+    "region": "",
+    "summary": "Key topics: Resistance to Padroado; jurisdiction; schism trigger",
+    "tradition": "St Thomas Christians (Kerala)",
+    "citations": [
+      "S059",
+      "S060",
+      "S085"
+    ]
+  },
+  {
+    "id": "DOC_DOC024",
+    "type": "Decrees/controversy",
+    "title": "Chinese Rites decrees & debates (selected)",
+    "date_range": "1704",
+    "region": "",
+    "summary": "Key topics: Inculturation; ancestor rites; Confucian rites; papal authority",
+    "tradition": "Roman Catholic missions",
+    "citations": [
+      "S062",
+      "S064"
+    ]
+  },
+  {
+    "id": "DOC_DOC025",
+    "type": "Papal bull",
+    "title": "Ex quo singulari",
+    "date_range": "1742",
+    "region": "",
+    "summary": "Key topics: Prohibition of certain accommodation practices",
+    "tradition": "Roman Catholic missions",
+    "citations": [
+      "S063",
+      "S064"
+    ]
+  },
+  {
+    "id": "DOC_DOC026",
+    "type": "Vatican policy decision",
+    "title": "1939 Propaganda Fide decision on Chinese rites (policy shift)",
+    "date_range": "1939",
+    "region": "",
+    "summary": "Key topics: Conditional permission of certain Chinese rites; boundaries of inculturation",
+    "tradition": "Roman Catholic missions",
+    "citations": [
+      "S064",
+      "S089",
+      "S090",
+      "S091"
+    ]
+  },
+  {
+    "id": "DOC_DOC027",
+    "type": "Inscription",
+    "title": "Xi'an (Nestorian) Stele inscription",
+    "date_range": "781",
+    "region": "",
+    "summary": "Key topics: Jingjiao presence; early Chinese Christianity; Silk Road missions",
+    "tradition": "Church of the East missions",
+    "citations": [
+      "S061"
+    ]
+  },
+  {
+    "id": "DOC_DOC028",
+    "type": "Canon Law",
+    "title": "Code of Canons of the Eastern Churches (CCEO)",
+    "date_range": "1990",
+    "region": "",
+    "summary": "Key topics: Rite; sui iuris; governance",
+    "tradition": "Eastern Catholic",
+    "citations": [
+      "S092"
+    ]
+  },
+  {
+    "id": "FATHER_CLEMENT_OF_ROME",
+    "type": "Person",
+    "title": "Clement of Rome",
+    "date_range": "fl. c. 90s",
+    "region": "Rome",
+    "summary": "Early church order; leadership; unity Key works: 1 Clement",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/richardson/fathers/x.html"
+    ]
+  },
+  {
+    "id": "FATHER_IGNATIUS_OF_ANTIOCH",
+    "type": "Person",
+    "title": "Ignatius of Antioch",
+    "date_range": "d. c. 110",
+    "region": "Antioch",
+    "summary": "Early episcopacy; Eucharist; unity Key works: Letters",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/richardson/fathers/xv.html"
+    ]
+  },
+  {
+    "id": "FATHER_IRENAEUS_OF_LYONS",
+    "type": "Person",
+    "title": "Irenaeus of Lyons",
+    "date_range": "c. 130–202",
+    "region": "Gaul",
+    "summary": "Rule of faith; apostolic succession; gnosticism Key works: Against Heresies",
+    "language": "Greek/Latin",
+    "citations": [
+      "https://ccel.org/ccel/irenaeus/against_heresies"
+    ]
+  },
+  {
+    "id": "FATHER_TERTULLIAN",
+    "type": "Person",
+    "title": "Tertullian",
+    "date_range": "c. 155–240",
+    "region": "North Africa",
+    "summary": "Early Latin theology; Trinity terminology seeds Key works: Apologetic works",
+    "language": "Latin",
+    "citations": [
+      "https://ccel.org/ccel/tertullian"
+    ]
+  },
+  {
+    "id": "FATHER_ORIGEN",
+    "type": "Person",
+    "title": "Origen",
+    "date_range": "c. 184–253",
+    "region": "Alexandria/Caesarea",
+    "summary": "Biblical interpretation; early theology (with later controversies) Key works: On First Principles; biblical commentaries",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/origen"
+    ]
+  },
+  {
+    "id": "FATHER_ATHANASIUS_OF_ALEXANDRIA",
+    "type": "Person",
+    "title": "Athanasius of Alexandria",
+    "date_range": "c. 296–373",
+    "region": "Alexandria",
+    "summary": "Anti-Arian theology; incarnation Key works: On the Incarnation",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/athanasius/incarnation"
+    ]
+  },
+  {
+    "id": "FATHER_BASIL_THE_GREAT",
+    "type": "Person",
+    "title": "Basil the Great",
+    "date_range": "c. 330–379",
+    "region": "Cappadocia",
+    "summary": "Trinity; Spirit’s divinity; liturgy Key works: On the Holy Spirit",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/basil/spirit"
+    ]
+  },
+  {
+    "id": "FATHER_GREGORY_NAZIANZEN",
+    "type": "Person",
+    "title": "Gregory Nazianzen",
+    "date_range": "329–390",
+    "region": "Cappadocia",
+    "summary": "Trinitarian theology; Christology Key works: Theological Orations",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/schaff/npnf207"
+    ]
+  },
+  {
+    "id": "FATHER_JOHN_CHRYSOSTOM",
+    "type": "Person",
+    "title": "John Chrysostom",
+    "date_range": "c. 347–407",
+    "region": "Antioch/Constantinople",
+    "summary": "Preaching; liturgy; ethics Key works: Homilies",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/schaff/npnf109"
+    ]
+  },
+  {
+    "id": "FATHER_AUGUSTINE_OF_HIPPO",
+    "type": "Person",
+    "title": "Augustine of Hippo",
+    "date_range": "354–430",
+    "region": "North Africa",
+    "summary": "Grace; church; politics; doctrine development Key works: Confessions; City of God; On Trinity",
+    "language": "Latin",
+    "citations": [
+      "https://ccel.org/ccel/augustine"
+    ]
+  },
+  {
+    "id": "FATHER_CYRIL_OF_ALEXANDRIA",
+    "type": "Person",
+    "title": "Cyril of Alexandria",
+    "date_range": "c. 376–444",
+    "region": "Alexandria",
+    "summary": "Christology; Theotokos debates Key works: Letters (Ephesus)",
+    "language": "Greek",
+    "citations": [
+      "https://www.papalencyclicals.net/councils/ecum03.htm"
+    ]
+  },
+  {
+    "id": "FATHER_LEO_THE_GREAT",
+    "type": "Person",
+    "title": "Leo the Great",
+    "date_range": "c. 400–461",
+    "region": "Rome",
+    "summary": "Chalcedon context; Christology Key works: Tome of Leo",
+    "language": "Latin",
+    "citations": [
+      "https://www.newadvent.org/fathers/3604028.htm"
+    ]
+  },
+  {
+    "id": "FATHER_MAXIMUS_THE_CONFESSOR",
+    "type": "Person",
+    "title": "Maximus the Confessor",
+    "date_range": "c. 580–662",
+    "region": "Byzantine",
+    "summary": "Dyothelitism; theosis Key works: Ambigua; theology of wills",
+    "language": "Greek",
+    "citations": [
+      "https://www.newadvent.org/cathen/10082a.htm"
+    ]
+  },
+  {
+    "id": "FATHER_JOHN_OF_DAMASCUS",
+    "type": "Person",
+    "title": "John of Damascus",
+    "date_range": "c. 675–749",
+    "region": "Damascus",
+    "summary": "Icons; systematic theology Key works: On the Divine Images; Exposition of the Orthodox Faith",
+    "language": "Greek",
+    "citations": [
+      "https://ccel.org/ccel/schaff/npnf209"
+    ]
+  },
+  {
+    "id": "FATHER_EPHREM_THE_SYRIAN",
+    "type": "Person",
+    "title": "Ephrem the Syrian",
+    "date_range": "c. 306–373",
+    "region": "Edessa/Nisibis",
+    "summary": "Syriac theology and poetry; global Christianity beyond Greek/Latin Key works: Hymns",
+    "language": "Syriac",
+    "citations": [
+      "https://www.newadvent.org/cathen/05471a.htm"
+    ]
+  }
 ]

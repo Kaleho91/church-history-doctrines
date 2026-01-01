@@ -1,54 +1,3936 @@
 [
   {
-    "id": "CLM_BR_C1",
-    "cluster": "Baptism & New Birth",
-    "short_label": "Baptism ordinarily effects regeneration",
-    "full_statement": "Baptism is ordinarily an instrument through which God grants regeneration (new birth), not merely a symbolic representation.",
+    "id": "DO001",
+    "cluster": "God",
+    "short_label": "Monotheism",
+    "full_statement": "There is only one true God.",
+    "technicalDefinition": "Classical Christian confession of one God (against polytheism).",
     "definition_variants": [
-      "Regeneration as the beginning of new spiritual life (new birth).",
-      "Regeneration as covenantal incorporation + new status (adoption/identity).",
-      "Regeneration as a grace ordinarily given through baptism, with exceptions (e.g., desire, martyrdom)."
-    ]
+      "There is only one true God.",
+      "Classical Christian confession of one God (against polytheism)."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
   },
   {
-    "id": "CLM_BR_C2",
-    "cluster": "Baptism & New Birth",
-    "short_label": "Baptism ordinarily remits sins",
-    "full_statement": "Baptism is ordinarily connected with the remission of sins (including, in some traditions, original sin).",
+    "id": "DO002",
+    "cluster": "God",
+    "short_label": "Trinity",
+    "full_statement": "God is one God in three persons: Father, Son, and Holy Spirit.",
+    "technicalDefinition": "One divine essence (ousia) in three hypostases/persons; coequal and coeternal.",
     "definition_variants": [
-      "Remission of sins as real cleansing/forgiveness granted by God.",
-      "Remission of sins as promised forgiveness received in faith through a sign.",
-      "Remission of sins as tied to baptism but not to the moment of administration."
-    ]
+      "God is one God in three persons: Father, Son, and Holy Spirit.",
+      "One divine essence (ousia) in three hypostases/persons; coequal and coeternal."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
   },
   {
-    "id": "CLM_BR_C3",
-    "cluster": "Baptism & New Birth",
-    "short_label": "Baptism incorporates into Christ/Church",
-    "full_statement": "Baptism is ordinarily connected with incorporation into Christ and visible membership in the Church.",
+    "id": "DO003",
+    "cluster": "Christ",
+    "short_label": "Divinity of Christ",
+    "full_statement": "Jesus is truly God.",
+    "technicalDefinition": "The Son is consubstantial with the Father (homoousios).",
     "definition_variants": [
-      "Incorporation as visible entry into the covenant community.",
-      "Incorporation as spiritual union with Christ (variously related to faith, election, and sacramental theology)."
-    ]
+      "Jesus is truly God.",
+      "The Son is consubstantial with the Father (homoousios)."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
   },
   {
-    "id": "CLM_BR_C4",
-    "cluster": "Baptism & New Birth",
-    "short_label": "Efficacy relates to faith / timing",
-    "full_statement": "Baptism’s promised grace is related to faith and may not be tied to the exact moment of administration (depending on tradition).",
+    "id": "DO004",
+    "cluster": "Christ",
+    "short_label": "Humanity of Christ",
+    "full_statement": "Jesus is truly human.",
+    "technicalDefinition": "Incarnation: the Word truly assumes human nature.",
     "definition_variants": [
-      "Faith as the means by which baptism’s promise is received.",
-      "Grace conferred in God’s appointed time, not mechanically at administration."
-    ]
+      "Jesus is truly human.",
+      "Incarnation: the Word truly assumes human nature."
+    ],
+    "keyDocs": [
+      "DOC002",
+      "DOC004"
+    ],
+    "sourceIds": [
+      "S001",
+      "S002"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
   },
   {
-    "id": "CLM_BR_C5",
-    "cluster": "Baptism & New Birth",
-    "short_label": "Not automatic magic (no mechanical guarantee)",
-    "full_statement": "Baptism is not a mechanical guarantee that works automatically apart from God’s Word/promise, proper reception, or the broader economy of grace.",
+    "id": "DO005",
+    "cluster": "Christ",
+    "short_label": "Incarnation",
+    "full_statement": "God the Son became a human being in Jesus.",
+    "technicalDefinition": "The eternal Logos assumes human nature without ceasing to be divine.",
     "definition_variants": [
-      "Anti-‘opus operatum’ framing: the rite is not a self-acting machine.",
-      "Distinguish objective institution (valid baptism) from subjective benefit (received rightly / in faith / appointed time)."
-    ]
+      "God the Son became a human being in Jesus.",
+      "The eternal Logos assumes human nature without ceasing to be divine."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO006",
+    "cluster": "Christ",
+    "short_label": "Virgin Birth",
+    "full_statement": "Jesus was born to Mary by a miracle; God is his Father.",
+    "technicalDefinition": "Conceived by the Holy Spirit; born of the Virgin Mary.",
+    "definition_variants": [
+      "Jesus was born to Mary by a miracle; God is his Father.",
+      "Conceived by the Holy Spirit; born of the Virgin Mary."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 1,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO007",
+    "cluster": "Christ",
+    "short_label": "Theotokos (Mary as 'God-bearer')",
+    "full_statement": "Mary can be called 'Mother of God' because Jesus is God.",
+    "technicalDefinition": "The title safeguards unity of Christ’s person; affirmed at Ephesus (431).",
+    "definition_variants": [
+      "Mary can be called 'Mother of God' because Jesus is God.",
+      "The title safeguards unity of Christ’s person; affirmed at Ephesus (431)."
+    ],
+    "keyDocs": [
+      "DOC003"
+    ],
+    "sourceIds": [
+      "S003"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO008",
+    "cluster": "Christ",
+    "short_label": "Hypostatic Union",
+    "full_statement": "Jesus is one person, fully God and fully man.",
+    "technicalDefinition": "Union of two natures in one hypostasis/person of the Son.",
+    "definition_variants": [
+      "Jesus is one person, fully God and fully man.",
+      "Union of two natures in one hypostasis/person of the Son."
+    ],
+    "keyDocs": [
+      "DOC004"
+    ],
+    "sourceIds": [
+      "S002"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO009",
+    "cluster": "Christ",
+    "short_label": "Chalcedonian Definition (Two Natures)",
+    "full_statement": "Jesus has a divine nature and a human nature.",
+    "technicalDefinition": "One person in two natures 'without confusion, change, division, separation'.",
+    "definition_variants": [
+      "Jesus has a divine nature and a human nature.",
+      "One person in two natures 'without confusion, change, division, separation'."
+    ],
+    "keyDocs": [
+      "DOC004"
+    ],
+    "sourceIds": [
+      "S002",
+      "S044"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 2,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO010",
+    "cluster": "Holy Spirit",
+    "short_label": "Divinity of the Holy Spirit",
+    "full_statement": "The Holy Spirit is truly God.",
+    "technicalDefinition": "The Spirit is worshiped and glorified with the Father and the Son (381).",
+    "definition_variants": [
+      "The Holy Spirit is truly God.",
+      "The Spirit is worshiped and glorified with the Father and the Son (381)."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO011",
+    "cluster": "Holy Spirit",
+    "short_label": "Procession of the Holy Spirit",
+    "full_statement": "The Spirit comes from the Father (and debate over 'and the Son').",
+    "technicalDefinition": "Doctrine of eternal origin within Trinity; filioque controversy.",
+    "definition_variants": [
+      "The Spirit comes from the Father (and debate over 'and the Son').",
+      "Doctrine of eternal origin within Trinity; filioque controversy."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001",
+      "S028",
+      "S029",
+      "S010"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO012",
+    "cluster": "Scripture",
+    "short_label": "Canon of Scripture",
+    "full_statement": "The Church recognizes which books belong in the Bible.",
+    "technicalDefinition": "Process of reception/recognition of authoritative writings (OT/NT).",
+    "definition_variants": [
+      "The Church recognizes which books belong in the Bible.",
+      "Process of reception/recognition of authoritative writings (OT/NT)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO013",
+    "cluster": "Scripture",
+    "short_label": "Deuterocanonical Books / Apocrypha",
+    "full_statement": "Some churches include extra Old Testament books as Scripture.",
+    "technicalDefinition": "Catholic/Orthodox accept deuterocanon; many Protestants read them but not for doctrine.",
+    "definition_variants": [
+      "Some churches include extra Old Testament books as Scripture.",
+      "Catholic/Orthodox accept deuterocanon; many Protestants read them but not for doctrine."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO014",
+    "cluster": "Authority",
+    "short_label": "Sacred Tradition",
+    "full_statement": "The faith is passed on not only by the Bible but also by church teaching and practice.",
+    "technicalDefinition": "Apostolic tradition transmitted in liturgy, councils, Fathers; authoritative in Catholic/Orthodox systems.",
+    "definition_variants": [
+      "The faith is passed on not only by the Bible but also by church teaching and practice.",
+      "Apostolic tradition transmitted in liturgy, councils, Fathers; authoritative in Catholic/Orthodox systems."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005",
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO015",
+    "cluster": "Authority",
+    "short_label": "Sola Scriptura",
+    "full_statement": "The Bible is the highest authority for Christian belief.",
+    "technicalDefinition": "Scripture as the only infallible rule; tradition has ministerial authority.",
+    "definition_variants": [
+      "The Bible is the highest authority for Christian belief.",
+      "Scripture as the only infallible rule; tradition has ministerial authority."
+    ],
+    "keyDocs": [
+      "DOC009",
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S015",
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO016",
+    "cluster": "Church",
+    "short_label": "Apostolic Succession",
+    "full_statement": "Church leaders (bishops) are ordained in a chain going back to the apostles.",
+    "technicalDefinition": "Continuity of episcopal ordination and teaching as sign of catholicity.",
+    "definition_variants": [
+      "Church leaders (bishops) are ordained in a chain going back to the apostles.",
+      "Continuity of episcopal ordination and teaching as sign of catholicity."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO017",
+    "cluster": "Church",
+    "short_label": "Episcopacy (bishops)",
+    "full_statement": "Some churches are led by bishops.",
+    "technicalDefinition": "Threefold ministry (bishop/presbyter/deacon) as normative.",
+    "definition_variants": [
+      "Some churches are led by bishops.",
+      "Threefold ministry (bishop/presbyter/deacon) as normative."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO018",
+    "cluster": "Church",
+    "short_label": "Papal Primacy",
+    "full_statement": "The bishop of Rome has a special leadership role over the whole Church.",
+    "technicalDefinition": "Jurisdictional primacy claimed by Catholic Church; understood differently in Orthodox dialogue.",
+    "definition_variants": [
+      "The bishop of Rome has a special leadership role over the whole Church.",
+      "Jurisdictional primacy claimed by Catholic Church; understood differently in Orthodox dialogue."
+    ],
+    "keyDocs": [
+      "DOC019"
+    ],
+    "sourceIds": [
+      "S009",
+      "S030"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO019",
+    "cluster": "Church",
+    "short_label": "Papal Infallibility (ex cathedra)",
+    "full_statement": "In certain official teachings, the pope cannot err on faith/morals (Catholic claim).",
+    "technicalDefinition": "Defined at Vatican I (1870) under specific conditions.",
+    "definition_variants": [
+      "In certain official teachings, the pope cannot err on faith/morals (Catholic claim).",
+      "Defined at Vatican I (1870) under specific conditions."
+    ],
+    "keyDocs": [
+      "DOC019"
+    ],
+    "sourceIds": [
+      "S009"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 0,
+      "councilScore": 1,
+      "consensusScore": 0,
+      "tier": "Tier 5 – Modern/Novel",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO020",
+    "cluster": "Salvation",
+    "short_label": "Grace",
+    "full_statement": "Salvation is a gift from God, not something we earn.",
+    "technicalDefinition": "God’s unmerited favor and transforming help; varieties: created grace, uncreated energies, etc.",
+    "definition_variants": [
+      "Salvation is a gift from God, not something we earn.",
+      "God’s unmerited favor and transforming help; varieties: created grace, uncreated energies, etc."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S034",
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO021",
+    "cluster": "Salvation",
+    "short_label": "Justification",
+    "full_statement": "How God makes a sinner right with Him.",
+    "technicalDefinition": "Catholic: includes inner renewal (infused righteousness); Protestant: often forensic declaration (imputed righteousness).",
+    "definition_variants": [
+      "How God makes a sinner right with Him.",
+      "Catholic: includes inner renewal (infused righteousness); Protestant: often forensic declaration (imputed righteousness)."
+    ],
+    "keyDocs": [
+      "DOC010",
+      "DOC012",
+      "DOC008"
+    ],
+    "sourceIds": [
+      "S034",
+      "S014",
+      "S012"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 2,
+      "councilScore": 0,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO022",
+    "cluster": "Salvation",
+    "short_label": "Justification by Faith Alone (Sola Fide)",
+    "full_statement": "God declares people right by faith apart from works (a Reformation slogan).",
+    "technicalDefinition": "In classical Lutheran/Reformed sense: faith alone is the instrument of justification.",
+    "definition_variants": [
+      "God declares people right by faith apart from works (a Reformation slogan).",
+      "In classical Lutheran/Reformed sense: faith alone is the instrument of justification."
+    ],
+    "keyDocs": [
+      "DOC008",
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S012",
+      "S014",
+      "S034"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 4 – Reformation/Post‑Reformation distinctive",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO023",
+    "cluster": "Salvation",
+    "short_label": "Imputed Righteousness",
+    "full_statement": "Christ’s righteousness is counted to the believer.",
+    "technicalDefinition": "Forensic crediting; central to many Protestant systems.",
+    "definition_variants": [
+      "Christ’s righteousness is counted to the believer.",
+      "Forensic crediting; central to many Protestant systems."
+    ],
+    "keyDocs": [
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 4 – Reformation/Post‑Reformation distinctive",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO024",
+    "cluster": "Salvation",
+    "short_label": "Infused Righteousness",
+    "full_statement": "God makes the believer actually righteous inside by grace.",
+    "technicalDefinition": "Justification includes sanctifying grace; Catholic/Orthodox stress transformation.",
+    "definition_variants": [
+      "God makes the believer actually righteous inside by grace.",
+      "Justification includes sanctifying grace; Catholic/Orthodox stress transformation."
+    ],
+    "keyDocs": [
+      "DOC010"
+    ],
+    "sourceIds": [
+      "S034",
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 2,
+      "councilScore": 0,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO025",
+    "cluster": "Salvation",
+    "short_label": "Theosis (Deification)",
+    "full_statement": "God makes humans share in His life by grace (becoming like God).",
+    "technicalDefinition": "Participation in divine nature/energies by grace; central in Orthodox spirituality.",
+    "definition_variants": [
+      "God makes humans share in His life by grace (becoming like God).",
+      "Participation in divine nature/energies by grace; central in Orthodox spirituality."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S027",
+      "S045"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 0,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO026",
+    "cluster": "Salvation",
+    "short_label": "Synergism",
+    "full_statement": "Humans cooperate with God’s grace in salvation.",
+    "technicalDefinition": "Divine-human cooperation; strong in Catholic/Orthodox and some Protestants (e.g., Wesleyan).",
+    "definition_variants": [
+      "Humans cooperate with God’s grace in salvation.",
+      "Divine-human cooperation; strong in Catholic/Orthodox and some Protestants (e.g., Wesleyan)."
+    ],
+    "keyDocs": [
+      "DOC010",
+      "DOC017"
+    ],
+    "sourceIds": [
+      "S034",
+      "S019"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO027",
+    "cluster": "Salvation",
+    "short_label": "Monergism",
+    "full_statement": "God alone causes the new birth; humans don’t contribute to regeneration.",
+    "technicalDefinition": "Especially in Reformed/Lutheran forms: regeneration is entirely God’s work; faith follows.",
+    "definition_variants": [
+      "God alone causes the new birth; humans don’t contribute to regeneration.",
+      "Especially in Reformed/Lutheran forms: regeneration is entirely God’s work; faith follows."
+    ],
+    "keyDocs": [
+      "DOC012",
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S014",
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO028",
+    "cluster": "Salvation",
+    "short_label": "Predestination",
+    "full_statement": "God’s plan for who will be saved.",
+    "technicalDefinition": "Varies widely: Augustine; Catholic; Reformed; Wesleyan; etc.",
+    "definition_variants": [
+      "God’s plan for who will be saved.",
+      "Varies widely: Augustine; Catholic; Reformed; Wesleyan; etc."
+    ],
+    "keyDocs": [
+      "DOC009",
+      "DOC012",
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S015",
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO029",
+    "cluster": "Salvation",
+    "short_label": "Perseverance of the Saints",
+    "full_statement": "God keeps true believers; they will endure to the end (in some traditions).",
+    "technicalDefinition": "Reformed 'perseverance/preservation'; disputed by Wesleyan traditions.",
+    "definition_variants": [
+      "God keeps true believers; they will endure to the end (in some traditions).",
+      "Reformed 'perseverance/preservation'; disputed by Wesleyan traditions."
+    ],
+    "keyDocs": [
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO030",
+    "cluster": "Sin",
+    "short_label": "Original Sin / Ancestral Sin",
+    "full_statement": "Humans inherit a broken condition from Adam.",
+    "technicalDefinition": "West: inherited guilt + corruption; East often emphasizes corruption/death (ancestral) more than inherited guilt.",
+    "definition_variants": [
+      "Humans inherit a broken condition from Adam.",
+      "West: inherited guilt + corruption; East often emphasizes corruption/death (ancestral) more than inherited guilt."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO031",
+    "cluster": "Sacraments",
+    "short_label": "Number of Sacraments (7 vs 2 vs other)",
+    "full_statement": "Different churches count the church’s key rituals differently.",
+    "technicalDefinition": "Catholic/Orthodox commonly speak of seven; many Protestants speak of two ordinances.",
+    "definition_variants": [
+      "Different churches count the church’s key rituals differently.",
+      "Catholic/Orthodox commonly speak of seven; many Protestants speak of two ordinances."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031",
+      "S032",
+      "S018",
+      "S017"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO032",
+    "cluster": "Sacraments",
+    "short_label": "Baptism",
+    "full_statement": "Christian initiation with water in the name of the Trinity.",
+    "technicalDefinition": "Sacrament/mystery/ordinance instituted by Christ.",
+    "definition_variants": [
+      "Christian initiation with water in the name of the Trinity.",
+      "Sacrament/mystery/ordinance instituted by Christ."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO033",
+    "cluster": "Sacraments",
+    "short_label": "Infant Baptism",
+    "full_statement": "Baptizing babies of Christian families.",
+    "technicalDefinition": "Practice rooted in household baptisms and covenant theology; defended in Catholic/Orthodox/Lutheran/Reformed/Methodist/Anglican traditions.",
+    "definition_variants": [
+      "Baptizing babies of Christian families.",
+      "Practice rooted in household baptisms and covenant theology; defended in Catholic/Orthodox/Lutheran/Reformed/Methodist/Anglican traditions."
+    ],
+    "keyDocs": [
+      "DOC012",
+      "DOC017"
+    ],
+    "sourceIds": [
+      "S012",
+      "S014",
+      "S019"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 0,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO034",
+    "cluster": "Sacraments",
+    "short_label": "Believer’s Baptism",
+    "full_statement": "Baptizing only people who personally profess faith.",
+    "technicalDefinition": "Baptism following repentance/faith; common in Baptist/Anabaptist/Pentecostal traditions.",
+    "definition_variants": [
+      "Baptizing only people who personally profess faith.",
+      "Baptism following repentance/faith; common in Baptist/Anabaptist/Pentecostal traditions."
+    ],
+    "keyDocs": [
+      "DOC015",
+      "DOC016"
+    ],
+    "sourceIds": [
+      "S017",
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO035",
+    "cluster": "Sacraments",
+    "short_label": "Baptismal Regeneration",
+    "full_statement": "In baptism, God gives new birth (regeneration) and forgiveness.",
+    "technicalDefinition": "Sacramental efficacy: baptism actually conveys grace, not merely symbolizes it.",
+    "definition_variants": [
+      "In baptism, God gives new birth (regeneration) and forgiveness.",
+      "Sacramental efficacy: baptism actually conveys grace, not merely symbolizes it."
+    ],
+    "keyDocs": [
+      "DOC002",
+      "DOC007",
+      "DOC008"
+    ],
+    "sourceIds": [
+      "S001",
+      "S013",
+      "S012",
+      "S014",
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO036",
+    "cluster": "Sacraments",
+    "short_label": "Mode of Baptism (immersion/pouring/sprinkling)",
+    "full_statement": "Different ways of applying water in baptism.",
+    "technicalDefinition": "Immersion often argued as NT norm; other modes defended as permissible.",
+    "definition_variants": [
+      "Different ways of applying water in baptism.",
+      "Immersion often argued as NT norm; other modes defended as permissible."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S017",
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO037",
+    "cluster": "Sacraments",
+    "short_label": "Chrismation / Confirmation",
+    "full_statement": "Anointing/laying on hands to strengthen baptized Christians.",
+    "technicalDefinition": "Often linked with gift of Spirit; East administers at baptism; West usually later.",
+    "definition_variants": [
+      "Anointing/laying on hands to strengthen baptized Christians.",
+      "Often linked with gift of Spirit; East administers at baptism; West usually later."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO038",
+    "cluster": "Sacraments",
+    "short_label": "Eucharist / Lord’s Supper",
+    "full_statement": "Bread and wine given by Jesus as a memorial and communion in His body and blood.",
+    "technicalDefinition": "Varies: sacrifice, real presence, communion, anamnesis.",
+    "definition_variants": [
+      "Bread and wine given by Jesus as a memorial and communion in His body and blood.",
+      "Varies: sacrifice, real presence, communion, anamnesis."
+    ],
+    "keyDocs": [
+      "DOC002",
+      "DOC011"
+    ],
+    "sourceIds": [
+      "S001",
+      "S035"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO039",
+    "cluster": "Sacraments",
+    "short_label": "Real Presence",
+    "full_statement": "Christ is truly present in the Eucharist (not just a symbol).",
+    "technicalDefinition": "Catholic: substantial change; Lutheran: sacramental union; Orthodox: mystery; Reformed: spiritual presence; Zwinglian: symbolic.",
+    "definition_variants": [
+      "Christ is truly present in the Eucharist (not just a symbol).",
+      "Catholic: substantial change; Lutheran: sacramental union; Orthodox: mystery; Reformed: spiritual presence; Zwinglian: symbolic."
+    ],
+    "keyDocs": [
+      "DOC011",
+      "DOC007"
+    ],
+    "sourceIds": [
+      "S035",
+      "S037"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 3,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO040",
+    "cluster": "Sacraments",
+    "short_label": "Transubstantiation",
+    "full_statement": "Catholic teaching: the bread and wine become Christ’s body and blood in substance.",
+    "technicalDefinition": "Defined in scholastic terms; affirmed at Trent; rejected by many Protestants (e.g., Anglican Articles).",
+    "definition_variants": [
+      "Catholic teaching: the bread and wine become Christ’s body and blood in substance.",
+      "Defined in scholastic terms; affirmed at Trent; rejected by many Protestants (e.g., Anglican Articles)."
+    ],
+    "keyDocs": [
+      "DOC011",
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S035",
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 1,
+      "councilScore": 1,
+      "consensusScore": 1,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO041",
+    "cluster": "Sacraments",
+    "short_label": "Eucharistic Sacrifice",
+    "full_statement": "The Eucharist is connected to Christ’s one sacrifice in a sacrificial way.",
+    "technicalDefinition": "Catholic/Orthodox speak of unbloody sacrifice/re-presentation; Protestants vary.",
+    "definition_variants": [
+      "The Eucharist is connected to Christ’s one sacrifice in a sacrificial way.",
+      "Catholic/Orthodox speak of unbloody sacrifice/re-presentation; Protestants vary."
+    ],
+    "keyDocs": [
+      "DOC011"
+    ],
+    "sourceIds": [
+      "S035"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO042",
+    "cluster": "Sacraments",
+    "short_label": "Eucharistic Adoration",
+    "full_statement": "Worship directed to Christ present in the Eucharist (Catholic practice).",
+    "technicalDefinition": "Develops with Eucharistic theology of real presence; practiced especially in Latin Catholicism.",
+    "definition_variants": [
+      "Worship directed to Christ present in the Eucharist (Catholic practice).",
+      "Develops with Eucharistic theology of real presence; practiced especially in Latin Catholicism."
+    ],
+    "keyDocs": [
+      "DOC011"
+    ],
+    "sourceIds": [
+      "S035"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO043",
+    "cluster": "Sacraments",
+    "short_label": "Confession to a priest (Sacrament of Penance)",
+    "full_statement": "Telling sins to a priest and receiving absolution.",
+    "technicalDefinition": "Sacramental confession/absolution in Catholic/Orthodox; Lutheran retains private confession but varies; many Protestants do not.",
+    "definition_variants": [
+      "Telling sins to a priest and receiving absolution.",
+      "Sacramental confession/absolution in Catholic/Orthodox; Lutheran retains private confession but varies; many Protestants do not."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO044",
+    "cluster": "Afterlife",
+    "short_label": "Purgatory",
+    "full_statement": "A post-death purification for people who die in God’s grace but still need cleansing.",
+    "technicalDefinition": "Catholic doctrine; different from hell; Orthodox have prayers for dead but often reject 'purgatory' as Latin system.",
+    "definition_variants": [
+      "A post-death purification for people who die in God’s grace but still need cleansing.",
+      "Catholic doctrine; different from hell; Orthodox have prayers for dead but often reject 'purgatory' as Latin system."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S007",
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO045",
+    "cluster": "Afterlife",
+    "short_label": "Prayers for the Dead",
+    "full_statement": "Praying for departed Christians.",
+    "technicalDefinition": "Common in ancient liturgy; dogmatic framing varies.",
+    "definition_variants": [
+      "Praying for departed Christians.",
+      "Common in ancient liturgy; dogmatic framing varies."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S007"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO046",
+    "cluster": "Mary/Saints",
+    "short_label": "Veneration of Saints",
+    "full_statement": "Honoring holy Christians and asking for their prayers.",
+    "technicalDefinition": "Dulia (veneration) vs latria (worship) distinctions in Catholic/Orthodox; Protestants vary.",
+    "definition_variants": [
+      "Honoring holy Christians and asking for their prayers.",
+      "Dulia (veneration) vs latria (worship) distinctions in Catholic/Orthodox; Protestants vary."
+    ],
+    "keyDocs": [
+      "DOC005"
+    ],
+    "sourceIds": [
+      "S004",
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 2,
+      "councilScore": 1,
+      "consensusScore": 2,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO047",
+    "cluster": "Mary/Saints",
+    "short_label": "Intercession of Saints",
+    "full_statement": "Asking saints to pray for us.",
+    "technicalDefinition": "Assumes communion of saints and heavenly intercession.",
+    "definition_variants": [
+      "Asking saints to pray for us.",
+      "Assumes communion of saints and heavenly intercession."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO048",
+    "cluster": "Mary/Saints",
+    "short_label": "Marian Veneration (hyperdulia)",
+    "full_statement": "Special honor for Mary above other saints (not worship).",
+    "technicalDefinition": "Catholic/Orthodox/Oriental Orthodox liturgical devotion; Protestants vary widely.",
+    "definition_variants": [
+      "Special honor for Mary above other saints (not worship).",
+      "Catholic/Orthodox/Oriental Orthodox liturgical devotion; Protestants vary widely."
+    ],
+    "keyDocs": [
+      "DOC003"
+    ],
+    "sourceIds": [
+      "S003",
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO049",
+    "cluster": "Mary/Saints",
+    "short_label": "Perpetual Virginity of Mary",
+    "full_statement": "Mary remained a virgin before, during, and after Jesus’ birth (in many traditions).",
+    "technicalDefinition": "Ancient belief; debated among Protestants.",
+    "definition_variants": [
+      "Mary remained a virgin before, during, and after Jesus’ birth (in many traditions).",
+      "Ancient belief; debated among Protestants."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO050",
+    "cluster": "Mary/Saints",
+    "short_label": "Immaculate Conception",
+    "full_statement": "Catholic dogma: Mary was preserved from original sin from conception.",
+    "technicalDefinition": "Defined 1854 (Ineffabilis Deus).",
+    "definition_variants": [
+      "Catholic dogma: Mary was preserved from original sin from conception.",
+      "Defined 1854 (Ineffabilis Deus)."
+    ],
+    "keyDocs": [
+      "DOC020"
+    ],
+    "sourceIds": [
+      "S010"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO051",
+    "cluster": "Mary/Saints",
+    "short_label": "Assumption of Mary",
+    "full_statement": "Catholic dogma: Mary was taken to heaven body and soul.",
+    "technicalDefinition": "Defined 1950 (Munificentissimus Deus).",
+    "definition_variants": [
+      "Catholic dogma: Mary was taken to heaven body and soul.",
+      "Defined 1950 (Munificentissimus Deus)."
+    ],
+    "keyDocs": [
+      "DOC021"
+    ],
+    "sourceIds": [
+      "S011"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO052",
+    "cluster": "Worship",
+    "short_label": "Icons (holy images)",
+    "full_statement": "Using sacred images of Christ and saints in worship and prayer.",
+    "technicalDefinition": "Veneration of icons affirmed at Nicaea II; honor passes to prototype.",
+    "definition_variants": [
+      "Using sacred images of Christ and saints in worship and prayer.",
+      "Veneration of icons affirmed at Nicaea II; honor passes to prototype."
+    ],
+    "keyDocs": [
+      "DOC005"
+    ],
+    "sourceIds": [
+      "S004",
+      "S036"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 2,
+      "councilScore": 2,
+      "consensusScore": 2,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO053",
+    "cluster": "Worship",
+    "short_label": "Relics",
+    "full_statement": "Honoring physical remains or objects connected to saints.",
+    "technicalDefinition": "Ancient practice; connected to saints and sanctification of matter.",
+    "definition_variants": [
+      "Honoring physical remains or objects connected to saints.",
+      "Ancient practice; connected to saints and sanctification of matter."
+    ],
+    "keyDocs": [
+      "DOC005"
+    ],
+    "sourceIds": [
+      "S036"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO054",
+    "cluster": "Worship",
+    "short_label": "Liturgical Worship",
+    "full_statement": "Structured worship with set prayers, readings, and sacraments.",
+    "technicalDefinition": "Liturgy as public work of Church; ancient patterns.",
+    "definition_variants": [
+      "Structured worship with set prayers, readings, and sacraments.",
+      "Liturgy as public work of Church; ancient patterns."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S027"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO055",
+    "cluster": "Spirituality",
+    "short_label": "Monasticism",
+    "full_statement": "Christians living in communities focused on prayer and discipline.",
+    "technicalDefinition": "Develops from 3rd/4th c. desert traditions; major in East and West.",
+    "definition_variants": [
+      "Christians living in communities focused on prayer and discipline.",
+      "Develops from 3rd/4th c. desert traditions; major in East and West."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO056",
+    "cluster": "Spirituality",
+    "short_label": "Hesychasm",
+    "full_statement": "Eastern Orthodox tradition of interior prayer (e.g., Jesus Prayer).",
+    "technicalDefinition": "Associated with Gregory Palamas and distinction of essence/energies.",
+    "definition_variants": [
+      "Eastern Orthodox tradition of interior prayer (e.g., Jesus Prayer).",
+      "Associated with Gregory Palamas and distinction of essence/energies."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO057",
+    "cluster": "Scripture",
+    "short_label": "Biblical Inerrancy (modern evangelical)",
+    "full_statement": "The Bible has no errors in what it teaches (as defined by some modern statements).",
+    "technicalDefinition": "Often tied to Chicago Statement (1978) and modern evangelical debates.",
+    "definition_variants": [
+      "The Bible has no errors in what it teaches (as defined by some modern statements).",
+      "Often tied to Chicago Statement (1978) and modern evangelical debates."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO058",
+    "cluster": "Church",
+    "short_label": "Priesthood of All Believers",
+    "full_statement": "All Christians can approach God directly through Christ.",
+    "technicalDefinition": "Reformation theme; does not necessarily deny ordained ministry.",
+    "definition_variants": [
+      "All Christians can approach God directly through Christ.",
+      "Reformation theme; does not necessarily deny ordained ministry."
+    ],
+    "keyDocs": [
+      "DOC008"
+    ],
+    "sourceIds": [
+      "S012"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO059",
+    "cluster": "Church",
+    "short_label": "Ordained Priesthood / Holy Orders",
+    "full_statement": "Some Christians are set apart to lead worship and sacraments.",
+    "technicalDefinition": "Sacrament of order; apostolic ministry; differs by tradition.",
+    "definition_variants": [
+      "Some Christians are set apart to lead worship and sacraments.",
+      "Sacrament of order; apostolic ministry; differs by tradition."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO060",
+    "cluster": "Church",
+    "short_label": "Sacramental Validity (apostolic succession vs not)",
+    "full_statement": "Debate over what makes sacraments 'valid' (real).",
+    "technicalDefinition": "Catholic/Orthodox tie to apostolic succession and form/matter/intention; Protestants vary.",
+    "definition_variants": [
+      "Debate over what makes sacraments 'valid' (real).",
+      "Catholic/Orthodox tie to apostolic succession and form/matter/intention; Protestants vary."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO061",
+    "cluster": "Salvation",
+    "short_label": "Merit",
+    "full_statement": "Whether good works done in grace can be 'rewarded' by God.",
+    "technicalDefinition": "Catholic theology of merit (condign/congruent) vs Protestant rejection of merit in justification.",
+    "definition_variants": [
+      "Whether good works done in grace can be 'rewarded' by God.",
+      "Catholic theology of merit (condign/congruent) vs Protestant rejection of merit in justification."
+    ],
+    "keyDocs": [
+      "DOC010"
+    ],
+    "sourceIds": [
+      "S034"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO062",
+    "cluster": "Salvation",
+    "short_label": "Sanctification",
+    "full_statement": "Growing in holiness after coming to faith.",
+    "technicalDefinition": "Process of being made holy by Spirit; relation to justification differs by tradition.",
+    "definition_variants": [
+      "Growing in holiness after coming to faith.",
+      "Process of being made holy by Spirit; relation to justification differs by tradition."
+    ],
+    "keyDocs": [
+      "DOC015",
+      "DOC016"
+    ],
+    "sourceIds": [
+      "S017",
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO063",
+    "cluster": "Salvation",
+    "short_label": "Assurance of Salvation",
+    "full_statement": "How confident a believer can be that they are saved.",
+    "technicalDefinition": "Ranges from strong assurance (some Reformed) to more conditional (Catholic/Wesleyan).",
+    "definition_variants": [
+      "How confident a believer can be that they are saved.",
+      "Ranges from strong assurance (some Reformed) to more conditional (Catholic/Wesleyan)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO064",
+    "cluster": "Eschatology",
+    "short_label": "Bodily Resurrection",
+    "full_statement": "The dead will rise with bodies at the end.",
+    "technicalDefinition": "Affirmed in creeds; central Christian hope.",
+    "definition_variants": [
+      "The dead will rise with bodies at the end.",
+      "Affirmed in creeds; central Christian hope."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO065",
+    "cluster": "Eschatology",
+    "short_label": "Second Coming of Christ",
+    "full_statement": "Jesus will return to judge the living and the dead.",
+    "technicalDefinition": "Affirmed in creeds; timing schemes vary.",
+    "definition_variants": [
+      "Jesus will return to judge the living and the dead.",
+      "Affirmed in creeds; timing schemes vary."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO066",
+    "cluster": "Eschatology",
+    "short_label": "Millennium Views (amillennial/premillennial/postmillennial)",
+    "full_statement": "Different views about a '1,000-year' reign mentioned in Revelation 20.",
+    "technicalDefinition": "Interpretive frameworks; vary across church history.",
+    "definition_variants": [
+      "Different views about a '1,000-year' reign mentioned in Revelation 20.",
+      "Interpretive frameworks; vary across church history."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO067",
+    "cluster": "Eschatology",
+    "short_label": "Rapture (pre-tribulation)",
+    "full_statement": "Modern teaching that believers will be taken up before a tribulation period.",
+    "technicalDefinition": "Popularized in 19th–20th c. dispensationalism; not a defined ancient doctrine.",
+    "definition_variants": [
+      "Modern teaching that believers will be taken up before a tribulation period.",
+      "Popularized in 19th–20th c. dispensationalism; not a defined ancient doctrine."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 5 – Modern/Novel",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO068",
+    "cluster": "Holy Spirit",
+    "short_label": "Baptism in the Holy Spirit (Pentecostal)",
+    "full_statement": "A special experience after conversion empowering a believer.",
+    "technicalDefinition": "Often linked with tongues as initial physical evidence in classical Pentecostalism.",
+    "definition_variants": [
+      "A special experience after conversion empowering a believer.",
+      "Often linked with tongues as initial physical evidence in classical Pentecostalism."
+    ],
+    "keyDocs": [
+      "DOC016"
+    ],
+    "sourceIds": [
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO069",
+    "cluster": "Holy Spirit",
+    "short_label": "Speaking in Tongues as Initial Evidence",
+    "full_statement": "Tongues are the first sign that someone was baptized in the Holy Spirit (AG teaching).",
+    "technicalDefinition": "Distinctive classical Pentecostal doctrine.",
+    "definition_variants": [
+      "Tongues are the first sign that someone was baptized in the Holy Spirit (AG teaching).",
+      "Distinctive classical Pentecostal doctrine."
+    ],
+    "keyDocs": [
+      "DOC016"
+    ],
+    "sourceIds": [
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 5 – Modern/Novel",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO070",
+    "cluster": "Holy Spirit",
+    "short_label": "Continuationism",
+    "full_statement": "Spiritual gifts like healing and tongues continue today.",
+    "technicalDefinition": "Opposed to cessationism; debate mostly post-Reformation.",
+    "definition_variants": [
+      "Spiritual gifts like healing and tongues continue today.",
+      "Opposed to cessationism; debate mostly post-Reformation."
+    ],
+    "keyDocs": [
+      "DOC016"
+    ],
+    "sourceIds": [
+      "S018"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO071",
+    "cluster": "Holy Spirit",
+    "short_label": "Cessationism",
+    "full_statement": "Some miraculous gifts ended with the apostles.",
+    "technicalDefinition": "Often tied to certain Reformed traditions; not a formal ancient dogma.",
+    "definition_variants": [
+      "Some miraculous gifts ended with the apostles.",
+      "Often tied to certain Reformed traditions; not a formal ancient dogma."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO072",
+    "cluster": "Scripture",
+    "short_label": "Apocrypha as non-doctrinal (Anglican)",
+    "full_statement": "Some churches read extra books but don’t use them to prove doctrine.",
+    "technicalDefinition": "Anglican Article VI stance; similar in some Protestant traditions.",
+    "definition_variants": [
+      "Some churches read extra books but don’t use them to prove doctrine.",
+      "Anglican Article VI stance; similar in some Protestant traditions."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO073",
+    "cluster": "Church",
+    "short_label": "Ecumenical Councils Authority",
+    "full_statement": "Debate over whether church councils can define doctrine.",
+    "technicalDefinition": "Catholic/Orthodox treat ecumenical councils as authoritative; many Protestants accept early councils but debate extent.",
+    "definition_variants": [
+      "Debate over whether church councils can define doctrine.",
+      "Catholic/Orthodox treat ecumenical councils as authoritative; many Protestants accept early councils but debate extent."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO074",
+    "cluster": "Church",
+    "short_label": "Sola Ecclesia / Magisterium",
+    "full_statement": "Catholic idea that the Church’s teaching office has authority to interpret faith.",
+    "technicalDefinition": "Magisterium under pope and bishops; Scripture and Tradition interpreted authoritatively.",
+    "definition_variants": [
+      "Catholic idea that the Church’s teaching office has authority to interpret faith.",
+      "Magisterium under pope and bishops; Scripture and Tradition interpreted authoritatively."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO075",
+    "cluster": "Ethics",
+    "short_label": "Just War",
+    "full_statement": "Some wars can be morally justified under strict rules.",
+    "technicalDefinition": "Develops in Augustine and later; Catholic tradition formalizes; many traditions adopt variants.",
+    "definition_variants": [
+      "Some wars can be morally justified under strict rules.",
+      "Develops in Augustine and later; Catholic tradition formalizes; many traditions adopt variants."
+    ],
+    "keyDocs": [
+      "DOC006"
+    ],
+    "sourceIds": [
+      "S049"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Derived",
+      "patristicBreadth": 2,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO076",
+    "cluster": "Ethics",
+    "short_label": "Pacifism",
+    "full_statement": "Christians should not use violence.",
+    "technicalDefinition": "Early Christian and Anabaptist emphasis; not universal.",
+    "definition_variants": [
+      "Christians should not use violence.",
+      "Early Christian and Anabaptist emphasis; not universal."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO077",
+    "cluster": "Church",
+    "short_label": "Bishops as successors of apostles (strong form)",
+    "full_statement": "The apostles’ authority continues through bishops.",
+    "technicalDefinition": "Catholic/Orthodox/Anglican claim; contested in some Protestant ecclesiology.",
+    "definition_variants": [
+      "The apostles’ authority continues through bishops.",
+      "Catholic/Orthodox/Anglican claim; contested in some Protestant ecclesiology."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO078",
+    "cluster": "Sacraments",
+    "short_label": "Eucharist: Memorialism (Zwinglian)",
+    "full_statement": "The Lord’s Supper is mainly a symbolic remembrance.",
+    "technicalDefinition": "Christ not present in a unique sacramental way; common in many free churches.",
+    "definition_variants": [
+      "The Lord’s Supper is mainly a symbolic remembrance.",
+      "Christ not present in a unique sacramental way; common in many free churches."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S017"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 4 – Reformation/Post‑Reformation distinctive",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO079",
+    "cluster": "Sacraments",
+    "short_label": "Eucharist: Spiritual Presence (Reformed)",
+    "full_statement": "Christ is really present spiritually to believers in Communion.",
+    "technicalDefinition": "Reformed view (Calvin) distinct from Lutheran and memorialist positions.",
+    "definition_variants": [
+      "Christ is really present spiritually to believers in Communion.",
+      "Reformed view (Calvin) distinct from Lutheran and memorialist positions."
+    ],
+    "keyDocs": [
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 4 – Reformation/Post‑Reformation distinctive",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO080",
+    "cluster": "Sacraments",
+    "short_label": "Eucharist: Sacramental Union (Lutheran)",
+    "full_statement": "Christ’s body and blood are truly given with bread and wine.",
+    "technicalDefinition": "Often called 'in, with, under' the elements; rejects transubstantiation terminology.",
+    "definition_variants": [
+      "Christ’s body and blood are truly given with bread and wine.",
+      "Often called 'in, with, under' the elements; rejects transubstantiation terminology."
+    ],
+    "keyDocs": [
+      "DOC007"
+    ],
+    "sourceIds": [
+      "S037"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Disputed",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 4 – Reformation/Post‑Reformation distinctive",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO081",
+    "cluster": "Sacraments",
+    "short_label": "Closed Communion",
+    "full_statement": "Only certain people (e.g., members) may receive Communion.",
+    "technicalDefinition": "Practiced in some traditions; based on discipline and unity concerns.",
+    "definition_variants": [
+      "Only certain people (e.g., members) may receive Communion.",
+      "Practiced in some traditions; based on discipline and unity concerns."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO082",
+    "cluster": "Church",
+    "short_label": "Church Discipline (excommunication)",
+    "full_statement": "Church can exclude members for serious sin or heresy.",
+    "technicalDefinition": "Ancient practice; various forms across traditions.",
+    "definition_variants": [
+      "Church can exclude members for serious sin or heresy.",
+      "Ancient practice; various forms across traditions."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO083",
+    "cluster": "Afterlife",
+    "short_label": "Indulgences",
+    "full_statement": "Catholic practice connected to remission of temporal punishment for sin.",
+    "technicalDefinition": "Develops in medieval Latin church; abuses contribute to Reformation controversy.",
+    "definition_variants": [
+      "Catholic practice connected to remission of temporal punishment for sin.",
+      "Develops in medieval Latin church; abuses contribute to Reformation controversy."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO084",
+    "cluster": "Afterlife",
+    "short_label": "Limbo (theological opinion)",
+    "full_statement": "A proposed state for unbaptized infants (historical Catholic speculation).",
+    "technicalDefinition": "Not defined dogma; debated; largely abandoned in modern catechesis.",
+    "definition_variants": [
+      "A proposed state for unbaptized infants (historical Catholic speculation).",
+      "Not defined dogma; debated; largely abandoned in modern catechesis."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO085",
+    "cluster": "Church",
+    "short_label": "Clerical Celibacy",
+    "full_statement": "Some churches require priests to remain unmarried.",
+    "technicalDefinition": "Latin Catholic discipline; Eastern Catholic/Orthodox allow married priests (with restrictions).",
+    "definition_variants": [
+      "Some churches require priests to remain unmarried.",
+      "Latin Catholic discipline; Eastern Catholic/Orthodox allow married priests (with restrictions)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO086",
+    "cluster": "Church",
+    "short_label": "Marriage as Sacrament",
+    "full_statement": "Marriage is a sacred sign of God’s grace (in some traditions).",
+    "technicalDefinition": "Catholic/Orthodox count marriage as sacrament/mystery; Protestants vary.",
+    "definition_variants": [
+      "Marriage is a sacred sign of God’s grace (in some traditions).",
+      "Catholic/Orthodox count marriage as sacrament/mystery; Protestants vary."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO087",
+    "cluster": "Sacraments",
+    "short_label": "Anointing of the Sick / Unction",
+    "full_statement": "Prayer and anointing for healing/for the sick.",
+    "technicalDefinition": "Sacrament in Catholic/Orthodox; James 5 basis; Protestants vary.",
+    "definition_variants": [
+      "Prayer and anointing for healing/for the sick.",
+      "Sacrament in Catholic/Orthodox; James 5 basis; Protestants vary."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO088",
+    "cluster": "Scripture",
+    "short_label": "Sufficiency of Scripture (Anglican Article VI)",
+    "full_statement": "The Bible contains everything necessary for salvation.",
+    "technicalDefinition": "Article VI: what cannot be read/proved from Scripture not required as article of faith.",
+    "definition_variants": [
+      "The Bible contains everything necessary for salvation.",
+      "Article VI: what cannot be read/proved from Scripture not required as article of faith."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO089",
+    "cluster": "Salvation",
+    "short_label": "Penal Substitution Atonement",
+    "full_statement": "Christ took the punishment we deserved.",
+    "technicalDefinition": "Reformation/evangelical dominant model; present in some patristic seeds but modern framing varies.",
+    "definition_variants": [
+      "Christ took the punishment we deserved.",
+      "Reformation/evangelical dominant model; present in some patristic seeds but modern framing varies."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO090",
+    "cluster": "Salvation",
+    "short_label": "Christus Victor Atonement",
+    "full_statement": "Christ defeats sin, death, and the devil.",
+    "technicalDefinition": "Classic patristic theme; often linked with resurrection and liberation.",
+    "definition_variants": [
+      "Christ defeats sin, death, and the devil.",
+      "Classic patristic theme; often linked with resurrection and liberation."
+    ],
+    "keyDocs": [
+      "DOC007"
+    ],
+    "sourceIds": [
+      "S013"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO091",
+    "cluster": "Salvation",
+    "short_label": "Satisfaction Atonement (Anselm)",
+    "full_statement": "Christ satisfies divine justice/honor.",
+    "technicalDefinition": "Medieval Western model; influences Catholic and Protestant theology.",
+    "definition_variants": [
+      "Christ satisfies divine justice/honor.",
+      "Medieval Western model; influences Catholic and Protestant theology."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO092",
+    "cluster": "Church",
+    "short_label": "Sacramental Economy",
+    "full_statement": "God normally gives grace through the Church’s sacraments.",
+    "technicalDefinition": "Catholic/Orthodox framework; Protestantism varies.",
+    "definition_variants": [
+      "God normally gives grace through the Church’s sacraments.",
+      "Catholic/Orthodox framework; Protestantism varies."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005",
+      "S031"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO093",
+    "cluster": "Church",
+    "short_label": "Visible vs Invisible Church",
+    "full_statement": "Distinction between the church seen on earth and the true spiritual body of believers.",
+    "technicalDefinition": "Often in Protestant ecclesiology; Catholic/Orthodox emphasize visible communion.",
+    "definition_variants": [
+      "Distinction between the church seen on earth and the true spiritual body of believers.",
+      "Often in Protestant ecclesiology; Catholic/Orthodox emphasize visible communion."
+    ],
+    "keyDocs": [
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO094",
+    "cluster": "Church",
+    "short_label": "One Holy Catholic and Apostolic Church",
+    "full_statement": "The Church is one, holy, worldwide (catholic), and built on apostles.",
+    "technicalDefinition": "Creedal mark of church; interpreted differently by communions.",
+    "definition_variants": [
+      "The Church is one, holy, worldwide (catholic), and built on apostles.",
+      "Creedal mark of church; interpreted differently by communions."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 2,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO095",
+    "cluster": "Scripture",
+    "short_label": "Apostolic Tradition as 'rule of faith' (early)",
+    "full_statement": "Early Christians used a shared summary of belief to read Scripture.",
+    "technicalDefinition": "Regula fidei; used against heresies (e.g., Irenaeus).",
+    "definition_variants": [
+      "Early Christians used a shared summary of belief to read Scripture.",
+      "Regula fidei; used against heresies (e.g., Irenaeus)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO096",
+    "cluster": "Church",
+    "short_label": "Pentarchy (five ancient patriarchates)",
+    "full_statement": "Ancient idea of five main episcopal sees: Rome, Constantinople, Alexandria, Antioch, Jerusalem.",
+    "technicalDefinition": "Administrative model in Byzantine era; not accepted the same way everywhere.",
+    "definition_variants": [
+      "Ancient idea of five main episcopal sees: Rome, Constantinople, Alexandria, Antioch, Jerusalem.",
+      "Administrative model in Byzantine era; not accepted the same way everywhere."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO097",
+    "cluster": "Church",
+    "short_label": "Autocephaly (Orthodox)",
+    "full_statement": "Some Orthodox churches govern themselves while sharing the same faith.",
+    "technicalDefinition": "Self-headed national/regional churches (e.g., Russian, Greek).",
+    "definition_variants": [
+      "Some Orthodox churches govern themselves while sharing the same faith.",
+      "Self-headed national/regional churches (e.g., Russian, Greek)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S030"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO098",
+    "cluster": "Church",
+    "short_label": "Conciliarity / Synodality",
+    "full_statement": "Church decisions are made together in councils/synods.",
+    "technicalDefinition": "Strong in Orthodox ecclesiology; also in Catholic (especially Vatican II era) and others.",
+    "definition_variants": [
+      "Church decisions are made together in councils/synods.",
+      "Strong in Orthodox ecclesiology; also in Catholic (especially Vatican II era) and others."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S030"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO099",
+    "cluster": "Church",
+    "short_label": "Apostolic See of Rome (Catholic claim)",
+    "full_statement": "Rome has a unique place because of Peter and Paul.",
+    "technicalDefinition": "Basis for primacy arguments; interpreted differently across traditions.",
+    "definition_variants": [
+      "Rome has a unique place because of Peter and Paul.",
+      "Basis for primacy arguments; interpreted differently across traditions."
+    ],
+    "keyDocs": [
+      "DOC019"
+    ],
+    "sourceIds": [
+      "S009"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO100",
+    "cluster": "Afterlife",
+    "short_label": "Hell (eternal punishment)",
+    "full_statement": "Final separation from God for the unrepentant.",
+    "technicalDefinition": "Creedal/conciliar background; debates on nature/eternity exist.",
+    "definition_variants": [
+      "Final separation from God for the unrepentant.",
+      "Creedal/conciliar background; debates on nature/eternity exist."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 3,
+      "scriptureClass": "Explicit/strong",
+      "patristicBreadth": 3,
+      "councilScore": 2,
+      "consensusScore": 3,
+      "tier": "Tier 1 – Ancient/Core",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO101",
+    "cluster": "Christ",
+    "short_label": "Miaphysite Christology (Oriental Orthodox)",
+    "full_statement": "Jesus is one united nature from two (divine and human) without mixing.",
+    "technicalDefinition": "Miaphysis: one composite united nature of the incarnate Word; rejects 'one nature' in Eutychian sense.",
+    "definition_variants": [
+      "Jesus is one united nature from two (divine and human) without mixing.",
+      "Miaphysis: one composite united nature of the incarnate Word; rejects 'one nature' in Eutychian sense."
+    ],
+    "keyDocs": [
+      "DOC003"
+    ],
+    "sourceIds": [
+      "S044"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO102",
+    "cluster": "Christ",
+    "short_label": "Dyophysite Christology (Chalcedonian)",
+    "full_statement": "Jesus has two natures, divine and human, united in one person.",
+    "technicalDefinition": "Chalcedon: two natures without confusion/change/division/separation.",
+    "definition_variants": [
+      "Jesus has two natures, divine and human, united in one person.",
+      "Chalcedon: two natures without confusion/change/division/separation."
+    ],
+    "keyDocs": [
+      "DOC004"
+    ],
+    "sourceIds": [
+      "S002"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO103",
+    "cluster": "Christ",
+    "short_label": "Nestorianism (condemned)",
+    "full_statement": "Teaching (as understood by opponents) that splits Jesus into two persons.",
+    "technicalDefinition": "Condemned at Ephesus; Church of the East’s later theology is more nuanced than the label suggests.",
+    "definition_variants": [
+      "Teaching (as understood by opponents) that splits Jesus into two persons.",
+      "Condemned at Ephesus; Church of the East’s later theology is more nuanced than the label suggests."
+    ],
+    "keyDocs": [
+      "DOC003"
+    ],
+    "sourceIds": [
+      "S003",
+      "S025"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO104",
+    "cluster": "Christ",
+    "short_label": "Dyothelitism (Two Wills)",
+    "full_statement": "Jesus has a divine will and a human will.",
+    "technicalDefinition": "Defined against monothelitism at Constantinople III (680–681).",
+    "definition_variants": [
+      "Jesus has a divine will and a human will.",
+      "Defined against monothelitism at Constantinople III (680–681)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO105",
+    "cluster": "Christ",
+    "short_label": "Monothelitism (condemned)",
+    "full_statement": "Teaching that Jesus had only one will.",
+    "technicalDefinition": "Rejected by Constantinople III.",
+    "definition_variants": [
+      "Teaching that Jesus had only one will.",
+      "Rejected by Constantinople III."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO106",
+    "cluster": "Sin",
+    "short_label": "Total Depravity (Reformed)",
+    "full_statement": "Sin affects every part of a person so they cannot save themselves.",
+    "technicalDefinition": "One point in later TULIP summary; not 'as bad as possible' but morally unable to turn to God without grace.",
+    "definition_variants": [
+      "Sin affects every part of a person so they cannot save themselves.",
+      "One point in later TULIP summary; not 'as bad as possible' but morally unable to turn to God without grace."
+    ],
+    "keyDocs": [
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO107",
+    "cluster": "Salvation",
+    "short_label": "Prevenient Grace (Wesleyan)",
+    "full_statement": "God gives grace to all people that enables them to respond to Him.",
+    "technicalDefinition": "Grace that comes before conversion, restoring ability to choose; key in Wesleyan-Arminian theology.",
+    "definition_variants": [
+      "God gives grace to all people that enables them to respond to Him.",
+      "Grace that comes before conversion, restoring ability to choose; key in Wesleyan-Arminian theology."
+    ],
+    "keyDocs": [
+      "DOC017"
+    ],
+    "sourceIds": [
+      "S019"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO108",
+    "cluster": "Salvation",
+    "short_label": "Limited Atonement / Particular Redemption (Reformed)",
+    "full_statement": "Christ died effectively for the elect (in some Reformed views).",
+    "technicalDefinition": "Debated; related to Dort; often framed as intent/efficacy.",
+    "definition_variants": [
+      "Christ died effectively for the elect (in some Reformed views).",
+      "Debated; related to Dort; often framed as intent/efficacy."
+    ],
+    "keyDocs": [
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO109",
+    "cluster": "Salvation",
+    "short_label": "Universal Atonement (Arminian)",
+    "full_statement": "Christ died for all people, offering salvation to everyone.",
+    "technicalDefinition": "Contrasts with some Reformed readings; held in many Wesleyan/evangelical contexts.",
+    "definition_variants": [
+      "Christ died for all people, offering salvation to everyone.",
+      "Contrasts with some Reformed readings; held in many Wesleyan/evangelical contexts."
+    ],
+    "keyDocs": [
+      "DOC017"
+    ],
+    "sourceIds": [
+      "S019"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO110",
+    "cluster": "Salvation",
+    "short_label": "Double Predestination (some Reformed)",
+    "full_statement": "God chooses some to salvation and passes over/ordains others to judgment (in some systems).",
+    "technicalDefinition": "High-Reformed doctrine in some confessional interpretations; controversial even within Reformed family.",
+    "definition_variants": [
+      "God chooses some to salvation and passes over/ordains others to judgment (in some systems).",
+      "High-Reformed doctrine in some confessional interpretations; controversial even within Reformed family."
+    ],
+    "keyDocs": [
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO111",
+    "cluster": "Sacraments",
+    "short_label": "Eucharist: Leavened vs Unleavened Bread",
+    "full_statement": "Some churches use leavened bread; others use unleavened wafers.",
+    "technicalDefinition": "East commonly leavened; Latin West commonly unleavened; not a dogma but a long-standing practice difference.",
+    "definition_variants": [
+      "Some churches use leavened bread; others use unleavened wafers.",
+      "East commonly leavened; Latin West commonly unleavened; not a dogma but a long-standing practice difference."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO112",
+    "cluster": "Sacraments",
+    "short_label": "Communion in Both Kinds (bread and wine)",
+    "full_statement": "Whether laity receive both bread and wine.",
+    "technicalDefinition": "Practice varies historically; restored widely in many traditions.",
+    "definition_variants": [
+      "Whether laity receive both bread and wine.",
+      "Practice varies historically; restored widely in many traditions."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S035"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO113",
+    "cluster": "Church",
+    "short_label": "Iconoclasm (condemned)",
+    "full_statement": "Destroying or banning icons as idolatrous.",
+    "technicalDefinition": "Rejected at Nicaea II; complex historical movement.",
+    "definition_variants": [
+      "Destroying or banning icons as idolatrous.",
+      "Rejected at Nicaea II; complex historical movement."
+    ],
+    "keyDocs": [
+      "DOC005"
+    ],
+    "sourceIds": [
+      "S036"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO114",
+    "cluster": "Scripture",
+    "short_label": "Authority of the Deuterocanon (Catholic)",
+    "full_statement": "Catholics treat certain extra OT books as Scripture.",
+    "technicalDefinition": "Received in Catholic canon; Protestants often classify as Apocrypha.",
+    "definition_variants": [
+      "Catholics treat certain extra OT books as Scripture.",
+      "Received in Catholic canon; Protestants often classify as Apocrypha."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO115",
+    "cluster": "Scripture",
+    "short_label": "Broader Biblical Canon (Ethiopian)",
+    "full_statement": "Ethiopian tradition includes a larger set of biblical books.",
+    "technicalDefinition": "Ethiopian canon historically broader than most other traditions.",
+    "definition_variants": [
+      "Ethiopian tradition includes a larger set of biblical books.",
+      "Ethiopian canon historically broader than most other traditions."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO116",
+    "cluster": "Church",
+    "short_label": "Holy Leaven (Assyrian sacrament)",
+    "full_statement": "A unique East Syriac sacramental practice tied to the Eucharist.",
+    "technicalDefinition": "Listed as sacrament in Assyrian tradition; sometimes linked to 'Holy Leaven' (malka).",
+    "definition_variants": [
+      "A unique East Syriac sacramental practice tied to the Eucharist.",
+      "Listed as sacrament in Assyrian tradition; sometimes linked to 'Holy Leaven' (malka)."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S032"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO117",
+    "cluster": "Church",
+    "short_label": "Sign of the Cross (as sacramental in Assyrian list)",
+    "full_statement": "Making the sign of the cross as a sacred act.",
+    "technicalDefinition": "Assyrian tradition lists as sacrament; widely practiced devotion elsewhere too.",
+    "definition_variants": [
+      "Making the sign of the cross as a sacred act.",
+      "Assyrian tradition lists as sacrament; widely practiced devotion elsewhere too."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S032"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO118",
+    "cluster": "Church",
+    "short_label": "Conciliar vs Papal Model of Authority",
+    "full_statement": "Debate over whether councils or a pope are the highest authority.",
+    "technicalDefinition": "Orthodox conciliarity vs Catholic papal primacy; Protestant confessional authority differs.",
+    "definition_variants": [
+      "Debate over whether councils or a pope are the highest authority.",
+      "Orthodox conciliarity vs Catholic papal primacy; Protestant confessional authority differs."
+    ],
+    "keyDocs": [
+      "DOC019"
+    ],
+    "sourceIds": [
+      "S009",
+      "S030"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO119",
+    "cluster": "Mary/Saints",
+    "short_label": "Dormition of Mary (Eastern tradition)",
+    "full_statement": "Eastern tradition that Mary 'fell asleep' (died) and was taken to glory.",
+    "technicalDefinition": "Liturgical feast; not defined the same way as Catholic Assumption dogma.",
+    "definition_variants": [
+      "Eastern tradition that Mary 'fell asleep' (died) and was taken to glory.",
+      "Liturgical feast; not defined the same way as Catholic Assumption dogma."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S011"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO120",
+    "cluster": "Church",
+    "short_label": "Indwelling of the Holy Spirit",
+    "full_statement": "God’s Spirit lives in believers.",
+    "technicalDefinition": "Common Christian doctrine; linked to sanctification and adoption.",
+    "definition_variants": [
+      "God’s Spirit lives in believers.",
+      "Common Christian doctrine; linked to sanctification and adoption."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO121",
+    "cluster": "Worship",
+    "short_label": "Use of Images (non-icon veneration)",
+    "full_statement": "Some Christians allow art but not veneration.",
+    "technicalDefinition": "Common in many Protestant traditions; differs from Nicaea II theology.",
+    "definition_variants": [
+      "Some Christians allow art but not veneration.",
+      "Common in many Protestant traditions; differs from Nicaea II theology."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO122",
+    "cluster": "Church",
+    "short_label": "Ordination of Women",
+    "full_statement": "Whether women can be ordained as clergy.",
+    "technicalDefinition": "Modern disputed issue; varies widely among Anglicans, some Protestants; Catholic/Orthodox generally reject priestly ordination of women.",
+    "definition_variants": [
+      "Whether women can be ordained as clergy.",
+      "Modern disputed issue; varies widely among Anglicans, some Protestants; Catholic/Orthodox generally reject priestly ordination of women."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO123",
+    "cluster": "Church-State",
+    "short_label": "Established Church",
+    "full_statement": "A church formally connected to a state government.",
+    "technicalDefinition": "Historically common (Byzantine, medieval Latin, Anglican establishments); contested in modern pluralism.",
+    "definition_variants": [
+      "A church formally connected to a state government.",
+      "Historically common (Byzantine, medieval Latin, Anglican establishments); contested in modern pluralism."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S049"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO124",
+    "cluster": "Church-State",
+    "short_label": "Separation of Church and State",
+    "full_statement": "Church and government should be institutionally separate.",
+    "technicalDefinition": "Develops in post-Reformation and modern contexts; Anabaptist and Baptist streams influential.",
+    "definition_variants": [
+      "Church and government should be institutionally separate.",
+      "Develops in post-Reformation and modern contexts; Anabaptist and Baptist streams influential."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S017"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO125",
+    "cluster": "Ethics",
+    "short_label": "Sabbath Observance (Seventh-day)",
+    "full_statement": "Keeping Saturday as the Sabbath day.",
+    "technicalDefinition": "Distinctive SDA and some other groups; most Christians historically worship Sunday as Lord’s Day.",
+    "definition_variants": [
+      "Keeping Saturday as the Sabbath day.",
+      "Distinctive SDA and some other groups; most Christians historically worship Sunday as Lord’s Day."
+    ],
+    "keyDocs": [
+      "DOC018"
+    ],
+    "sourceIds": [
+      "S020"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO126",
+    "cluster": "Ethics",
+    "short_label": "Sunday as Lord’s Day",
+    "full_statement": "Most Christians worship on Sunday in honor of Jesus’ resurrection.",
+    "technicalDefinition": "Ancient practice; later formalized in various ways.",
+    "definition_variants": [
+      "Most Christians worship on Sunday in honor of Jesus’ resurrection.",
+      "Ancient practice; later formalized in various ways."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO127",
+    "cluster": "Eschatology",
+    "short_label": "Dispensationalism",
+    "full_statement": "A modern system dividing history into 'dispensations' with specific prophecy schemes.",
+    "technicalDefinition": "Develops in 19th century (Darby) and popularized via Scofield; shapes rapture doctrine.",
+    "definition_variants": [
+      "A modern system dividing history into 'dispensations' with specific prophecy schemes.",
+      "Develops in 19th century (Darby) and popularized via Scofield; shapes rapture doctrine."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 0,
+      "scriptureClass": "Not directly in Scripture",
+      "patristicBreadth": 0,
+      "councilScore": 0,
+      "consensusScore": 0,
+      "tier": "Tier 5 – Modern/Novel",
+      "confidence": "High",
+      "derivedConfidence": "High"
+    }
+  },
+  {
+    "id": "DO128",
+    "cluster": "Church",
+    "short_label": "Apostolic Poverty (Franciscan-style)",
+    "full_statement": "Ideal of radical poverty as Christian perfection.",
+    "technicalDefinition": "Medieval spiritual movement; not universal doctrine.",
+    "definition_variants": [
+      "Ideal of radical poverty as Christian perfection.",
+      "Medieval spiritual movement; not universal doctrine."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO129",
+    "cluster": "Salvation",
+    "short_label": "Sacramental Union of Justification and Baptism (Catholic)",
+    "full_statement": "Catholics link baptism closely with justification/new birth.",
+    "technicalDefinition": "Baptism as sacrament of faith that removes sin and initiates justification.",
+    "definition_variants": [
+      "Catholics link baptism closely with justification/new birth.",
+      "Baptism as sacrament of faith that removes sin and initiates justification."
+    ],
+    "keyDocs": [
+      "DOC010"
+    ],
+    "sourceIds": [
+      "S006",
+      "S034"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO130",
+    "cluster": "Salvation",
+    "short_label": "Regeneration Precedes Faith (some Reformed)",
+    "full_statement": "God gives new life before a person can truly believe.",
+    "technicalDefinition": "Order of salvation (ordo salutis) in some Calvinist theology.",
+    "definition_variants": [
+      "God gives new life before a person can truly believe.",
+      "Order of salvation (ordo salutis) in some Calvinist theology."
+    ],
+    "keyDocs": [
+      "DOC013"
+    ],
+    "sourceIds": [
+      "S041"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO131",
+    "cluster": "Salvation",
+    "short_label": "Faith Precedes Regeneration (some Wesleyan)",
+    "full_statement": "A person believes and then is born again (in some frameworks).",
+    "technicalDefinition": "Arminian/Wesleyan order differs from some Reformed order; debated.",
+    "definition_variants": [
+      "A person believes and then is born again (in some frameworks).",
+      "Arminian/Wesleyan order differs from some Reformed order; debated."
+    ],
+    "keyDocs": [
+      "DOC017"
+    ],
+    "sourceIds": [
+      "S019"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO132",
+    "cluster": "Church",
+    "short_label": "Visible Unity as Institutional Communion",
+    "full_statement": "Unity means being in the same sacramental/episcopal communion.",
+    "technicalDefinition": "Catholic/Orthodox/Oriental Orthodox emphasize visible communion; Protestants often allow more plural unity models.",
+    "definition_variants": [
+      "Unity means being in the same sacramental/episcopal communion.",
+      "Catholic/Orthodox/Oriental Orthodox emphasize visible communion; Protestants often allow more plural unity models."
+    ],
+    "keyDocs": [
+      "DOC002"
+    ],
+    "sourceIds": [
+      "S001"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 2 – Ancient/Disputed",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO133",
+    "cluster": "Church",
+    "short_label": "Unity as Spiritual Fellowship",
+    "full_statement": "Unity can exist across denominations through shared faith in Christ.",
+    "technicalDefinition": "Often in evangelical/protestant ecumenism.",
+    "definition_variants": [
+      "Unity can exist across denominations through shared faith in Christ.",
+      "Often in evangelical/protestant ecumenism."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO134",
+    "cluster": "Afterlife",
+    "short_label": "Annihilationism",
+    "full_statement": "The wicked are destroyed rather than punished forever (held by some groups).",
+    "technicalDefinition": "Minority view historically; sometimes associated with Adventist tradition (varies).",
+    "definition_variants": [
+      "The wicked are destroyed rather than punished forever (held by some groups).",
+      "Minority view historically; sometimes associated with Adventist tradition (varies)."
+    ],
+    "keyDocs": [
+      "DOC018"
+    ],
+    "sourceIds": [
+      "S020"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO135",
+    "cluster": "Afterlife",
+    "short_label": "Universalism",
+    "full_statement": "All people will eventually be saved (minority view).",
+    "technicalDefinition": "Appears in some early thinkers and modern movements; not creedal mainstream.",
+    "definition_variants": [
+      "All people will eventually be saved (minority view).",
+      "Appears in some early thinkers and modern movements; not creedal mainstream."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO136",
+    "cluster": "Worship",
+    "short_label": "Liturgical Calendar (feasts, saints days)",
+    "full_statement": "Annual cycle of celebrations like Easter, Christmas, saints’ days.",
+    "technicalDefinition": "Develops early; extensive in Catholic/Orthodox; adopted in some Protestant liturgies.",
+    "definition_variants": [
+      "Annual cycle of celebrations like Easter, Christmas, saints’ days.",
+      "Develops early; extensive in Catholic/Orthodox; adopted in some Protestant liturgies."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO137",
+    "cluster": "Church",
+    "short_label": "Epiclesis in Eucharist (Spirit invocation)",
+    "full_statement": "Prayer asking the Holy Spirit to sanctify the gifts in Communion.",
+    "technicalDefinition": "Strongly emphasized in Eastern liturgies; present in some forms in the West.",
+    "definition_variants": [
+      "Prayer asking the Holy Spirit to sanctify the gifts in Communion.",
+      "Strongly emphasized in Eastern liturgies; present in some forms in the West."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO138",
+    "cluster": "Sacraments",
+    "short_label": "Sacramental Confession Retained (Lutheran optional)",
+    "full_statement": "Some Lutherans keep private confession and absolution.",
+    "technicalDefinition": "Book of Concord commends confession; practice varies by church body.",
+    "definition_variants": [
+      "Some Lutherans keep private confession and absolution.",
+      "Book of Concord commends confession; practice varies by church body."
+    ],
+    "keyDocs": [
+      "DOC007"
+    ],
+    "sourceIds": [
+      "S013"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO139",
+    "cluster": "Sacraments",
+    "short_label": "Baptism as Covenant Sign (Reformed)",
+    "full_statement": "Baptism marks someone as belonging to God’s covenant community.",
+    "technicalDefinition": "Sign and seal in covenant theology; linked with infant baptism.",
+    "definition_variants": [
+      "Baptism marks someone as belonging to God’s covenant community.",
+      "Sign and seal in covenant theology; linked with infant baptism."
+    ],
+    "keyDocs": [
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO140",
+    "cluster": "Church",
+    "short_label": "Congregational Polity",
+    "full_statement": "Local church governs itself (no bishops).",
+    "technicalDefinition": "Common in Baptists and many free churches.",
+    "definition_variants": [
+      "Local church governs itself (no bishops).",
+      "Common in Baptists and many free churches."
+    ],
+    "keyDocs": [
+      "DOC015"
+    ],
+    "sourceIds": [
+      "S017"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO141",
+    "cluster": "Church",
+    "short_label": "Presbyterian Polity",
+    "full_statement": "Church is governed by elders in councils (sessions, presbyteries).",
+    "technicalDefinition": "Reformed/Presbyterian structure.",
+    "definition_variants": [
+      "Church is governed by elders in councils (sessions, presbyteries).",
+      "Reformed/Presbyterian structure."
+    ],
+    "keyDocs": [
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S014"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO142",
+    "cluster": "Church",
+    "short_label": "Episcopal Polity",
+    "full_statement": "Church is governed by bishops.",
+    "technicalDefinition": "Catholic/Orthodox/Anglican forms; differs internally.",
+    "definition_variants": [
+      "Church is governed by bishops.",
+      "Catholic/Orthodox/Anglican forms; differs internally."
+    ],
+    "keyDocs": [
+      "DOC009"
+    ],
+    "sourceIds": [
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO143",
+    "cluster": "Church",
+    "short_label": "Charismatic Renewal (within historic churches)",
+    "full_statement": "Pentecostal-like spiritual gifts within Catholic/Orthodox/Anglican/Protestant contexts.",
+    "technicalDefinition": "20th century movement; differs from classical Pentecostal denominations.",
+    "definition_variants": [
+      "Pentecostal-like spiritual gifts within Catholic/Orthodox/Anglican/Protestant contexts.",
+      "20th century movement; differs from classical Pentecostal denominations."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO144",
+    "cluster": "Sacraments",
+    "short_label": "Open Communion",
+    "full_statement": "Any baptized believer may receive Communion.",
+    "technicalDefinition": "Common in many Protestant churches; differs from closed communion discipline.",
+    "definition_variants": [
+      "Any baptized believer may receive Communion.",
+      "Common in many Protestant churches; differs from closed communion discipline."
+    ],
+    "keyDocs": [],
+    "sourceIds": [],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO145",
+    "cluster": "Salvation",
+    "short_label": "Baptism of Desire / Baptism of Blood (Catholic concept)",
+    "full_statement": "God can save people who aren’t baptized with water but desire it or die for Christ.",
+    "technicalDefinition": "Catholic theological explanations of salvation outside sacramental reception; not negating baptism’s norm.",
+    "definition_variants": [
+      "God can save people who aren’t baptized with water but desire it or die for Christ.",
+      "Catholic theological explanations of salvation outside sacramental reception; not negating baptism’s norm."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S005"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO146",
+    "cluster": "Church",
+    "short_label": "Sacred Images vs Idols Distinction",
+    "full_statement": "Using an image as a reminder is not the same as worshiping it.",
+    "technicalDefinition": "Key logic in icon veneration theology (prototype distinction).",
+    "definition_variants": [
+      "Using an image as a reminder is not the same as worshiping it.",
+      "Key logic in icon veneration theology (prototype distinction)."
+    ],
+    "keyDocs": [
+      "DOC005"
+    ],
+    "sourceIds": [
+      "S004"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier 3 – Medieval/Confessional development",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO147",
+    "cluster": "Mary/Saints",
+    "short_label": "Mary as 'ever-virgin' (patristic consensus claim)",
+    "full_statement": "Many early Christians believed Mary was always a virgin.",
+    "technicalDefinition": "Widely attested early; later Protestant debate.",
+    "definition_variants": [
+      "Many early Christians believed Mary was always a virgin.",
+      "Widely attested early; later Protestant debate."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO148",
+    "cluster": "Authority",
+    "short_label": "Confessionalism",
+    "full_statement": "Churches define belief through written confessions (Reformation-era).",
+    "technicalDefinition": "Augsburg, Westminster, 39 Articles, etc as identity markers.",
+    "definition_variants": [
+      "Churches define belief through written confessions (Reformation-era).",
+      "Augsburg, Westminster, 39 Articles, etc as identity markers."
+    ],
+    "keyDocs": [
+      "DOC008",
+      "DOC009",
+      "DOC012"
+    ],
+    "sourceIds": [
+      "S012",
+      "S014",
+      "S015"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO149",
+    "cluster": "Church history method",
+    "short_label": "Development of Doctrine",
+    "full_statement": "Some beliefs get clarified or expanded over time.",
+    "technicalDefinition": "Newman’s concept (Catholic) and broader historical method; distinct from 'new inventions'.",
+    "definition_variants": [
+      "Some beliefs get clarified or expanded over time.",
+      "Newman’s concept (Catholic) and broader historical method; distinct from 'new inventions'."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
+  },
+  {
+    "id": "DO150",
+    "cluster": "Church history method",
+    "short_label": "Heresy Categories (Arian, Pelagian, etc.)",
+    "full_statement": "Names for teachings the church rejected.",
+    "technicalDefinition": "Heresy labels are historically situated; sometimes used polemically; careful definition needed.",
+    "definition_variants": [
+      "Names for teachings the church rejected.",
+      "Heresy labels are historically situated; sometimes used polemically; careful definition needed."
+    ],
+    "keyDocs": [],
+    "sourceIds": [
+      "S047"
+    ],
+    "scoring": {
+      "scriptureScore": 1,
+      "scriptureClass": "Implicit/derived",
+      "patristicBreadth": 1,
+      "councilScore": 0,
+      "consensusScore": 1,
+      "tier": "Tier ? – Needs research",
+      "confidence": "Medium",
+      "derivedConfidence": "Medium"
+    }
   }
 ]

@@ -7,9 +7,9 @@ import { InterpretationPanel } from '@/components/domain/InterpretationPanel';
 import { ReadingProgress } from '@/components/domain/ReadingProgress';
 import { KeyboardShortcuts } from '@/components/domain/KeyboardShortcuts';
 import { ConsensusSummary } from '@/components/domain/ConsensusSummary';
+import { ClaimPageContent } from '@/components/domain/ClaimPageContent';
 import { ArrowLeft, Share2 } from 'lucide-react';
 
-// Use generateStaticParams for SSG if desired, but dynamic for now is fine for MVP.
 export function generateStaticParams() {
     const claims = getAllClaims();
     return claims.map((claim) => ({
@@ -32,71 +32,31 @@ export default async function ClaimPage({ params }: { params: Promise<{ id: stri
         <>
             <ReadingProgress />
             <KeyboardShortcuts />
-            <div className="min-h-screen pb-20">
-                {/* Header */}
-                <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
+            <div className="min-h-screen pb-20 bg-stone-50">
+                {/* Header - Glass effect */}
+                <header className="bg-white/80 backdrop-blur-md border-b border-stone-200 sticky top-0 z-30">
                     <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-                        <Link href="/" className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors">
+                        <Link href="/" className="flex items-center gap-2 text-stone-500 hover:text-stone-900 transition-colors">
                             <ArrowLeft className="w-5 h-5" />
                             <span className="font-medium text-sm">Back to Search</span>
                         </Link>
-                        <div className="font-serif font-bold text-xl tracking-tight text-slate-800 hidden sm:block">
-                            Church History <span className="text-slate-400 font-sans font-normal text-sm ml-2">Claim Trace</span>
+                        <div className="font-serif font-bold text-xl tracking-tight text-stone-800 hidden sm:block">
+                            Church History <span className="text-stone-400 font-sans font-normal text-sm ml-2">Claim Trace</span>
                         </div>
-                        <button className="p-2 hover:bg-slate-100 rounded-full text-slate-500">
+                        <button className="p-2 hover:bg-stone-100 rounded-full text-stone-500 transition-colors">
                             <Share2 className="w-5 h-5" />
                         </button>
                     </div>
                 </header>
 
                 <main className="max-w-7xl mx-auto px-4 py-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-
-                        {/* LEFT: Claim Header & Trace Rail */}
-                        <div className="lg:col-span-7 space-y-8">
-                            {/* Consensus Summary */}
-                            <ConsensusSummary claimId={claim.id} />
-
-                            {/* Claim Header */}
-                            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                                <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wide mb-4">
-                                    {claim.cluster}
-                                </span>
-                                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
-                                    {claim.short_label}
-                                </h1>
-                                <p className="text-xl text-slate-600 leading-relaxed mb-6 font-serif">
-                                    {claim.full_statement}
-                                </p>
-
-                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-100">
-                                    <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Definition Variants</h3>
-                                    <ul className="space-y-2">
-                                        {claim.definition_variants.map((v, i) => (
-                                            <li key={i} className="flex gap-3 text-sm text-slate-700">
-                                                <span className="text-blue-300">•</span> {v}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-
-                            {/* Trace Rail */}
-                            <div>
-                                <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                                    Historical Trace
-                                    <span className="text-sm font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{nodes.length} Nodes</span>
-                                </h2>
-                                <TraceRail nodes={nodes} />
-                            </div>
-                        </div>
-
-                        {/* RIGHT: Interpretation Panel */}
-                        <div className="lg:col-span-5 relative">
-                            <InterpretationPanel interpretations={interpretations} />
-                        </div>
-
-                    </div>
+                    <ClaimPageContent
+                        claim={claim}
+                        consensusSummary={<ConsensusSummary claimId={claim.id} />}
+                        traceRail={<TraceRail nodes={nodes} />}
+                        interpretationPanel={<InterpretationPanel interpretations={interpretations} />}
+                        nodeCount={nodes.length}
+                    />
                 </main>
             </div>
         </>

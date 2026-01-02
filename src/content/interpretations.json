@@ -110,5 +110,127 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "INT_TR_C1_CONSENSUS",
+        "claim_id": "CLM_TR_C1",
+        "lens": "Consensus",
+        "summary": "All major Christian traditions affirm the Son's co-eternity with the Father, though the precise theological language developed through centuries of controversy.",
+        "key_points": [
+            {
+                "text": "John's Gospel provides foundational texts identifying the Logos with God.",
+                "citations": []
+            },
+            {
+                "text": "The Council of Nicaea definitively established homoousios as orthodox doctrine.",
+                "citations": [
+                    "SRC_NICENE_CREED"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C3_CONSENSUS",
+        "claim_id": "CLM_TR_C3",
+        "lens": "Consensus",
+        "summary": "The doctrine of one divine essence in three persons is affirmed by all major Christian traditions as central to Christian faith.",
+        "key_points": [
+            {
+                "text": "Tertullian first articulated the formula 'one substance, three persons.'",
+                "citations": [
+                    "SRC_TERTULLIAN_PRAXEAS"
+                ]
+            },
+            {
+                "text": "The Athanasian Creed provides the most detailed articulation of Trinitarian doctrine.",
+                "citations": [
+                    "SRC_ATHANASIAN_CREED"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_CONSENSUS",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Consensus",
+        "summary": "Most Christian traditions affirm some form of Christ's real presence in the Eucharist, though they differ significantly on the mode of that presence.",
+        "key_points": [
+            {
+                "text": "Early church writers like Ignatius speak of the Eucharist as Christ's flesh.",
+                "citations": [
+                    "SRC_IGNATIUS_EPHESIANS"
+                ]
+            },
+            {
+                "text": "Reformation debates produced three main positions: transubstantiation, sacramental union, and memorial.",
+                "citations": [
+                    "SRC_MARBURG_SCHAFF"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_CATHOLIC",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Catholic",
+        "summary": "Christ is substantially present under the forms of bread and wine through transubstantiation, the whole Christ in each species.",
+        "key_points": [
+            {
+                "text": "Lateran IV and Trent define transubstantiation as the change of substance.",
+                "citations": [
+                    "SRC_LATERAN_IV",
+                    "SRC_TRENT_EUCHARIST"
+                ]
+            },
+            {
+                "text": "Aquinas provides the standard scholastic explanation using Aristotelian categories.",
+                "citations": [
+                    "SRC_AQUINAS_EUCHARIST"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_LUTHERAN",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Lutheran",
+        "summary": "Christ's body and blood are truly present 'in, with, and under' the bread and wine (sacramental union), received by all who eat and drink.",
+        "key_points": [
+            {
+                "text": "Luther rejected transubstantiation but strongly affirmed Real Presence.",
+                "citations": [
+                    "SRC_LUTHER_BABYLONIAN"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_REFORMED",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Reformed",
+        "summary": "Christ is truly present in the Supper, but spiritually — believers are lifted to heaven by the Spirit to commune with the glorified Christ.",
+        "key_points": [
+            {
+                "text": "Calvin mediates between Luther and Zwingli with his doctrine of spiritual presence.",
+                "citations": [
+                    "SRC_CALVIN_INSTITUTES"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_ZB",
+        "claim_id": "CLM_EU_C1",
+        "lens": "ZwinglianBaptistic",
+        "summary": "The Lord's Supper is a memorial meal in which believers remember Christ's sacrifice; 'This is my body' means 'represents.'",
+        "key_points": [
+            {
+                "text": "Zwingli argued for a purely symbolic understanding at Marburg.",
+                "citations": [
+                    "SRC_ZWINGLI_BRITANNICA",
+                    "SRC_MARBURG_SCHAFF"
+                ]
+            }
+        ]
     }
 ]

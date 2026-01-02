@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageArrival } from '@/lib/motion';
 import { ClaimConfidenceIndicator } from './ClaimConfidenceIndicator';
+import { TraditionPerspectives } from './TraditionPerspectives';
+import { TraditionCompare } from './TraditionCompare';
 import type { Claim } from '@/lib/types';
 
 interface ClaimContentProps {
@@ -15,13 +17,6 @@ interface ClaimContentProps {
     claimId: string;
 }
 
-/**
- * SYSTEM 1: Page Arrival Choreography
- * 
- * Wraps claim page content in staggered entrance animation.
- * Content arrives gently - opacity 0→1, y 12→0
- * Each section staggers slightly to create a sense of place.
- */
 export function ClaimPageContent({
     claim,
     consensusSummary,
@@ -35,10 +30,11 @@ export function ClaimPageContent({
             variants={pageArrival.container}
             initial="initial"
             animate="animate"
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10"
         >
             {/* LEFT: Claim Header & Trace Rail */}
-            <div className="lg:col-span-7 space-y-8">
+            <div className="lg:col-span-7 space-y-8 min-w-0">
+
                 {/* Consensus Summary */}
                 <motion.div variants={pageArrival.section}>
                     {consensusSummary}
@@ -47,31 +43,31 @@ export function ClaimPageContent({
                 {/* Claim Header */}
                 <motion.div
                     variants={pageArrival.section}
-                    className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200"
+                    className="bg-white/[0.03] rounded-2xl p-6 border border-white/10"
                 >
-                    <span className="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide mb-4">
+                    <span className="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wide mb-4">
                         {claim.cluster}
                     </span>
-                    <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-900 mb-4 leading-tight tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight tracking-tight">
                         {claim.short_label}
                     </h1>
-                    <p className="text-xl text-stone-600 leading-relaxed mb-4 font-serif">
+                    <p className="text-xl text-white/50 leading-relaxed mb-4 font-serif">
                         {claim.full_statement}
                     </p>
 
-                    {/* PART 1: Claim-Level Confidence */}
+                    {/* Claim-Level Confidence */}
                     <div className="mb-6">
                         <ClaimConfidenceIndicator claimId={claimId} />
                     </div>
 
-                    <div className="bg-stone-50 rounded-xl p-4 border border-stone-100">
-                        <h3 className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-3">
+                    <div className="bg-white/[0.02] rounded-xl p-4 border border-white/5">
+                        <h3 className="text-xs font-bold text-white/30 uppercase tracking-widest mb-3">
                             Definition Variants
                         </h3>
                         <ul className="space-y-2">
                             {claim.definition_variants.map((v, i) => (
-                                <li key={i} className="flex gap-3 text-sm text-stone-700">
-                                    <span className="text-indigo-300">•</span> {v}
+                                <li key={i} className="flex gap-3 text-sm text-white/60">
+                                    <span className="text-amber-500/50">•</span> {v}
                                 </li>
                             ))}
                         </ul>
@@ -80,9 +76,9 @@ export function ClaimPageContent({
 
                 {/* Trace Rail */}
                 <motion.div variants={pageArrival.section}>
-                    <h2 className="text-xl font-bold text-stone-900 mb-6 flex items-center gap-2">
+                    <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
                         Historical Trace
-                        <span className="text-sm font-normal text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">
+                        <span className="text-sm font-normal text-white/40 bg-white/5 px-2 py-0.5 rounded-full">
                             {nodeCount} Nodes
                         </span>
                     </h2>
@@ -90,12 +86,21 @@ export function ClaimPageContent({
                 </motion.div>
             </div>
 
-            {/* RIGHT: Interpretation Panel */}
+            {/* RIGHT: Interpretation Panel + Tradition Perspectives - Sticky Sidebar */}
             <motion.div
                 variants={pageArrival.section}
-                className="lg:col-span-5 relative"
+                className="lg:col-span-5"
             >
-                {interpretationPanel}
+                {/* Sticky wrapper for entire sidebar content */}
+                <div className="lg:sticky lg:top-24 space-y-6 max-h-[calc(100vh-8rem)] overflow-y-auto scrollbar-thin">
+                    {interpretationPanel}
+
+                    {/* Tradition Compare - Divergence Overlay */}
+                    <TraditionCompare claimId={claimId} />
+
+                    {/* Tradition Perspectives */}
+                    <TraditionPerspectives claimId={claimId} />
+                </div>
             </motion.div>
         </motion.div>
     );

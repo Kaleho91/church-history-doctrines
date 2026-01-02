@@ -1,33 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  /* Warmer, richer neutrals */
-  --bg-primary: #fafaf9;
-  --bg-secondary: #f5f5f4;
-  --bg-tertiary: #e7e5e4;
-  
-  /* Text colors */
-  --text-primary: #1c1917;
-  --text-secondary: #57534e;
-  --text-tertiary: #78716c;
-  
-  /* Refined accent palette */
-  --accent-primary: #3730a3; /* Deep indigo */
-  --accent-hover: #4338ca;
-  
-  /* Lens-specific colors */
-  --lens-consensus: #3b82f6;
-  --lens-catholic: #dc2626;
-  --lens-orthodox: #d97706;
-  --lens-lutheran: #7c3aed;
-  --lens-reformed: #0891b2;
-  --lens-zwinglian: #059669;
-  
-  /* Shadows for depth */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  /* === BREATHTAKING MANUSCRIPT PALETTE === */
+  /* Warm, sophisticated parchment tones with depth */
+  --bg-primary: #faf8f4;
+  /* Luminous parchment */
+  --bg-secondary: #f6f3ec;
+  /* Soft vellum */
+  --bg-tertiary: #ede8de;
+  /* Aged manuscript */
+  --bg-card: #ffffff;
+  /* Pristine surface */
+  --bg-elevated: rgba(255, 255, 255, 0.95);
+
+  /* Ambient color - adds life to backgrounds */
+  --bg-ambient: radial-gradient(ellipse 80% 50% at 50% -20%,
+      rgba(184, 134, 11, 0.03) 0%,
+      transparent 50%);
+
+  /* Ink tones with rich contrast */
+  --text-primary: #1a1612;
+  /* Rich dark oak */
+  --text-secondary: #4a423a;
+  /* Weathered ink */
+  --text-tertiary: #7a7068;
+  /* Margin annotations */
+  --text-muted: #a89a8a;
+  /* Faded marginalia */
+
+  /* Luxurious accent palette */
+  --accent-primary: #8b5a2b;
+  /* Warm sienna */
+  --accent-secondary: #b8860b;
+  /* Byzantine gold */
+  --accent-vermillion: #c45c4c;
+  /* Illuminated red */
+  --accent-sapphire: #4a6fa5;
+  /* Royal blue */
+  --accent-emerald: #4a7c6f;
+  /* Scholarly green */
+
+  /* Lens colors — Rich, jewel tones */
+  --lens-consensus: #5c7999;
+  --lens-catholic: #9e4f4f;
+  --lens-orthodox: #c9a227;
+  --lens-lutheran: #7a6b8f;
+  --lens-reformed: #4a7c6f;
+  --lens-zwinglian: #5a8a6a;
+
+  /* Era gradient band */
+  --era-scripture: #8a7a68;
+  --era-early: #c9a227;
+  --era-medieval: #8b5a2b;
+  --era-reformation: #5c7999;
+  --era-modern: #5a6a7a;
+
+  /* Premium shadow system */
+  --shadow-xs: 0 1px 2px rgb(26 22 18 / 0.04);
+  --shadow-sm: 0 1px 3px rgb(26 22 18 / 0.06), 0 1px 2px rgb(26 22 18 / 0.04);
+  --shadow-md: 0 4px 8px -2px rgb(26 22 18 / 0.08), 0 2px 4px -2px rgb(26 22 18 / 0.04);
+  --shadow-lg: 0 12px 24px -4px rgb(26 22 18 / 0.1), 0 4px 8px -4px rgb(26 22 18 / 0.06);
+  --shadow-xl: 0 24px 48px -8px rgb(26 22 18 / 0.12), 0 8px 16px -4px rgb(26 22 18 / 0.06);
+
+  /* Elegant glows */
+  --glow-gold: 0 0 40px -8px rgb(184 134 11 / 0.2);
+  --glow-warm: 0 8px 32px -4px rgb(139 90 43 / 0.12);
+  --glow-soft: 0 4px 20px rgb(0 0 0 / 0.06);
+
+  /* Animation curves */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @theme inline {
@@ -36,65 +79,402 @@
   --font-serif-alt: var(--font-serif-alt);
 }
 
-/* Typography refinements */
+/* === TYPOGRAPHY REFINEMENTS === */
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
   background: var(--bg-primary);
+  background-image: var(--bg-ambient);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Serif headlines — scholarly gravitas */
+.headline-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-rendering: optimizeLegibility;
 }
 
 /* Serif for long-form content */
 .prose-content {
   font-family: var(--font-serif-alt), Georgia, serif;
-  line-height: 1.75;
-  letter-spacing: 0.01em;
+  line-height: 1.8;
+  letter-spacing: 0.005em;
 }
 
-/* Small caps for labels */
+/* Small caps for labels — refined */
 .label-caps {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
 }
 
-/* Card hover effects */
-.card-hover {
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+/* === PREMIUM CARD SYSTEM === */
+.card-base {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  transition: all 0.35s var(--ease-out-expo);
 }
 
-.card-hover:hover {
-  transform: translateY(-2px);
+.card-base:hover {
+  border-color: rgba(139, 90, 43, 0.15);
+  box-shadow: var(--glow-warm);
+}
+
+/* Elevated card with subtle float */
+.card-elevated {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s var(--ease-out-expo);
+}
+
+.card-elevated:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl), var(--glow-gold);
+}
+
+/* Glass card with premium blur */
+.card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
   box-shadow: var(--shadow-lg);
 }
 
-/* Glassmorphism utility */
+/* Warm glow on interaction */
+.card-glow {
+  position: relative;
+  transition: all 0.3s var(--ease-out-expo);
+  background: var(--bg-card);
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+      rgba(184, 134, 11, 0.1) 0%,
+      rgba(139, 90, 43, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out-expo);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+.card-glow:hover {
+  box-shadow: var(--glow-warm);
+  border-color: rgba(184, 134, 11, 0.2);
+}
+
+/* === GLASSMORPHISM === */
 .glass {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-subtle {
+  background: rgba(250, 248, 244, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Focus states */
-:focus-visible {
-  outline: 2px solid var(--accent-primary);
-  outline-offset: 2px;
-  border-radius: 4px;
+/* === ILLUMINATED MANUSCRIPT EFFECTS === */
+.illuminated-initial::first-letter {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--accent-vermillion);
+  font-family: var(--font-serif), Georgia, serif;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.15em;
+  background: linear-gradient(135deg, var(--accent-vermillion), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Smooth scrolling */
+/* === TIMELINE DESIGN — THE SIGNATURE ELEMENT === */
+.timeline-ink {
+  width: 3px;
+  background: linear-gradient(to bottom,
+      var(--era-scripture) 0%,
+      var(--era-early) 25%,
+      var(--era-medieval) 50%,
+      var(--era-reformation) 75%,
+      var(--era-modern) 100%);
+  border-radius: 2px;
+  position: relative;
+}
+
+.timeline-ink::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(8px);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Timeline diamond marker */
+.timeline-diamond {
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background: var(--bg-card);
+  border: 2px solid var(--text-tertiary);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s var(--ease-out-expo);
+}
+
+.group:hover .timeline-diamond {
+  border-color: var(--accent-secondary);
+  background: rgba(184, 134, 11, 0.1);
+  box-shadow: 0 0 12px rgba(184, 134, 11, 0.3);
+}
+
+/* Era badge — refined illuminated style */
+.era-badge {
+  position: relative;
+  padding: 0.25rem 0.75rem 0.25rem 1rem;
+  border-left: 3px solid currentColor;
+  border-radius: 0 6px 6px 0;
+  background: linear-gradient(90deg,
+      rgba(current, 0.08) 0%,
+      transparent 100%);
+}
+
+.era-badge::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* === STANCE INDICATORS — ELEGANT PILLS === */
+.stance-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.stance-pill:hover {
+  transform: scale(1.02);
+}
+
+/* === TRADITION CARD — PREMIUM HOVER === */
+.tradition-card {
+  position: relative;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 3px solid;
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+.tradition-card:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.tradition-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: inherit;
+  filter: blur(4px);
+  opacity: 0.5;
+}
+
+/* === PERSPECTIVE TOGGLE — SLIDING PILL === */
+.lens-button {
+  position: relative;
+  padding: 0.625rem 0.875rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.25s var(--ease-out-expo);
+  z-index: 1;
+}
+
+.lens-button:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.lens-button.active {
+  color: var(--text-primary);
+}
+
+.lens-pill-active {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-card);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  z-index: -1;
+}
+
+/* === FOCUS STATES — ELEGANT === */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bg-card), 0 0 0 4px var(--accent-secondary);
+  border-radius: 8px;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 134, 11, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 4px rgba(184, 134, 11, 0.1);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s var(--ease-out-expo) forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(184, 134, 11, 0.08) 50%,
+      transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite;
+}
+
+/* === SCROLLBAR — ELEGANT === */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 5px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Thin scrollbar for sidebar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* === SMOOTH SCROLLING === */
 html {
   scroll-behavior: smooth;
 }
 
+/* Subtle parchment texture */
+.texture-parchment {
+  position: relative;
+}
+
+.texture-parchment::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -102,4 +482,13 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* === FONT SIZE SCALING === */
+html.text-scale-large {
+  font-size: 112%;
+}
+
+html.text-scale-larger {
+  font-size: 125%;
 }

@@ -166,5 +166,205 @@
         "relation_type": "Supports",
         "note": "Rejects mechanical timing; affirms real conferral.",
         "confidence": "High"
+    },
+    {
+        "id": "E22",
+        "claim_id": "CLM_TR_C1",
+        "node_id": "N_JOHN_1_1",
+        "relation_type": "Defines",
+        "note": "Logos theology in John's prologue foundational for co-eternity.",
+        "confidence": "High"
+    },
+    {
+        "id": "E23",
+        "claim_id": "CLM_TR_C1",
+        "node_id": "N_JOHN_10_30",
+        "relation_type": "Supports",
+        "note": "Jesus claims oneness with Father.",
+        "confidence": "Medium"
+    },
+    {
+        "id": "E24",
+        "claim_id": "CLM_TR_C1",
+        "node_id": "N_JUSTIN_LOGOS",
+        "relation_type": "Develops",
+        "note": "Early Logos theology adapts philosophical language.",
+        "confidence": "High"
+    },
+    {
+        "id": "E25",
+        "claim_id": "CLM_TR_C1",
+        "node_id": "N_ARIUS_CONTROVERSY",
+        "relation_type": "Challenges",
+        "note": "Arius denied co-eternity, claiming Son was created.",
+        "confidence": "High"
+    },
+    {
+        "id": "E26",
+        "claim_id": "CLM_TR_C1",
+        "node_id": "N_NICAEA_325",
+        "relation_type": "Defines",
+        "note": "Homoousios affirms Son is of same substance as Father.",
+        "confidence": "High"
+    },
+    {
+        "id": "E27",
+        "claim_id": "CLM_TR_C2",
+        "node_id": "N_CONSTANTINOPLE_381",
+        "relation_type": "Defines",
+        "note": "Spirit 'proceeds from the Father' formalized in creed.",
+        "confidence": "High"
+    },
+    {
+        "id": "E28",
+        "claim_id": "CLM_TR_C2",
+        "node_id": "N_FILIOQUE_ADDITION",
+        "relation_type": "Develops",
+        "note": "West adds 'and the Son' — major East-West division.",
+        "confidence": "Contested"
+    },
+    {
+        "id": "E29",
+        "claim_id": "CLM_TR_C3",
+        "node_id": "N_MATT_28_19",
+        "relation_type": "Defines",
+        "note": "Triadic baptismal formula foundational for Trinitarian thought.",
+        "confidence": "High"
+    },
+    {
+        "id": "E30",
+        "claim_id": "CLM_TR_C3",
+        "node_id": "N_TERTULLIAN_TRINITY",
+        "relation_type": "Develops",
+        "note": "First use of 'Trinity' and 'three persons, one substance.'",
+        "confidence": "High"
+    },
+    {
+        "id": "E31",
+        "claim_id": "CLM_TR_C3",
+        "node_id": "N_ATHANASIAN_CREED",
+        "relation_type": "Supports",
+        "note": "Detailed articulation of one essence, three persons.",
+        "confidence": "High"
+    },
+    {
+        "id": "E32",
+        "claim_id": "CLM_TR_C4",
+        "node_id": "N_NICAEA_325",
+        "relation_type": "Supports",
+        "note": "Council emphasizes ontological equality despite economic roles.",
+        "confidence": "High"
+    },
+    {
+        "id": "E33",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_JOHN_6_BREAD",
+        "relation_type": "Defines",
+        "note": "'My flesh is true food' — foundational text for Real Presence.",
+        "confidence": "Contested"
+    },
+    {
+        "id": "E34",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_IGNATIUS_EUCHARIST",
+        "relation_type": "Supports",
+        "note": "Early reference to Eucharist as Christ's flesh.",
+        "confidence": "High"
+    },
+    {
+        "id": "E35",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_CYRIL_JERUSALEM",
+        "relation_type": "Supports",
+        "note": "Mystagogical instruction on bread becoming body.",
+        "confidence": "High"
+    },
+    {
+        "id": "E36",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_LUTHER_REAL_PRESENCE",
+        "relation_type": "Supports",
+        "note": "Luther affirms Real Presence against Zwingli.",
+        "confidence": "High"
+    },
+    {
+        "id": "E37",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_ZWINGLI_MEMORIAL",
+        "relation_type": "Challenges",
+        "note": "Zwingli denies physical presence — memorial only.",
+        "confidence": "High"
+    },
+    {
+        "id": "E38",
+        "claim_id": "CLM_EU_C1",
+        "node_id": "N_CALVIN_SPIRITUAL_PRESENCE",
+        "relation_type": "Develops",
+        "note": "Calvin mediates: true presence but spiritual, not physical.",
+        "confidence": "High"
+    },
+    {
+        "id": "E39",
+        "claim_id": "CLM_EU_C2",
+        "node_id": "N_LATERAN_IV",
+        "relation_type": "Defines",
+        "note": "Transubstantiation first officially defined.",
+        "confidence": "High"
+    },
+    {
+        "id": "E40",
+        "claim_id": "CLM_EU_C2",
+        "node_id": "N_AQUINAS_EUCHARIST",
+        "relation_type": "Develops",
+        "note": "Scholastic synthesis using Aristotelian categories.",
+        "confidence": "High"
+    },
+    {
+        "id": "E41",
+        "claim_id": "CLM_EU_C2",
+        "node_id": "N_TRENT_EUCHARIST",
+        "relation_type": "Supports",
+        "note": "Trent reaffirms transubstantiation against Reformation.",
+        "confidence": "High"
+    },
+    {
+        "id": "E42",
+        "claim_id": "CLM_EU_C3",
+        "node_id": "N_1COR_11_SUPPER",
+        "relation_type": "Defines",
+        "note": "'Do this in remembrance' — debates on memorial vs sacrifice.",
+        "confidence": "Contested"
+    },
+    {
+        "id": "E43",
+        "claim_id": "CLM_EU_C3",
+        "node_id": "N_TRENT_EUCHARIST",
+        "relation_type": "Supports",
+        "note": "Trent affirms sacrificial character of Mass.",
+        "confidence": "High"
+    },
+    {
+        "id": "E44",
+        "claim_id": "CLM_EU_C3",
+        "node_id": "N_ZWINGLI_MEMORIAL",
+        "relation_type": "Challenges",
+        "note": "Zwingli denies any sacrificial element — pure memorial.",
+        "confidence": "High"
+    },
+    {
+        "id": "E45",
+        "claim_id": "CLM_EU_C4",
+        "node_id": "N_1COR_11_SUPPER",
+        "relation_type": "Defines",
+        "note": "Warning against eating/drinking 'without discerning the body.'",
+        "confidence": "High"
+    },
+    {
+        "id": "E46",
+        "claim_id": "CLM_EU_C4",
+        "node_id": "N_MARBURG_COLLOQUY",
+        "relation_type": "Develops",
+        "note": "Reformation debates on faith's role in reception.",
+        "confidence": "Medium"
     }
 ]

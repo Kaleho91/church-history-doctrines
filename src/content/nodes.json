@@ -156,5 +156,226 @@
         "citations": [
             "SRC_CCC_VATICAN_ART1"
         ]
+    },
+    {
+        "id": "N_JOHN_1_1",
+        "type": "Scripture",
+        "title": "John 1:1 — 'In the beginning was the Word'",
+        "date_range": "c. 90",
+        "region": "Eastern Mediterranean",
+        "summary": "The prologue of John identifies the Logos (Word) with God and as the agent of creation, foundational for later Trinitarian formulations.",
+        "citations": []
+    },
+    {
+        "id": "N_JOHN_10_30",
+        "type": "Scripture",
+        "title": "John 10:30 — 'I and the Father are one'",
+        "date_range": "c. 90",
+        "region": "Eastern Mediterranean",
+        "summary": "Jesus claims unity with the Father, interpreted variously as functional unity or ontological oneness, central to Christological debates.",
+        "citations": []
+    },
+    {
+        "id": "N_MATT_28_19",
+        "type": "Scripture",
+        "title": "Matthew 28:19 — Baptism 'in the name of the Father, Son, and Holy Spirit'",
+        "date_range": "c. 80-90",
+        "region": "Eastern Mediterranean",
+        "summary": "The Great Commission's triadic formula becomes a foundation for Trinitarian theology and liturgical practice.",
+        "citations": []
+    },
+    {
+        "id": "N_JUSTIN_LOGOS",
+        "type": "Text",
+        "title": "Justin Martyr — Logos theology",
+        "date_range": "c. 150-165",
+        "region": "Rome",
+        "summary": "Justin describes the Son as the Logos who was with God from eternity and through whom God created, adapting philosophical categories for Christian theology.",
+        "citations": [
+            "SRC_JUSTIN_APOL61_LOGOS"
+        ]
+    },
+    {
+        "id": "N_TERTULLIAN_TRINITY",
+        "type": "Text",
+        "title": "Tertullian — First use of 'Trinity' (Trinitas)",
+        "date_range": "c. 213",
+        "region": "North Africa (Carthage)",
+        "summary": "Tertullian coins the term 'Trinity' (Trinitas) and develops the formula 'one substance, three persons' against modalist heresies.",
+        "citations": [
+            "SRC_TERTULLIAN_PRAXEAS"
+        ]
+    },
+    {
+        "id": "N_ARIUS_CONTROVERSY",
+        "type": "Person",
+        "title": "Arius and the Arian Controversy",
+        "date_range": "c. 318-336",
+        "region": "Alexandria, Egypt",
+        "summary": "Arius teaches that the Son is a created being ('there was when he was not'), sparking the controversy that led to the Council of Nicaea.",
+        "citations": [
+            "SRC_ARIUS_ATHANASIUS"
+        ]
+    },
+    {
+        "id": "N_NICAEA_325",
+        "type": "Council",
+        "title": "Council of Nicaea (325) — Homoousios",
+        "date_range": "325",
+        "region": "Nicaea (modern Turkey)",
+        "summary": "The first ecumenical council declares the Son 'homoousios' (of one substance) with the Father, condemning Arianism in the Nicene Creed.",
+        "citations": [
+            "SRC_NICENE_CREED"
+        ]
+    },
+    {
+        "id": "N_CONSTANTINOPLE_381",
+        "type": "Council",
+        "title": "Council of Constantinople (381) — Niceno-Constantinopolitan Creed",
+        "date_range": "381",
+        "region": "Constantinople",
+        "summary": "Expands the Nicene Creed to affirm the full divinity of the Holy Spirit ('who proceeds from the Father') against Macedonianism.",
+        "citations": [
+            "SRC_CONSTANTINOPLE_381"
+        ]
+    },
+    {
+        "id": "N_FILIOQUE_ADDITION",
+        "type": "Event",
+        "title": "Filioque clause added in the West",
+        "date_range": "589-1014",
+        "region": "Western Europe",
+        "summary": "The phrase 'and the Son' (Filioque) is gradually added to the Creed in the West, becoming a major point of division with the East.",
+        "citations": [
+            "SRC_FILIOQUE_CCEL"
+        ]
+    },
+    {
+        "id": "N_ATHANASIAN_CREED",
+        "type": "Confession",
+        "title": "Athanasian Creed — Trinitarian and Christological precision",
+        "date_range": "c. 500",
+        "region": "Western Europe",
+        "summary": "The Quicunque vult articulates the Trinity and Incarnation with detailed precision, widely used in Western liturgy.",
+        "citations": [
+            "SRC_ATHANASIAN_CREED"
+        ]
+    },
+    {
+        "id": "N_JOHN_6_BREAD",
+        "type": "Scripture",
+        "title": "John 6:51-56 — 'My flesh is true food'",
+        "date_range": "c. 90",
+        "region": "Eastern Mediterranean",
+        "summary": "Jesus declares that his flesh is real food and his blood real drink; those who eat and drink have eternal life. Foundational for Eucharistic theology.",
+        "citations": []
+    },
+    {
+        "id": "N_1COR_11_SUPPER",
+        "type": "Scripture",
+        "title": "1 Corinthians 11:23-29 — Institution and worthy reception",
+        "date_range": "c. 55",
+        "region": "Corinth (Greece)",
+        "summary": "Paul recounts the Last Supper tradition and warns against eating and drinking 'without discerning the body.'",
+        "citations": []
+    },
+    {
+        "id": "N_IGNATIUS_EUCHARIST",
+        "type": "Text",
+        "title": "Ignatius of Antioch — Eucharist as 'medicine of immortality'",
+        "date_range": "c. 107",
+        "region": "Antioch / Rome",
+        "summary": "Ignatius describes the Eucharist as the flesh of Christ and 'medicine of immortality,' showing early belief in real presence.",
+        "citations": [
+            "SRC_IGNATIUS_EPHESIANS"
+        ]
+    },
+    {
+        "id": "N_CYRIL_JERUSALEM",
+        "type": "Text",
+        "title": "Cyril of Jerusalem — Mystagogical Catecheses on the Eucharist",
+        "date_range": "c. 350",
+        "region": "Jerusalem",
+        "summary": "Cyril teaches that after the invocation of the Spirit, the bread and wine become the body and blood of Christ.",
+        "citations": [
+            "SRC_CYRIL_MYSTAGOGICAL"
+        ]
+    },
+    {
+        "id": "N_LATERAN_IV",
+        "type": "Council",
+        "title": "Fourth Lateran Council (1215) — Transubstantiation defined",
+        "date_range": "1215",
+        "region": "Rome",
+        "summary": "The Council officially employs 'transubstantiation' to describe the change of bread and wine into Christ's body and blood.",
+        "citations": [
+            "SRC_LATERAN_IV"
+        ]
+    },
+    {
+        "id": "N_AQUINAS_EUCHARIST",
+        "type": "Text",
+        "title": "Thomas Aquinas — Summa on the Eucharist",
+        "date_range": "c. 1265-1274",
+        "region": "Western Europe",
+        "summary": "Aquinas provides the definitive scholastic synthesis of Eucharistic theology, explaining transubstantiation using Aristotelian categories.",
+        "citations": [
+            "SRC_AQUINAS_EUCHARIST"
+        ]
+    },
+    {
+        "id": "N_LUTHER_REAL_PRESENCE",
+        "type": "Confession",
+        "title": "Luther — Real Presence 'in, with, and under'",
+        "date_range": "1520-1529",
+        "region": "German lands",
+        "summary": "Luther rejects transubstantiation but affirms that Christ's body and blood are truly present in, with, and under the bread and wine (sacramental union).",
+        "citations": [
+            "SRC_LUTHER_BABYLONIAN"
+        ]
+    },
+    {
+        "id": "N_ZWINGLI_MEMORIAL",
+        "type": "Person",
+        "title": "Zwingli — The Lord's Supper as memorial",
+        "date_range": "1525-1529",
+        "region": "Zurich (Swiss Confederacy)",
+        "summary": "Zwingli argues that 'This is my body' means 'signifies' — the Supper is a memorial and confession of faith, not a means of grace.",
+        "citations": [
+            "SRC_ZWINGLI_BRITANNICA"
+        ]
+    },
+    {
+        "id": "N_MARBURG_COLLOQUY",
+        "type": "Event",
+        "title": "Marburg Colloquy (1529) — Luther and Zwingli disagree",
+        "date_range": "1529",
+        "region": "Marburg (Germany)",
+        "summary": "Luther and Zwingli fail to reach agreement on the Lord's Supper, dividing the Protestant Reformation on Eucharistic theology.",
+        "citations": [
+            "SRC_MARBURG_SCHAFF"
+        ]
+    },
+    {
+        "id": "N_CALVIN_SPIRITUAL_PRESENCE",
+        "type": "Text",
+        "title": "Calvin — Spiritual presence through the Holy Spirit",
+        "date_range": "1536-1559",
+        "region": "Geneva",
+        "summary": "Calvin mediates between Luther and Zwingli: Christ is truly present in the Supper, but spiritually — believers are lifted to heaven by the Spirit to commune with Christ.",
+        "citations": [
+            "SRC_CALVIN_INSTITUTES"
+        ]
+    },
+    {
+        "id": "N_TRENT_EUCHARIST",
+        "type": "Council",
+        "title": "Council of Trent — Reaffirms transubstantiation",
+        "date_range": "1551",
+        "region": "Trent (Italy)",
+        "summary": "In response to Protestant challenges, Trent reaffirms transubstantiation and the sacrificial character of the Mass.",
+        "citations": [
+            "SRC_TRENT_EUCHARIST"
+        ]
     }
 ]

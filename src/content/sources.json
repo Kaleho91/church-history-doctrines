@@ -4,61 +4,71 @@
         "primary_or_secondary": "Primary",
         "citation_chicago": "Justin Martyr. First Apology, ch. 61. c. 155. Translation in Ante-Nicene Fathers (Roberts-Donaldson).",
         "url": "https://logoslibrary.org/justin/apology1/61.html",
-        "notes": "Regeneration language in baptismal description."
+        "notes": "Regeneration language in baptismal description.",
+        "excerpt": "Then they are brought by us where there is water, and are regenerated in the same manner in which we were ourselves regenerated. For, in the name of God, the Father and Lord of the universe, and of our Savior Jesus Christ, and of the Holy Spirit, they then receive the washing with water.",
+        "significance": "Justin explicitly uses 'regenerated' (ἀναγεννάω) for baptism, showing that 2nd-century Christians understood baptism as effecting new birth, not merely symbolizing it."
     },
     {
         "id": "SRC_JUSTIN_APOL66_CCEL",
         "primary_or_secondary": "Primary",
         "citation_chicago": "Justin Martyr. First Apology, ch. 66. c. 155. Translation in Ante-Nicene Fathers (Roberts-Donaldson).",
         "url": "https://ccel.org/ccel/justin_martyr/first_apology/anf01.viii.ii.lxvi.html",
-        "notes": "Includes ‘washing… remission of sins… regeneration’ phrasing."
+        "notes": "Includes 'washing… remission of sins… regeneration' phrasing."
     },
     {
         "id": "SRC_CYPRIAN_FIDUS_BIBLEHUB",
         "primary_or_secondary": "Primary",
         "citation_chicago": "Cyprian of Carthage. Epistle to Fidus on the Baptism of Infants (Epistle 64 in some editions). c. 252. Translation in Ante-Nicene Fathers.",
         "url": "https://biblehub.com/library/cyprian/the_epistles_of_cyprian/epistle_lviii_to_fidus_on.htm",
-        "notes": "Infant baptism and forgiveness framing."
+        "notes": "Infant baptism and forgiveness framing.",
+        "excerpt": "If remission of sins is granted even to the greatest sinners who have sinned much against God… how much more should an infant not be held back, who, being newly born, has done no sin, except that, born after the flesh of Adam, he has contracted the contagion of the old death.",
+        "significance": "Cyprian assumes baptism grants remission of sins even to infants — evidence that 3rd-century North African Christianity connected baptism directly to forgiveness."
     },
     {
         "id": "SRC_AUGUSTINE_NEWADVENT_MERITS",
         "primary_or_secondary": "Primary",
         "citation_chicago": "Augustine of Hippo. On Merit and the Forgiveness of Sins, and the Baptism of Infants, Book I. c. 412. Translation in Nicene and Post-Nicene Fathers, First Series.",
         "url": "https://www.newadvent.org/fathers/15011.htm",
-        "notes": "Argues infants receive remission of sins in baptism."
+        "notes": "Argues infants receive remission of sins in baptism.",
+        "excerpt": "It is an excellent thing that the Punic Christians call Baptism itself nothing else than 'salvation,' and the sacrament of Christ's Body nothing else than 'life.' Whence does this derive, except from an ancient and, as I suppose, apostolic tradition?",
+        "significance": "Augustine reports that North African Christians called baptism 'salvation' — a striking witness to the sacramental understanding that baptism actually saves."
     },
     {
         "id": "SRC_AQUINAS_NEWADVENT_Q69",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Thomas Aquinas. Summa Theologiae, III, q. 69 (‘The Effects of Baptism’). c. 1265–1274. Translation in New Advent.",
+        "citation_chicago": "Thomas Aquinas. Summa Theologiae, III, q. 69 ('The Effects of Baptism'). c. 1265–1274. Translation in New Advent.",
         "url": "https://www.newadvent.org/summa/4069.htm",
-        "notes": "Uses Titus 3:5 (‘laver of regeneration’) and ties baptism to remission of sins."
+        "notes": "Uses Titus 3:5 ('laver of regeneration') and ties baptism to remission of sins."
     },
     {
         "id": "SRC_LUTHER_SC_CPH",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Martin Luther. Small Catechism (1529), ‘Sacrament of Holy Baptism.’",
+        "citation_chicago": "Martin Luther. Small Catechism (1529), 'Sacrament of Holy Baptism.'",
         "url": "https://catechism.cph.org/en/sacrament-of-holy-baptism-second.html",
-        "notes": "‘Works forgiveness… gives eternal salvation… to all who believe this.’"
+        "notes": "'Works forgiveness… gives eternal salvation… to all who believe this.'",
+        "excerpt": "What benefits does Baptism give? It works forgiveness of sins, rescues from death and the devil, and gives eternal salvation to all who believe this, as the words and promises of God declare.",
+        "significance": "Luther retains strong sacramental language — baptism 'works' forgiveness and 'gives' salvation — while adding 'to all who believe' to emphasize faith's role."
     },
     {
         "id": "SRC_LUTHER_LC_BOC",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Martin Luther. Large Catechism (1529), ‘Holy Baptism.’ In The Book of Concord.",
+        "citation_chicago": "Martin Luther. Large Catechism (1529), 'Holy Baptism.' In The Book of Concord.",
         "url": "https://bookofconcord.org/large-catechism/holy-baptism/",
-        "notes": "Word + water; not ‘mere water’; uses ‘laver of regeneration’ language."
+        "notes": "Word + water; not 'mere water'; uses 'laver of regeneration' language."
     },
     {
         "id": "SRC_WCF28_REFORMEDWIKI",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Westminster Assembly. Westminster Confession of Faith (1646), ch. 28 (‘Of Baptism’).",
+        "citation_chicago": "Westminster Assembly. Westminster Confession of Faith (1646), ch. 28 ('Of Baptism').",
         "url": "https://reformedwiki.com/confessions/westminster/28",
-        "notes": "Efficacy ‘not tied to that moment of time’; grace ‘really exhibited and conferred’ in God’s appointed time."
+        "notes": "Efficacy 'not tied to that moment of time'; grace 'really exhibited and conferred' in God's appointed time.",
+        "excerpt": "The efficacy of Baptism is not tied to that moment of time wherein it is administered; yet, notwithstanding, by the right use of this ordinance, the grace promised is not only offered, but really exhibited, and conferred, by the Holy Ghost.",
+        "significance": "Westminster affirms real grace in baptism — not 'mere sign' — while dissenting from the idea that grace is automatically conferred at the moment of administration."
     },
     {
         "id": "SRC_ZWINGLI_BRITANNICA",
         "primary_or_secondary": "Secondary",
-        "citation_chicago": "Encyclopaedia Britannica. ‘On Baptism’ (work by Zwingli).",
+        "citation_chicago": "Encyclopaedia Britannica. 'On Baptism' (work by Zwingli).",
         "url": "https://www.britannica.com/topic/On-Baptism-by-Zwingli",
         "notes": "Summary of Zwingli emphasizing baptism as covenant sign."
     },
@@ -72,15 +82,133 @@
     {
         "id": "SRC_39ART_ART27_PDF",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Church of England. Thirty-Nine Articles of Religion (1563), Article 27 (‘Of Baptism’).",
+        "citation_chicago": "Church of England. Thirty-Nine Articles of Religion (1563), Article 27 ('Of Baptism').",
         "url": "https://storage2.snappages.site/23JH5R/assets/files/Thirty-Nine-Articles-of-Religion.pdf",
-        "notes": "Includes ‘sign of Regeneration or New-Birth… as by an instrument’ phrasing."
+        "notes": "Includes 'sign of Regeneration or New-Birth… as by an instrument' phrasing."
     },
     {
         "id": "SRC_CCC_VATICAN_ART1",
         "primary_or_secondary": "Primary",
-        "citation_chicago": "Catholic Church. Catechism of the Catholic Church (1992), Part Two, Section Two, Chapter One, Article 1 (‘The Sacrament of Baptism’).",
+        "citation_chicago": "Catholic Church. Catechism of the Catholic Church (1992), Part Two, Section Two, Chapter One, Article 1 ('The Sacrament of Baptism').",
         "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_1.html",
-        "notes": "Baptism as ‘sacrament of regeneration through water and the word.’"
+        "notes": "Baptism as 'sacrament of regeneration through water and the word.'"
+    },
+    {
+        "id": "SRC_TERTULLIAN_PRAXEAS",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Tertullian. Against Praxeas. c. 213. Translation in Ante-Nicene Fathers.",
+        "url": "https://www.newadvent.org/fathers/0317.htm",
+        "notes": "First use of 'Trinity' and 'three persons, one substance' formulation.",
+        "excerpt": "We define that there are two, the Father and the Son, and three with the Holy Spirit, and this number is made by the pattern of salvation... They are three, not in condition, but in degree; not in substance, but in form; not in power, but in aspect; yet of one substance, and of one condition, and of one power.",
+        "significance": "Tertullian coins 'Trinitas' in Latin and introduces the formula 'three persons, one substance' (tres personae, una substantia) — the foundation of Western Trinitarian language."
+    },
+    {
+        "id": "SRC_ARIUS_ATHANASIUS",
+        "primary_or_secondary": "Secondary",
+        "citation_chicago": "Athanasius. Orations Against the Arians. c. 339-345. Summarizes and refutes Arian teaching.",
+        "url": "https://www.newadvent.org/fathers/2816.htm",
+        "notes": "Primary source for understanding Arian controversy from anti-Arian perspective."
+    },
+    {
+        "id": "SRC_NICENE_CREED",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Council of Nicaea. Nicene Creed. 325.",
+        "url": "https://www.ccel.org/creeds/nicene.creed.html",
+        "notes": "Original creed declaring Son 'homoousios' (of one substance) with the Father.",
+        "excerpt": "We believe in one Lord Jesus Christ, the Son of God, begotten of the Father, Light of Light, very God of very God, begotten, not made, being of one substance (ὁμοούσιον) with the Father.",
+        "significance": "The key term 'homoousios' (ὁμοούσιος, 'of one substance') was chosen specifically to exclude Arianism — the Son shares the same divine essence as the Father, not a similar essence."
+    },
+    {
+        "id": "SRC_CONSTANTINOPLE_381",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Council of Constantinople. Niceno-Constantinopolitan Creed. 381.",
+        "url": "https://www.ccel.org/creeds/nicene.creed.html",
+        "notes": "Expanded creed affirming divinity of Holy Spirit.",
+        "excerpt": "And in the Holy Spirit, the Lord and Giver of Life, who proceeds from the Father, who with the Father and Son is worshiped and glorified, who spoke by the prophets.",
+        "significance": "Constantinople 381 expanded the creed to affirm the Spirit's full divinity — 'worshiped and glorified' alongside Father and Son — defeating Macedonianism (Spirit-denial)."
+    },
+    {
+        "id": "SRC_FILIOQUE_CCEL",
+        "primary_or_secondary": "Secondary",
+        "citation_chicago": "Philip Schaff. The Creeds of Christendom. Vol. 2. Discussion of Filioque controversy.",
+        "url": "https://ccel.org/ccel/schaff/creeds2/creeds2.iv.i.html",
+        "notes": "Historical overview of the Filioque addition."
+    },
+    {
+        "id": "SRC_ATHANASIAN_CREED",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Athanasian Creed (Quicunque vult). c. 500.",
+        "url": "https://www.ccel.org/creeds/athanasian.creed.html",
+        "notes": "Detailed Trinitarian and Christological formulations.",
+        "excerpt": "The Father is God, the Son is God, and the Holy Spirit is God; and yet they are not three gods, but one God. So likewise the Father is Lord, the Son Lord, and the Holy Spirit Lord; and yet not three Lords, but one Lord.",
+        "significance": "The Athanasian Creed provides the most detailed articulation of Trinitarian logic: each person is fully God, yet there is only one God — neither tritheism nor modalism."
+    },
+    {
+        "id": "SRC_IGNATIUS_EPHESIANS",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Ignatius of Antioch. Letter to the Ephesians, ch. 20. c. 107. Translation in Ante-Nicene Fathers.",
+        "url": "https://www.newadvent.org/fathers/0104.htm",
+        "notes": "Describes Eucharist as 'medicine of immortality.'",
+        "excerpt": "Breaking one bread, which is the medicine of immortality, the antidote that we should not die, but live forever in Jesus Christ.",
+        "significance": "Ignatius (c. 107 AD) calls the Eucharist 'medicine of immortality' (φάρμακον ἀθανασίας) — one of the earliest witnesses to belief that the Eucharist conveys life, not just symbolizes it."
+    },
+    {
+        "id": "SRC_CYRIL_MYSTAGOGICAL",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Cyril of Jerusalem. Mystagogical Catecheses, Lecture 4. c. 350.",
+        "url": "https://www.newadvent.org/fathers/310104.htm",
+        "notes": "Instruction on the Eucharist as Christ's body and blood.",
+        "excerpt": "Since then He Himself declared and said of the Bread, 'This is My Body,' who shall dare to doubt any longer? And since He has Himself affirmed and said, 'This is My Blood,' who shall ever hesitate?",
+        "significance": "Cyril's catechetical instruction shows that 4th-century Jerusalem taught new Christians to take Christ's words literally — the bread 'is' the body, not 'signifies' it."
+    },
+    {
+        "id": "SRC_LATERAN_IV",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Fourth Lateran Council. Canon 1. 1215.",
+        "url": "https://www.papalencyclicals.net/councils/ecum12-2.htm",
+        "notes": "First official use of 'transubstantiation' terminology.",
+        "excerpt": "His body and blood are truly contained in the sacrament of the altar under the forms of bread and wine, the bread and wine having been transubstantiated (transsubstantiatis), by God's power, into his body and blood.",
+        "significance": "Lateran IV (1215) is the first ecumenical council to use 'transubstantiation' (transsubstantiatio) — the doctrine that the substance changes while the accidents remain."
+    },
+    {
+        "id": "SRC_AQUINAS_EUCHARIST",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Thomas Aquinas. Summa Theologiae, III, qq. 73-83. c. 1265-1274.",
+        "url": "https://www.newadvent.org/summa/4073.htm",
+        "notes": "Comprehensive scholastic treatment of the Eucharist."
+    },
+    {
+        "id": "SRC_LUTHER_BABYLONIAN",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Martin Luther. The Babylonian Captivity of the Church. 1520.",
+        "url": "https://www.lutherdansk.dk/The%20Encyclopaedia/Encyclopaedia%20Main/Encyclopaedia.htm",
+        "notes": "Luther's critique of Catholic sacramental theology, affirms Real Presence.",
+        "excerpt": "I have been hesitant and fearful about the doctrine of transubstantiation... Yet the true body and true blood of Christ are in the true bread and wine, in just the same way... as the orthodox Church has always held.",
+        "significance": "Luther rejects transubstantiation's philosophical mechanism but emphatically affirms Real Presence — Christ's body and blood are truly present 'in, with, and under' the elements."
+    },
+    {
+        "id": "SRC_MARBURG_SCHAFF",
+        "primary_or_secondary": "Secondary",
+        "citation_chicago": "Philip Schaff. History of the Christian Church, Vol. 7. Discussion of Marburg Colloquy.",
+        "url": "https://ccel.org/ccel/schaff/hcc7.vi.iii.xii.html",
+        "notes": "Historical account of Luther-Zwingli disagreement."
+    },
+    {
+        "id": "SRC_CALVIN_INSTITUTES",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "John Calvin. Institutes of the Christian Religion, IV.17. 1559 edition.",
+        "url": "https://ccel.org/ccel/calvin/institutes.vi.xviii.html",
+        "notes": "Calvin's doctrine of spiritual presence in the Lord's Supper.",
+        "excerpt": "I say that Christ, though absent in body, is yet present by his Spirit; that he vivifies our souls by the substance of his flesh and blood... We are lifted up to heaven by faith, and there behold Christ in the glory of his kingdom.",
+        "significance": "Calvin mediates between Luther and Zwingli: Christ is truly present and truly received, but spiritually — the Spirit lifts believers to heaven to commune with the glorified Christ."
+    },
+    {
+        "id": "SRC_TRENT_EUCHARIST",
+        "primary_or_secondary": "Primary",
+        "citation_chicago": "Council of Trent. Session 13, Decree on the Eucharist. 1551.",
+        "url": "https://www.papalencyclicals.net/councils/trent/thirteenth-session.htm",
+        "notes": "Catholic reaffirmation of transubstantiation against Protestant challenges.",
+        "excerpt": "By the consecration of the bread and wine a change is brought about of the whole substance of the bread into the substance of the body of Christ our Lord, and of the whole substance of the wine into the substance of his blood. This change the holy Catholic Church properly and appropriately calls transubstantiation.",
+        "significance": "Trent explicitly reaffirms transubstantiation against Protestant alternatives, defining it as the 'proper and appropriate' term for how Christ becomes present in the Eucharist."
     }
 ]

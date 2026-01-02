@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Crimson_Pro, Lora } from "next/font/google";
+import { Lora, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SourceProvider } from "@/components/SourceContext";
+import { FontSizeControl } from "@/components/FontSizeControl";
 
-const inter = Inter({ subsets: ["latin"], variable: '--font-sans' });
-const crimson = Crimson_Pro({ subsets: ["latin"], variable: '--font-serif' });
-const lora = Lora({ subsets: ["latin"], variable: '--font-serif-alt' });
+const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: '--font-sans' });
+const lora = Lora({ subsets: ["latin"], variable: '--font-serif' });
 
 export const metadata: Metadata = {
-  title: "Church History | Trace the Claims",
-  description: "Trace doctrinal claims through 2,000 years of history.",
+  title: "Church History Explorer",
+  description: "Discover what the early church taught about your faith.",
 };
 
 export default function RootLayout({
@@ -19,11 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${crimson.variable} ${lora.variable} font-sans bg-stone-50 text-slate-900 antialiased`}>
+      <body className={`${sourceSans.variable} ${lora.variable} font-sans bg-[#faf8f5] text-[#3d3529] antialiased`}>
         <SourceProvider>
           {children}
+          <FontSizeControl />
         </SourceProvider>
       </body>
     </html>
   );
 }
+

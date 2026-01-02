@@ -50,5 +50,93 @@
       "Anti-‘opus operatum’ framing: the rite is not a self-acting machine.",
       "Distinguish objective institution (valid baptism) from subjective benefit (received rightly / in faith / appointed time)."
     ]
+  },
+  {
+    "id": "CLM_TR_C1",
+    "cluster": "Trinity",
+    "short_label": "The Son is co-eternal with the Father",
+    "full_statement": "The Son (Logos) is not a creature but eternally begotten of the Father, sharing the same divine essence.",
+    "definition_variants": [
+      "Eternally begotten: the Son has no beginning in time.",
+      "Homoousios: the Son is 'of one substance' with the Father.",
+      "Against Arianism: the Son is not the first-created being."
+    ]
+  },
+  {
+    "id": "CLM_TR_C2",
+    "cluster": "Trinity",
+    "short_label": "The Holy Spirit proceeds from the Father (and the Son)",
+    "full_statement": "The Holy Spirit eternally proceeds from the Father (and, in Western traditions, also from the Son — the Filioque).",
+    "definition_variants": [
+      "Eastern: proceeds from the Father alone (through the Son in economy).",
+      "Western (Filioque): proceeds from the Father and the Son as from one principle.",
+      "Joint procession vs. monarchy of the Father."
+    ]
+  },
+  {
+    "id": "CLM_TR_C3",
+    "cluster": "Trinity",
+    "short_label": "Three distinct persons, one divine essence",
+    "full_statement": "God is one divine essence (ousia) subsisting in three distinct persons (hypostases): Father, Son, and Holy Spirit.",
+    "definition_variants": [
+      "One 'what' (essence/nature), three 'whos' (persons/hypostases).",
+      "Neither modalism (one person in three modes) nor tritheism (three gods).",
+      "Each person is fully God; the persons are distinct but inseparable."
+    ]
+  },
+  {
+    "id": "CLM_TR_C4",
+    "cluster": "Trinity",
+    "short_label": "Economic distinctions vs. ontological equality",
+    "full_statement": "The 'economic' Trinity (how God acts in salvation history) reflects but does not exhaust the 'immanent' Trinity (God's eternal inner life).",
+    "definition_variants": [
+      "Economic roles (Father sends, Son is sent) do not imply ontological inferiority.",
+      "The missions reveal the processions but the persons remain co-equal.",
+      "Subordinationism rejected: functional order does not mean lesser divinity."
+    ]
+  },
+  {
+    "id": "CLM_EU_C1",
+    "cluster": "Eucharist",
+    "short_label": "Christ is truly present in the Eucharist",
+    "full_statement": "In the Eucharist, Christ is truly present — not merely symbolized or remembered — though traditions differ on the mode of presence.",
+    "definition_variants": [
+      "Substantial presence: Christ's body and blood are really present under the forms of bread and wine.",
+      "Sacramental union: Christ's body and blood are present 'in, with, and under' the elements.",
+      "Spiritual presence: Christ is present to faith through the Holy Spirit."
+    ]
+  },
+  {
+    "id": "CLM_EU_C2",
+    "cluster": "Eucharist",
+    "short_label": "The elements become Christ's body and blood",
+    "full_statement": "The bread and wine are transformed (or joined) to become or convey Christ's body and blood, though the nature of this change is debated.",
+    "definition_variants": [
+      "Transubstantiation: the substance changes while accidents remain.",
+      "Sacramental union: the elements remain bread/wine while also conveying Christ's body/blood.",
+      "Symbolic view: the elements represent but do not become the body and blood."
+    ]
+  },
+  {
+    "id": "CLM_EU_C3",
+    "cluster": "Eucharist",
+    "short_label": "The Eucharist is a sacrifice / memorial",
+    "full_statement": "The Eucharist is understood as a sacrifice, a memorial, or both — traditions differ on whether it re-presents Christ's sacrifice or commemorates it.",
+    "definition_variants": [
+      "Propitiatory sacrifice: the Mass makes present Christ's once-for-all sacrifice.",
+      "Sacrifice of thanksgiving: the Eucharist is an offering of praise and self-dedication.",
+      "Memorial (Zwinglian): the Lord's Supper is a remembrance, not a sacrifice."
+    ]
+  },
+  {
+    "id": "CLM_EU_C4",
+    "cluster": "Eucharist",
+    "short_label": "Worthy reception requires faith / preparation",
+    "full_statement": "Receiving the Eucharist worthily requires proper disposition — faith, repentance, or sacramental preparation — with unworthy reception bringing judgment.",
+    "definition_variants": [
+      "Faith as the means of receiving Christ's benefits in the sacrament.",
+      "Sacramental preparation (confession, fasting) as prerequisites.",
+      "Judgment on those who eat and drink 'without discerning the body' (1 Cor 11:29)."
+    ]
   }
 ]

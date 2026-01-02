@@ -4,23 +4,43 @@ import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { TraceNode } from '@/lib/types';
 import { NodeCard } from './NodeCard';
-import { viewportReveal, ease, durations } from '@/lib/motion';
+import { ease, durations } from '@/lib/motion';
 
 /**
  * SYSTEM 3: Historical Trace as a Journey
  * 
+ * Manuscript-inspired timeline with ink gradient and diamond markers.
  * Each node enters gently when it first appears in viewport.
- * The timeline feels like moving forward through time.
  */
 export function TraceRail({ nodes }: { nodes: TraceNode[] }) {
     const shouldReduceMotion = useReducedMotion();
 
-    const getEra = (year: number): { name: string; color: string } => {
-        if (year < 100) return { name: 'Scripture', color: 'bg-purple-50 text-purple-700 border-purple-200' };
-        if (year < 600) return { name: 'Early Church', color: 'bg-amber-50 text-amber-700 border-amber-200' };
-        if (year < 1500) return { name: 'Medieval', color: 'bg-rose-50 text-rose-700 border-rose-200' };
-        if (year < 1650) return { name: 'Reformation', color: 'bg-blue-50 text-blue-700 border-blue-200' };
-        return { name: 'Confessional & Modern', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
+    const getEra = (year: number): { name: string; color: string; textColor: string } => {
+        if (year < 100) return {
+            name: 'Scripture',
+            color: 'bg-stone-100 border-stone-400',
+            textColor: 'text-stone-700'
+        };
+        if (year < 600) return {
+            name: 'Early Church',
+            color: 'bg-amber-50 border-amber-600',
+            textColor: 'text-amber-800'
+        };
+        if (year < 1500) return {
+            name: 'Medieval',
+            color: 'bg-orange-50 border-orange-700',
+            textColor: 'text-orange-900'
+        };
+        if (year < 1650) return {
+            name: 'Reformation',
+            color: 'bg-sky-50 border-sky-600',
+            textColor: 'text-sky-800'
+        };
+        return {
+            name: 'Confessional & Modern',
+            color: 'bg-slate-100 border-slate-500',
+            textColor: 'text-slate-700'
+        };
     };
 
     const formatYear = (dateRange: string): string => {
@@ -33,9 +53,9 @@ export function TraceRail({ nodes }: { nodes: TraceNode[] }) {
 
     return (
         <div className="relative">
-            {/* Continuous timeline line */}
+            {/* Continuous timeline line — ink trace gradient */}
             <div
-                className="absolute left-24 top-0 bottom-0 w-px bg-gradient-to-b from-purple-200 via-amber-200 via-rose-200 to-blue-200"
+                className="absolute left-24 top-0 bottom-0 w-0.5 timeline-ink"
                 style={{ top: '2rem' }}
             />
 
@@ -64,7 +84,13 @@ export function TraceRail({ nodes }: { nodes: TraceNode[] }) {
                                 transition={{ duration: durations.short, ease }}
                                 className="relative mb-6 mt-10 first:mt-0"
                             >
-                                <div className={`inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border ${era.color} ml-14`}>
+                                {/* Era badge with illuminated style */}
+                                <div className={`
+                                    era-badge inline-block px-4 py-1.5 rounded-r-lg 
+                                    text-xs font-bold uppercase tracking-widest 
+                                    ${era.color} ${era.textColor}
+                                    ml-14
+                                `}>
                                     {era.name}
                                 </div>
                             </motion.div>
@@ -79,14 +105,14 @@ export function TraceRail({ nodes }: { nodes: TraceNode[] }) {
                         >
                             {/* Date Label (Left) */}
                             <div className="w-20 flex-shrink-0 text-right pt-5">
-                                <div className="text-sm font-bold text-stone-600 group-hover:text-indigo-600 transition-colors">
+                                <div className="text-sm font-bold text-[var(--text-secondary)] group-hover:text-[var(--accent-primary)] transition-colors">
                                     {formatYear(node.date_range)}
                                 </div>
                             </div>
 
-                            {/* Timeline Dot */}
-                            <div className="relative flex-shrink-0 pt-5">
-                                <div className="w-2.5 h-2.5 rounded-full bg-white border-2 border-stone-300 group-hover:border-indigo-500 group-hover:bg-indigo-100 transition-all" />
+                            {/* Timeline Diamond */}
+                            <div className="relative flex-shrink-0 pt-4">
+                                <div className="timeline-diamond" />
                             </div>
 
                             {/* Node Card (Right) */}
@@ -100,3 +126,4 @@ export function TraceRail({ nodes }: { nodes: TraceNode[] }) {
         </div>
     );
 }
+

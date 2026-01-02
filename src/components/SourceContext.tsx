@@ -1,11 +1,10 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, useRef, ReactNode } from 'react';
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Source } from '@/lib/types';
 import { getSource } from '@/lib/data';
 import { X, ExternalLink, BookOpen, Copy, Check } from 'lucide-react';
-import { transitions, variants } from '@/lib/motion';
 
 interface SourceContextType {
     openSource: (sourceId: string, returnFocusEl?: HTMLElement | null) => void;
@@ -32,7 +31,6 @@ export function SourceProvider({ children }: { children: ReactNode }) {
 
     const closeSource = () => {
         setActiveSource(null);
-        // Return focus to trigger element
         if (returnFocusRef.current) {
             returnFocusRef.current.focus();
             returnFocusRef.current = null;
@@ -57,24 +55,6 @@ export function useSource() {
     return context;
 }
 
-// Helper: Generate BibTeX from source
-function generateBibTeX(source: Source): string {
-    const author = source.citation_chicago.split('.')[0] || 'Unknown';
-    // Extract year from citation string
-    const yearMatch = source.citation_chicago.match(/(\d{3,4})/);
-    const year = yearMatch ? yearMatch[1] : 'n.d.';
-    const key = source.id.toLowerCase().replace(/_/g, '');
-
-    return `@misc{${key},
-  author = {${author}},
-  title = {${source.citation_chicago}},
-  year = {${year}},
-  note = {${source.primary_or_secondary} source},
-  url = {${source.url || ''}}
-}`;
-}
-
-// Copy Button Component
 function CopyButton({ text, label }: { text: string; label: string }) {
     const [copied, setCopied] = useState(false);
 
@@ -91,16 +71,16 @@ function CopyButton({ text, label }: { text: string; label: string }) {
     return (
         <button
             onClick={handleCopy}
-            className="flex items-center gap-2 px-3 py-2 text-xs font-medium bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex items-center gap-2 px-3 py-2 text-sm font-medium bg-[#f5f2ed] hover:bg-[#e8e4dc] text-[#6b6358] rounded-lg transition-colors"
         >
             {copied ? (
                 <>
-                    <Check className="w-3 h-3 text-emerald-600" />
+                    <Check className="w-4 h-4 text-green-600" />
                     Copied!
                 </>
             ) : (
                 <>
-                    <Copy className="w-3 h-3" />
+                    <Copy className="w-4 h-4" />
                     {label}
                 </>
             )}
@@ -108,16 +88,12 @@ function CopyButton({ text, label }: { text: string; label: string }) {
     );
 }
 
-// Citation Drawer Component
 function CitationDrawer({ source, isOpen, onClose }: { source: Source | null, isOpen: boolean, onClose: () => void }) {
-    const shouldReduceMotion = useReducedMotion();
     const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-    // Lock body scroll when open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
-            // Focus close button when opened
             setTimeout(() => closeButtonRef.current?.focus(), 100);
         } else {
             document.body.style.overflow = '';
@@ -127,7 +103,6 @@ function CitationDrawer({ source, isOpen, onClose }: { source: Source | null, is
         };
     }, [isOpen]);
 
-    // ESC key handler
     useEffect(() => {
         const handleEscape = (e: KeyboardEvent) => {
             if (e.key === 'Escape' && isOpen) {
@@ -144,88 +119,84 @@ function CitationDrawer({ source, isOpen, onClose }: { source: Source | null, is
         <AnimatePresence>
             {isOpen && (
                 <>
-                    {/* Backdrop with dim + blur */}
+                    {/* Backdrop */}
                     <motion.div
-                        className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm"
-                        initial={shouldReduceMotion ? undefined : variants.overlay.initial}
-                        animate={shouldReduceMotion ? undefined : variants.overlay.animate}
-                        exit={shouldReduceMotion ? undefined : variants.overlay.exit}
-                        transition={transitions.short}
+                        className="fixed inset-0 z-50 bg-black/30"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
                         onClick={onClose}
-                        aria-hidden="true"
                     />
 
-                    {/* Drawer */}
+                    {/* Drawer - Warm theme */}
                     <motion.div
                         role="dialog"
                         aria-modal="true"
-                        aria-labelledby="citation-title"
-                        className="fixed right-0 top-0 bottom-0 z-50 w-full max-w-md bg-white shadow-2xl overflow-y-auto"
-                        initial={shouldReduceMotion ? undefined : variants.drawerRight.initial}
-                        animate={shouldReduceMotion ? undefined : variants.drawerRight.animate}
-                        exit={shouldReduceMotion ? undefined : variants.drawerRight.exit}
-                        transition={transitions.drawer}
-                        onClick={(e) => e.stopPropagation()}
+                        className="fixed right-0 top-0 bottom-0 z-50 w-full max-w-md bg-[#faf8f5] shadow-2xl overflow-y-auto"
+                        initial={{ x: '100%' }}
+                        animate={{ x: 0 }}
+                        exit={{ x: '100%' }}
+                        transition={{ type: 'spring', damping: 30, stiffness: 300 }}
                     >
                         <div className="p-6">
                             <div className="flex justify-between items-start mb-6">
-                                <span className={`px-2 py-1 rounded text-xs font-bold uppercase tracking-wider ${source.primary_or_secondary === 'Primary'
-                                    ? 'bg-emerald-100 text-emerald-800'
-                                    : 'bg-blue-100 text-blue-800'
+                                <span className={`px-3 py-1 rounded-full text-sm font-medium ${source.primary_or_secondary === 'Primary'
+                                        ? 'bg-[#e8f5e9] text-[#2e7d32]'
+                                        : 'bg-[#e3f2fd] text-[#1565c0]'
                                     }`}>
                                     {source.primary_or_secondary} Source
                                 </span>
                                 <button
                                     ref={closeButtonRef}
                                     onClick={onClose}
-                                    className="p-1 hover:bg-slate-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                                    aria-label="Close citation drawer"
+                                    className="p-2 hover:bg-[#e8e4dc] rounded-full transition-colors"
+                                    aria-label="Close"
                                 >
-                                    <X className="w-6 h-6 text-slate-500" />
+                                    <X className="w-6 h-6 text-[#6b6358]" />
                                 </button>
                             </div>
 
-                            <div className="prose prose-slate max-w-none">
-                                <div id="citation-title" className="mb-6 p-4 bg-slate-50 rounded-lg border border-slate-100 font-serif text-lg leading-relaxed text-slate-800">
+                            {/* Primary text excerpt */}
+                            {source.excerpt && (
+                                <div className="mb-6 bg-white rounded-xl p-5 border border-[#e8e4dc]">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <BookOpen className="w-4 h-4 text-[#8b7355]" />
+                                        <span className="text-sm font-semibold text-[#8b7355]">
+                                            Original Text
+                                        </span>
+                                    </div>
+                                    <blockquote className="font-serif text-xl text-[#3d3529] leading-relaxed italic">
+                                        "{source.excerpt}"
+                                    </blockquote>
+                                    {source.significance && (
+                                        <p className="mt-4 pt-4 border-t border-[#e8e4dc] text-[#6b6358]">
+                                            {source.significance}
+                                        </p>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Citation */}
+                            <div className="mb-6 p-4 bg-white rounded-xl border border-[#e8e4dc]">
+                                <p className="font-serif text-[#3d3529] leading-relaxed">
                                     {source.citation_chicago}
-                                </div>
+                                </p>
+                            </div>
 
-                                {source.notes && (
-                                    <div className="mb-6">
-                                        <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                                            <BookOpen className="w-4 h-4" /> Relevance
-                                        </h4>
-                                        <p className="text-slate-600 leading-relaxed">{source.notes}</p>
-                                    </div>
-                                )}
+                            {source.url && (
+                                <a
+                                    href={source.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-[#8b7355] hover:text-[#3d3529] font-medium mb-6"
+                                >
+                                    Read full source online <ExternalLink className="w-4 h-4" />
+                                </a>
+                            )}
 
-                                {source.url && (
-                                    <a
-                                        href={source.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
-                                    >
-                                        View Source Online <ExternalLink className="w-4 h-4" />
-                                    </a>
-                                )}
-
-                                {/* Copy Citation Buttons */}
-                                <div className="mt-6 pt-6 border-t border-stone-200">
-                                    <h4 className="text-sm font-bold text-stone-400 uppercase tracking-widest mb-3">
-                                        Copy Citation
-                                    </h4>
-                                    <div className="flex gap-2">
-                                        <CopyButton
-                                            text={source.citation_chicago}
-                                            label="Chicago"
-                                        />
-                                        <CopyButton
-                                            text={generateBibTeX(source)}
-                                            label="BibTeX"
-                                        />
-                                    </div>
-                                </div>
+                            <div className="pt-4 border-t border-[#e8e4dc]">
+                                <p className="text-sm text-[#9a9285] mb-3">Copy citation:</p>
+                                <CopyButton text={source.citation_chicago} label="Copy" />
                             </div>
                         </div>
                     </motion.div>

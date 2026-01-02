@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Interpretation, LensType } from '@/lib/types';
 import { CitationList } from './CitationList';
-import { Check, Shield, AlertTriangle } from 'lucide-react';
-import { transitions, perspectiveShift, ease, durations } from '@/lib/motion';
+import { Check, AlertTriangle } from 'lucide-react';
 
 const LENSES: LensType[] = ['Consensus', 'Catholic', 'Orthodox', 'Lutheran', 'Reformed', 'ZwinglianBaptistic'];
 
@@ -18,153 +17,160 @@ const LENS_LABELS: Record<LensType, string> = {
     ZwinglianBaptistic: 'Zwinglian/Baptistic',
 };
 
-const LENS_COLORS: Record<LensType, { border: string; accent: string; badge: string }> = {
-    Consensus: { border: 'border-l-stone-400', accent: 'text-stone-700', badge: 'bg-stone-100 text-stone-700' },
-    Catholic: { border: 'border-l-rose-400', accent: 'text-rose-700', badge: 'bg-rose-50 text-rose-700' },
-    Orthodox: { border: 'border-l-amber-400', accent: 'text-amber-700', badge: 'bg-amber-50 text-amber-700' },
-    Lutheran: { border: 'border-l-purple-400', accent: 'text-purple-700', badge: 'bg-purple-50 text-purple-700' },
-    Reformed: { border: 'border-l-blue-400', accent: 'text-blue-700', badge: 'bg-blue-50 text-blue-700' },
-    ZwinglianBaptistic: { border: 'border-l-emerald-400', accent: 'text-emerald-700', badge: 'bg-emerald-50 text-emerald-700' },
+const LENS_COLORS: Record<LensType, { accent: string; border: string; bg: string }> = {
+    Consensus: { accent: 'text-white', border: 'border-l-white/50', bg: 'bg-white/10' },
+    Catholic: { accent: 'text-rose-400', border: 'border-l-rose-400', bg: 'bg-rose-500/10' },
+    Orthodox: { accent: 'text-amber-400', border: 'border-l-amber-500', bg: 'bg-amber-500/10' },
+    Lutheran: { accent: 'text-purple-400', border: 'border-l-purple-400', bg: 'bg-purple-500/10' },
+    Reformed: { accent: 'text-blue-400', border: 'border-l-blue-400', bg: 'bg-blue-500/10' },
+    ZwinglianBaptistic: { accent: 'text-emerald-400', border: 'border-l-emerald-400', bg: 'bg-emerald-500/10' },
 };
 
-/**
- * PART 3: Interpretation-Level Honesty
- * Explanatory notes derived from lens perspective
- */
 function getLensContextNote(lens: LensType): string {
     const notes: Record<LensType, string> = {
-        Consensus: 'This reading reflects areas of broad agreement across major Christian traditions.',
-        Catholic: 'This reading draws on magisterial teaching and sacramental theology.',
-        Orthodox: 'This reading emphasizes theosis, mystery, and patristic continuity.',
-        Lutheran: 'This reading prioritizes justification by grace through faith and the means of grace.',
-        Reformed: 'This reading emphasizes covenant theology and divine sovereignty in salvation.',
-        ZwinglianBaptistic: "This reading prioritizes memorial understanding and believer's profession.",
+        Consensus: 'Reflects broad agreement across major Christian traditions.',
+        Catholic: 'Draws on magisterial teaching and sacramental theology.',
+        Orthodox: 'Emphasizes theosis, mystery, and patristic continuity.',
+        Lutheran: 'Prioritizes justification by grace through faith.',
+        Reformed: 'Emphasizes covenant theology and divine sovereignty.',
+        ZwinglianBaptistic: "Prioritizes memorial understanding and believer's profession.",
     };
     return notes[lens];
 }
 
+function getDebatedContent(interpretations: Interpretation[]): { high: string; contested: string } {
+    const claimId = interpretations[0]?.claim_id || '';
 
-/**
- * SYSTEM 2: Lens Change = Perspective Shift
- * 
- * Switching lenses should feel like changing vantage points,
- * not toggling data. The panel is a "thinking surface."
- */
+    if (claimId.startsWith('CLM_TR')) {
+        return {
+            high: 'Universal affirmation of Nicene Trinitarianism across major traditions.',
+            contested: 'The Filioque clause and the precise language of eternal procession.',
+        };
+    }
+    if (claimId.startsWith('CLM_EU')) {
+        return {
+            high: 'Early church witness to Christ\'s presence in the Eucharist.',
+            contested: 'Mode of presence: transubstantiation, sacramental union, spiritual, or memorial.',
+        };
+    }
+    return {
+        high: 'Early church usage of "regeneration" vocabulary for baptism.',
+        contested: 'Whether this vocabulary implies mechanical instrumentality vs. covenantal signing.',
+    };
+}
+
 export function InterpretationPanel({ interpretations }: { interpretations: Interpretation[] }) {
     const [activeLens, setActiveLens] = useState<LensType>('Consensus');
     const shouldReduceMotion = useReducedMotion();
 
     const currentInt = interpretations.find(i => i.lens === activeLens) || interpretations[0];
     const lensColor = LENS_COLORS[activeLens];
+    const debatedContent = getDebatedContent(interpretations);
 
     return (
-        <div className="sticky top-24 space-y-5">
-            {/* Lens Toggle - The vantage point selector */}
-            <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden">
-                <div className="bg-stone-50/80 border-b border-stone-100 px-4 py-3">
-                    <h3 className="text-xs font-bold text-stone-500 uppercase tracking-wider flex items-center gap-2">
-                        <Shield className="w-3 h-3" /> Theological Lens
+        <div className="space-y-4">
+            {/* Lens Toggle */}
+            <div className="bg-white/[0.03] rounded-xl border border-white/10 overflow-hidden">
+                <div className="px-4 py-3 border-b border-white/5">
+                    <h3 className="text-xs font-semibold text-white/40 uppercase tracking-wide">
+                        Theological Lens
                     </h3>
                 </div>
-                <div className="p-2 grid grid-cols-2 gap-1 sm:grid-cols-3 relative">
-                    {LENSES.map(lens => (
-                        <button
-                            key={lens}
-                            onClick={() => setActiveLens(lens)}
-                            className={`relative text-xs px-3 py-2.5 rounded-lg font-medium text-left z-10 transition-colors ${activeLens === lens
-                                ? LENS_COLORS[lens].accent
-                                : 'text-stone-500 hover:text-stone-800 hover:bg-stone-50'
-                                }`}
-                            aria-pressed={activeLens === lens}
-                        >
-                            {/* Sliding pill - communicates continuity */}
-                            {activeLens === lens && (
-                                <motion.div
-                                    layoutId="lens-pill"
-                                    className="absolute inset-0 bg-white rounded-lg -z-10 shadow-sm border border-stone-200"
-                                    transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.25, ease }}
-                                />
-                            )}
-                            <span className="flex items-center gap-1.5">
-                                {activeLens === lens && <Check className="w-3 h-3" />}
+
+                <div className="grid grid-cols-3 gap-px bg-white/5">
+                    {LENSES.map(lens => {
+                        const isActive = lens === activeLens;
+                        const hasData = interpretations.some(i => i.lens === lens);
+                        const color = LENS_COLORS[lens];
+
+                        return (
+                            <button
+                                key={lens}
+                                onClick={() => hasData && setActiveLens(lens)}
+                                disabled={!hasData}
+                                className={`
+                                    px-3 py-2 text-xs font-medium transition-all
+                                    ${isActive
+                                        ? `${color.bg} ${color.accent}`
+                                        : hasData
+                                            ? 'bg-[#0a0a0a] text-white/40 hover:bg-white/5 hover:text-white/70'
+                                            : 'bg-[#0a0a0a] text-white/20 cursor-not-allowed'
+                                    }
+                                `}
+                            >
                                 {LENS_LABELS[lens]}
-                            </span>
-                        </button>
-                    ))}
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 
-            {/* Interpretation Content - The thinking surface */}
-            <div className={`bg-white rounded-xl shadow-md border border-stone-200 border-l-4 ${lensColor.border} overflow-hidden`}>
-                <AnimatePresence mode="wait" initial={false}>
+            {/* Perspective Content */}
+            <div className="bg-white/[0.03] rounded-xl border border-white/10 overflow-hidden">
+                <AnimatePresence mode="wait">
                     <motion.div
                         key={activeLens}
-                        initial={shouldReduceMotion ? undefined : perspectiveShift.initial}
-                        animate={shouldReduceMotion ? undefined : perspectiveShift.animate}
-                        exit={shouldReduceMotion ? undefined : perspectiveShift.exit}
-                        transition={{ duration: durations.short, ease }}
-                        className="p-6"
+                        initial={shouldReduceMotion ? false : { opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={shouldReduceMotion ? undefined : { opacity: 0 }}
+                        transition={{ duration: 0.15 }}
+                        className={`p-4 border-l-4 ${lensColor.border}`}
                     >
-                        <div className="mb-5">
-                            <span className={`text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full ${lensColor.badge}`}>
-                                {LENS_LABELS[activeLens]} Perspective
-                            </span>
-                        </div>
+                        <h4 className={`text-sm font-bold ${lensColor.accent} mb-2`}>
+                            {LENS_LABELS[activeLens]} Perspective
+                        </h4>
 
-                        <p className="text-lg text-stone-800 leading-relaxed mb-6 font-serif">
-                            {currentInt?.summary}
+                        <p className="text-sm text-white/60 leading-relaxed mb-3">
+                            {currentInt?.summary || 'No interpretation available for this lens.'}
                         </p>
 
-                        <div className="space-y-4">
-                            {currentInt?.key_points.map((point, i) => (
-                                <div key={i} className="flex gap-3">
-                                    <div className={`mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 ${lensColor.accent.replace('text-', 'bg-')}`} />
-                                    <p className="text-stone-600 text-sm leading-relaxed">
-                                        {point.text}
-                                        <CitationList citationIds={point.citations} />
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
+                        {currentInt?.key_points && currentInt.key_points.length > 0 && (
+                            <ul className="space-y-2 mb-3">
+                                {currentInt.key_points.map((point, i) => (
+                                    <li key={i} className="flex items-start gap-2">
+                                        <Check className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-sm text-white/50">
+                                            {point.text}
+                                            {point.citations.length > 0 && (
+                                                <CitationList citationIds={point.citations} />
+                                            )}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
 
-                        {/* PART 3: Interpretation-Level Contextual Note */}
-                        <div className="mt-6 pt-4 border-t border-stone-100">
-                            <p className="text-xs text-stone-400 italic leading-relaxed">
-                                {getLensContextNote(activeLens)}
-                            </p>
-                        </div>
+                        <p className="text-xs text-white/30 mt-4 pt-3 border-t border-white/5">
+                            {getLensContextNote(activeLens)}
+                        </p>
                     </motion.div>
                 </AnimatePresence>
             </div>
 
-            <DebatePanelBox />
-        </div>
-    );
-}
+            {/* What's Debated */}
+            <div className="bg-amber-500/5 rounded-xl border border-amber-500/20 p-4">
+                <h3 className="text-xs font-semibold text-amber-400 uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                    <AlertTriangle className="w-3 h-3" />
+                    What's Debated
+                </h3>
 
-function DebatePanelBox() {
-    return (
-        <div className="bg-stone-50 rounded-xl border border-stone-200 p-5">
-            <h3 className="text-sm font-bold text-stone-700 uppercase tracking-wider mb-4 flex items-center gap-2">
-                <AlertTriangle className="w-4 h-4 text-amber-500" /> What's Debated
-            </h3>
-
-            <div className="space-y-4">
-                <div>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 mb-1.5">
-                        High Confidence
-                    </span>
-                    <p className="text-sm text-stone-600 leading-relaxed">
-                        Early church usage of "regeneration" vocabulary for baptism.
-                    </p>
-                </div>
-                <div>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-rose-100 text-rose-800 mb-1.5">
-                        Contested
-                    </span>
-                    <p className="text-sm text-stone-600 leading-relaxed">
-                        Whether this vocabulary implies mechanical instrumentality vs. covenantal signing vs. spiritual reception.
-                    </p>
+                <div className="space-y-3">
+                    <div>
+                        <span className="text-xs font-medium text-emerald-400 block mb-1">
+                            High confidence
+                        </span>
+                        <p className="text-sm text-white/50">
+                            {debatedContent.high}
+                        </p>
+                    </div>
+                    <div>
+                        <span className="text-xs font-medium text-rose-400 block mb-1">
+                            Contested
+                        </span>
+                        <p className="text-sm text-white/50">
+                            {debatedContent.contested}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

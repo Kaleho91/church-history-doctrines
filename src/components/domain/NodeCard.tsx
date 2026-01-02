@@ -1,79 +1,87 @@
 'use client';
 
 import React, { useState } from 'react';
-import { TraceNode } from '@/lib/types';
+import { TraceNode, ConfidenceLevel } from '@/lib/types';
 import { CitationList } from './CitationList';
-import { FileText, User, Scroll, Landmark, Calendar } from 'lucide-react';
+import { FileText, User, Scroll, Landmark, Calendar, BookOpen, Church, MapPin } from 'lucide-react';
 
-/**
- * PART 2: Node-Level Confidence
- * 
- * Uses edge confidence to influence styling subtly:
- * - Border opacity varies by confidence
- * - Hover tooltip explains confidence level
- */
-
-const TYPE_ICONS: Record<string, React.ReactNode> = {
-    Scripture: <BookIcon className="w-4 h-4" />,
-    Text: <FileText className="w-4 h-4" />,
-    Person: <User className="w-4 h-4" />,
-    Confession: <Scroll className="w-4 h-4" />,
-    Council: <Landmark className="w-4 h-4" />,
-    Event: <Calendar className="w-4 h-4" />,
+const TYPE_CONFIG: Record<string, { icon: React.ReactNode; color: string; weight: number }> = {
+    Scripture: {
+        icon: <BookOpen className="w-4 h-4" />,
+        color: 'bg-emerald-500/20 text-emerald-400',
+        weight: 5,
+    },
+    Text: {
+        icon: <FileText className="w-4 h-4" />,
+        color: 'bg-white/10 text-white/60',
+        weight: 3,
+    },
+    Person: {
+        icon: <User className="w-4 h-4" />,
+        color: 'bg-amber-500/20 text-amber-400',
+        weight: 3,
+    },
+    Confession: {
+        icon: <Scroll className="w-4 h-4" />,
+        color: 'bg-blue-500/20 text-blue-400',
+        weight: 4,
+    },
+    Council: {
+        icon: <Landmark className="w-4 h-4" />,
+        color: 'bg-purple-500/20 text-purple-400',
+        weight: 5,
+    },
+    Event: {
+        icon: <Calendar className="w-4 h-4" />,
+        color: 'bg-white/10 text-white/50',
+        weight: 2,
+    },
+    'Early church manual': {
+        icon: <Church className="w-4 h-4" />,
+        color: 'bg-amber-500/20 text-amber-400',
+        weight: 4,
+    },
 };
-
-function BookIcon(props: React.SVGProps<SVGSVGElement>) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-        </svg>
-    );
-}
 
 const RELATION_COLORS = {
-    Defines: 'bg-indigo-100 text-indigo-700 border-indigo-200',
-    Supports: 'bg-emerald-100 text-emerald-700 border-emerald-200',
-    Challenges: 'bg-rose-100 text-rose-700 border-rose-200',
-    Develops: 'bg-amber-100 text-amber-700 border-amber-200',
+    Defines: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30',
+    Supports: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+    Challenges: 'bg-rose-500/20 text-rose-400 border-rose-500/30',
+    Develops: 'bg-amber-500/20 text-amber-400 border-amber-500/30',
 };
 
-// Confidence-based styling - subtle variations
-const CONFIDENCE_STYLES = {
+const CONFIDENCE_STYLES: Record<ConfidenceLevel, {
+    borderLeft: string;
+    tooltip: string;
+    dot: string;
+}> = {
     High: {
-        border: 'border-stone-200',
-        opacity: 'opacity-100',
+        borderLeft: 'border-l-4 border-l-emerald-500',
         tooltip: 'High confidence — strong source agreement',
+        dot: 'bg-emerald-500',
     },
     Medium: {
-        border: 'border-stone-200/70',
-        opacity: 'opacity-95',
+        borderLeft: 'border-l-4 border-l-amber-500',
         tooltip: 'Medium confidence — supported by sources, interpreted differently',
+        dot: 'bg-amber-500',
     },
     Contested: {
-        border: 'border-stone-200/50',
-        opacity: 'opacity-90',
+        borderLeft: 'border-l-4 border-l-rose-400',
         tooltip: 'Contested — scholarly debate exists on interpretation',
+        dot: 'bg-rose-400',
     },
 };
 
 export function NodeCard({ node }: { node: TraceNode }) {
     const [showTooltip, setShowTooltip] = useState(false);
 
-    const Icon = TYPE_ICONS[node.type] || <FileText className="w-4 h-4" />;
-    const relationStyle = RELATION_COLORS[node.edge.relation_type] || 'bg-slate-100 text-slate-700';
-    const confidence = node.edge.confidence || 'High';
+    const typeConfig = TYPE_CONFIG[node.type] || {
+        icon: <FileText className="w-4 h-4" />,
+        color: 'bg-white/10 text-white/60',
+        weight: 2
+    };
+    const relationStyle = RELATION_COLORS[node.edge.relation_type as keyof typeof RELATION_COLORS] || 'bg-white/10 text-white/50';
+    const confidence = (node.edge.confidence as ConfidenceLevel) || 'High';
     const confidenceStyle = CONFIDENCE_STYLES[confidence] || CONFIDENCE_STYLES.High;
 
     return (
@@ -82,40 +90,76 @@ export function NodeCard({ node }: { node: TraceNode }) {
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
         >
-            <div className={`bg-white rounded-xl border ${confidenceStyle.border} shadow-sm p-5 hover:shadow-md transition-all ${confidenceStyle.opacity}`}>
+            <div className={`
+                rounded-xl border border-white/10 bg-white/[0.03] p-5 
+                hover:bg-white/[0.05] hover:border-white/20 transition-all
+                ${confidenceStyle.borderLeft}
+            `}>
                 <header className="flex justify-between items-start mb-3">
-                    <div className="flex flex-col">
-                        <div className="flex items-center gap-2 mb-1.5">
+                    <div className="flex flex-col flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1.5 flex-wrap">
                             <span className={`text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded border ${relationStyle}`}>
                                 {node.edge.relation_type}
                             </span>
-                            <span className="text-xs font-medium text-stone-400 flex items-center gap-1">
+                            <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded flex items-center gap-1 ${typeConfig.color}`}>
+                                {typeConfig.icon}
                                 {node.type}
                             </span>
                         </div>
-                        <h3 className="text-lg font-bold text-stone-900 leading-tight">
+                        <h3 className="text-lg font-bold text-white leading-tight">
                             {node.title}
                         </h3>
                     </div>
+
+                    {node.date_range && (
+                        <div className="flex-shrink-0 ml-3">
+                            <span className="text-xs font-mono text-white/40 bg-white/5 px-2 py-1 rounded">
+                                {node.date_range}
+                            </span>
+                        </div>
+                    )}
                 </header>
 
-                <p className="text-stone-600 leading-relaxed text-sm font-serif">
+                {node.region && (
+                    <div className="flex items-center gap-1.5 mb-2 text-xs text-white/30">
+                        <MapPin className="w-3 h-3" />
+                        {node.region}
+                    </div>
+                )}
+
+                <p className="text-white/50 leading-relaxed text-sm">
                     {node.summary}
                     <CitationList citationIds={node.citations} />
                 </p>
 
                 {node.edge.note && (
-                    <div className="mt-3 pt-3 border-t border-stone-100 text-xs text-stone-500 italic flex gap-2">
-                        <span className="font-medium not-italic text-stone-400">Note:</span>
+                    <div className="mt-3 pt-3 border-t border-white/5 text-xs text-white/40 italic flex gap-2">
+                        <span className="font-medium not-italic text-white/30">Note:</span>
                         {node.edge.note}
                     </div>
                 )}
+
+                <div className="mt-3 pt-2 border-t border-white/5 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                        <div className={`w-2 h-2 rounded-full ${confidenceStyle.dot}`} />
+                        <span className="text-[10px] text-white/30">{confidence} confidence</span>
+                    </div>
+                    {typeConfig.weight >= 4 && (
+                        <span className="text-[10px] text-white/30">Primary source</span>
+                    )}
+                </div>
             </div>
 
-            {/* Confidence tooltip - appears on hover */}
             {showTooltip && (
-                <div className="absolute -top-8 left-4 z-20 px-2.5 py-1 bg-stone-800 text-white text-xs rounded shadow-lg whitespace-nowrap pointer-events-none">
+                <div className="
+                    absolute -top-10 left-4 z-20 
+                    px-3 py-1.5 
+                    bg-white text-stone-900 text-xs rounded-lg shadow-lg 
+                    whitespace-nowrap pointer-events-none
+                    animate-in fade-in slide-in-from-bottom-1 duration-150
+                ">
                     {confidenceStyle.tooltip}
+                    <div className="absolute -bottom-1 left-6 w-2 h-2 bg-white rotate-45" />
                 </div>
             )}
         </div>

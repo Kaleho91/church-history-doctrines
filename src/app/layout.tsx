@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SourceProvider } from "@/components/SourceContext";
-import { FontSizeControl } from "@/components/FontSizeControl";
-import AskFAB from "@/components/ask/AskFAB";
+import ClientControls from "@/components/ClientControls";
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: '--font-sans' });
 const lora = Lora({ subsets: ["latin"], variable: '--font-serif' });
@@ -23,8 +22,7 @@ export default function RootLayout({
       <body className={`${sourceSans.variable} ${lora.variable} font-sans bg-[#faf8f5] text-[#3d3529] antialiased`}>
         <SourceProvider>
           {children}
-          <FontSizeControl />
-          <AskFAB />
+          <ClientControls />
         </SourceProvider>
       </body>
     </html>

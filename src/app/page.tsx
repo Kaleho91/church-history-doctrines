@@ -1,29 +1,102 @@
 import Link from 'next/link';
 
+// Custom "Proprietary" Icons with Premium Gradients
+const BaptismIcon = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="dropGradient" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stopColor="#4fc3f7" />
+        <stop offset="50%" stopColor="#29b6f6" />
+        <stop offset="100%" stopColor="#0288d1" />
+      </linearGradient>
+      <radialGradient id="dropShine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(35 35) rotate(90) scale(20)">
+        <stop offset="0%" stopColor="white" stopOpacity="0.9" />
+        <stop offset="100%" stopColor="white" stopOpacity="0" />
+      </radialGradient>
+    </defs>
+    {/* Main Drop Shape */}
+    <path
+      d="M50 5 C50 5 20 45 20 65 C20 81.5685 33.4315 95 50 95 C66.5685 95 80 81.5685 80 65 C80 45 50 5 50 5Z"
+      fill="url(#dropGradient)"
+    />
+    {/* Glossy Reflection */}
+    <path
+      d="M38 25 C38 25 30 50 30 65 C30 70 32 75 35 78"
+      stroke="url(#dropShine)"
+      strokeWidth="4"
+      strokeLinecap="round"
+      opacity="0.8"
+    />
+  </svg>
+);
+
+const TrinityIcon = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="crossGradient" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stopColor="#a78bfa" />
+        <stop offset="100%" stopColor="#7c3aed" />
+      </linearGradient>
+      <linearGradient id="goldAccent" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stopColor="#fcd34d" />
+        <stop offset="100%" stopColor="#d97706" />
+      </linearGradient>
+    </defs>
+    {/* Triquetra / Stylized Cross */}
+    <path
+      d="M50 10 L50 90 M20 40 L80 40"
+      stroke="url(#crossGradient)"
+      strokeWidth="12"
+      strokeLinecap="round"
+    />
+    <circle cx="50" cy="40" r="14" stroke="url(#goldAccent)" strokeWidth="4" fill="none" opacity="0.8" />
+  </svg>
+);
+
+const EucharistIcon = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="breadGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50 50) rotate(90) scale(45)">
+        <stop offset="0%" stopColor="#fde68a" />
+        <stop offset="100%" stopColor="#d97706" />
+      </radialGradient>
+      <linearGradient id="crossImprint" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stopColor="#92400e" />
+        <stop offset="100%" stopColor="#78350f" />
+      </linearGradient>
+    </defs>
+    {/* Host/Bread */}
+    <circle cx="50" cy="50" r="40" fill="url(#breadGradient)" stroke="#b45309" strokeWidth="2" />
+    {/* Imprint */}
+    <path d="M50 25 L50 75 M25 50 L75 50" stroke="url(#crossImprint)" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+    <circle cx="50" cy="50" r="34" stroke="white" strokeWidth="1" opacity="0.3" />
+  </svg>
+);
+
 const TOPICS = [
   {
     slug: 'baptism',
-    emoji: '💧',
+    icon: <BaptismIcon />,
     title: 'Baptism',
     subtitle: 'What does baptism mean? Is it necessary for salvation?',
     sources: 9,
-    color: '#4a90a4',
+    color: '#0288d1',
   },
   {
     slug: 'trinity',
-    emoji: '✝️',
+    icon: <TrinityIcon />,
     title: 'The Trinity',
     subtitle: 'How did the early church understand Father, Son, and Holy Spirit?',
     sources: 8,
-    color: '#7c6a9a',
+    color: '#7c3aed',
   },
   {
     slug: 'communion',
-    emoji: '🍞',
+    icon: <EucharistIcon />,
     title: "The Lord's Supper",
     subtitle: 'What happens at communion? How is Christ present?',
     sources: 7,
-    color: '#8b7355',
+    color: '#d97706',
   },
 ];
 
@@ -101,14 +174,13 @@ export default function Home() {
                 <div className="relative p-8 flex flex-col items-center text-center h-full transition-transform duration-500 ease-out group-hover:-translate-y-1.5">
                   {/* Icon with elegant styling */}
                   <div
-                    className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-inner bg-white"
+                    className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-105 group-hover:rotate-3 bg-white p-3"
                     style={{
-                      color: topic.color,
-                      border: `1px solid ${topic.color}20`,
-                      boxShadow: `inset 0 2px 4px ${topic.color}05`
+                      border: `1px solid ${topic.color}15`,
+                      boxShadow: `0 4px 12px ${topic.color}10`
                     }}
                   >
-                    {topic.emoji}
+                    {topic.icon}
                   </div>
 
                   {/* Title & Sources */}

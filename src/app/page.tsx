@@ -49,12 +49,12 @@ export default function Home() {
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-2 text-[#d4af37]">
               <span className="w-8 h-[1px] bg-[#d4af37]/50" />
-              <span className="text-2xl">✦</span>
+              <span className="text-2xl decorative-star">✦</span>
               <span className="w-8 h-[1px] bg-[#d4af37]/50" />
             </div>
           </div>
 
-          <h2 className="font-serif text-4xl sm:text-5xl text-[#3d3529] mb-4 leading-tight">
+          <h2 className="font-serif text-4xl sm:text-5xl text-[#3d3529] mb-4 leading-tight text-reveal">
             What did the earliest <br className="hidden sm:block" />
             Christians believe?
           </h2>
@@ -99,7 +99,7 @@ export default function Home() {
                 style={{ backgroundColor: topic.color }}
               />
 
-              <div className="ml-0 group-hover:ml-4 bg-gradient-to-br from-white to-[#faf8f5] rounded-2xl p-6 shadow-sm border border-[#e8e4dc] hover:shadow-lg hover:border-[#d4cfc4] transition-all duration-300">
+              <div className="ml-0 group-hover:ml-4 bg-gradient-to-br from-white to-[#faf8f5] rounded-2xl p-6 shadow-sm border border-[#e8e4dc] transition-all duration-300 hover-lift border-glow">
                 <div className="flex items-center gap-5">
                   {/* Icon with colored background */}
                   <div
@@ -152,7 +152,7 @@ export default function Home() {
             </h3>
             <Link
               href="/scripture"
-              className="text-sm text-[#8b7355] hover:text-[#6b5339] font-medium transition-colors"
+              className="text-sm text-[#8b7355] hover:text-[#6b5339] font-medium transition-colors ink-underline"
             >
               View All →
             </Link>

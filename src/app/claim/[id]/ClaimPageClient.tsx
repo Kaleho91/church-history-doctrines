@@ -91,7 +91,7 @@ export default function ClaimPageClient({
                     </span>
 
                     {/* Claim title */}
-                    <h2 className="font-serif text-4xl text-[#3d3529] mb-4 leading-tight">
+                    <h2 className="font-serif text-4xl text-[#3d3529] mb-4 leading-tight text-reveal">
                         {claim.short_label}
                     </h2>
 
@@ -182,7 +182,7 @@ export default function ClaimPageClient({
                                                     </div>
 
                                                     {/* Card */}
-                                                    <div className="flex-1 bg-white rounded-xl p-5 border border-[#e8e4dc] hover:border-[#d4cfc4] hover:shadow-md transition-all group">
+                                                    <div className="flex-1 bg-white rounded-xl p-5 border border-[#e8e4dc] transition-all group hover-lift border-glow">
                                                         {/* Date and type */}
                                                         <div className="flex items-center justify-between mb-2">
                                                             <span className="text-sm font-medium text-[#8b7355]">
@@ -238,7 +238,7 @@ export default function ClaimPageClient({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="lg:sticky lg:top-24"
+                            className="lg:sticky lg:top-24 panel-enter"
                         >
                             <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-4">
                                 Tradition Perspectives
@@ -251,8 +251,8 @@ export default function ClaimPageClient({
                                         key={interp.id}
                                         onClick={() => setActiveLens(interp.lens)}
                                         className={`text-xs px-3 py-1.5 rounded-full font-medium transition-all ${activeLens === interp.lens
-                                                ? 'text-white shadow-md'
-                                                : 'bg-white border border-[#e8e4dc] text-[#6b6358] hover:border-[#d4cfc4]'
+                                            ? 'text-white shadow-md'
+                                            : 'bg-white border border-[#e8e4dc] text-[#6b6358] hover:border-[#d4cfc4]'
                                             }`}
                                         style={{
                                             backgroundColor: activeLens === interp.lens
@@ -273,7 +273,7 @@ export default function ClaimPageClient({
                                         key={interp.id}
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
-                                        className="bg-white rounded-xl p-5 border border-[#e8e4dc]"
+                                        className="bg-white rounded-xl p-5 border border-[#e8e4dc] hover-lift"
                                     >
                                         <div className="flex items-center gap-2 mb-3">
                                             <span
@@ -315,7 +315,7 @@ export default function ClaimPageClient({
                     <div className="flex justify-center mb-4">
                         <div className="flex items-center gap-2 text-[#d4af37]/60">
                             <span className="w-12 h-[1px] bg-current" />
-                            <span className="text-sm">✦</span>
+                            <span className="text-sm decorative-star">✦</span>
                             <span className="w-12 h-[1px] bg-current" />
                         </div>
                     </div>

@@ -81,12 +81,33 @@ function toQuestion(label: string): string {
 // Generate historic summary based on node data
 function generateHistoricSummary(nodes: ReturnType<typeof getTrace>, claimLabel: string): string {
     const supportsCount = nodes.filter(n => n.edge.relation_type === 'Supports' || n.edge.relation_type === 'Defines').length;
-    const divergesCount = nodes.filter(n => n.edge.relation_type === 'Challenges').length;
+    const divergentNodes = nodes.filter(n => n.edge.relation_type === 'Challenges');
+    const divergesCount = divergentNodes.length;
 
     if (divergesCount === 0) {
         return `${claimLabel.replace(/\.$/, '')} has been consistently affirmed across ${supportsCount} historical sources, from the apostolic writings through the church fathers, councils, and confessions. This represents the unified testimony of the historic Church.`;
     } else {
-        return `${claimLabel.replace(/\.$/, '')} was the predominant teaching of the early Church, affirmed by ${supportsCount} sources. However, ${divergesCount} notable divergence${divergesCount > 1 ? 's' : ''} emerged, particularly during the Reformation. The trace below shows this development.`;
+        // Determine what era the divergence(s) came from
+        const getEraFromDate = (dateRange: string | undefined): string => {
+            if (!dateRange) return 'history';
+            // Extract the first year from the date range
+            const match = dateRange.match(/(\d{2,4})/);
+            if (!match) return 'history';
+            const year = parseInt(match[1]);
+            // Handle century formats like "c. 155"
+            const fullYear = year < 100 ? (year < 50 ? 2000 + year : 1900 + year) : year;
+
+            if (fullYear < 500) return 'the Patristic era';
+            if (fullYear < 1500) return 'the Medieval period';
+            if (fullYear < 1650) return 'the Reformation';
+            return 'the modern era';
+        };
+
+        // Get the primary era of divergence
+        const divergentEras = divergentNodes.map(n => getEraFromDate(n.date_range));
+        const primaryEra = divergentEras[0] || 'church history';
+
+        return `${claimLabel.replace(/\.$/, '')} was the predominant teaching of the early Church, affirmed by ${supportsCount} sources. However, ${divergesCount} notable divergence${divergesCount > 1 ? 's' : ''} emerged during ${primaryEra}. The trace below shows this development.`;
     }
 }
 

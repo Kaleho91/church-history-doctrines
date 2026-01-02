@@ -43,8 +43,8 @@ export default function Home() {
       </header>
 
       <main className="max-w-2xl mx-auto px-6 py-12">
-        {/* Hero section - more engaging */}
-        <div className="text-center mb-16">
+        {/* Hero section - animated entrance */}
+        <div className="text-center mb-16 animate-fade-in">
           {/* Decorative element */}
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-2 text-[#d4af37]">
@@ -80,60 +80,72 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Topic cards - more visually interesting */}
+        {/* Topic cards - staggered animation */}
         <div className="space-y-4">
-          <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-4 text-center">
+          <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-4 text-center animate-fade-in">
             Choose a Topic to Explore
           </h3>
 
-          {TOPICS.map((topic) => (
+          {TOPICS.map((topic, index) => (
             <Link
               key={topic.slug}
               href={`/topic/${topic.slug}`}
-              className="group block bg-white rounded-2xl p-6 shadow-sm border border-[#e8e4dc] hover:shadow-lg hover:border-[#d4cfc4] transition-all hover:-translate-y-0.5"
+              className="group relative block animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center gap-5">
-                {/* Icon with colored background */}
-                <div
-                  className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl transition-transform group-hover:scale-110"
-                  style={{ backgroundColor: `${topic.color}15` }}
-                >
-                  {topic.emoji}
-                </div>
+              {/* Decorative accent bar */}
+              <div
+                className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-500"
+                style={{ backgroundColor: topic.color }}
+              />
 
-                <div className="flex-grow">
-                  <div className="flex items-center gap-3 mb-1">
-                    <h3 className="font-serif text-2xl text-[#3d3529]">
-                      {topic.title}
-                    </h3>
-                    <span
-                      className="text-xs font-medium px-2 py-0.5 rounded-full"
-                      style={{
-                        color: topic.color,
-                        backgroundColor: `${topic.color}15`
-                      }}
-                    >
-                      {topic.sources} sources
-                    </span>
+              <div className="ml-0 group-hover:ml-4 bg-gradient-to-br from-white to-[#faf8f5] rounded-2xl p-6 shadow-sm border border-[#e8e4dc] hover:shadow-lg hover:border-[#d4cfc4] transition-all duration-300">
+                <div className="flex items-center gap-5">
+                  {/* Icon with colored background */}
+                  <div
+                    className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl transition-transform group-hover:scale-110 shadow-sm"
+                    style={{
+                      background: `linear-gradient(135deg, ${topic.color}20, ${topic.color}08)`,
+                      border: `1px solid ${topic.color}25`
+                    }}
+                  >
+                    {topic.emoji}
                   </div>
-                  <p className="text-[#6b6358] text-lg">
-                    {topic.subtitle}
-                  </p>
-                </div>
 
-                {/* Arrow indicator */}
-                <div className="text-[#d4cfc4] group-hover:text-[#8b7355] transition-colors">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <div className="flex-grow">
+                    <div className="flex items-center gap-3 mb-1">
+                      <h3 className="font-serif text-2xl text-[#3d3529] group-hover:text-[#2a2520] transition-colors">
+                        {topic.title}
+                      </h3>
+                      <span
+                        className="text-xs font-medium px-2 py-0.5 rounded-full"
+                        style={{
+                          color: topic.color,
+                          backgroundColor: `${topic.color}15`
+                        }}
+                      >
+                        {topic.sources} sources
+                      </span>
+                    </div>
+                    <p className="text-[#6b6358] text-lg leading-relaxed">
+                      {topic.subtitle}
+                    </p>
+                  </div>
+
+                  {/* Arrow indicator */}
+                  <div className="text-[#d4cfc4] group-hover:text-[#8b7355] group-hover:translate-x-1 transition-all duration-300">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        {/* Trust statement */}
-        <div className="mt-16 text-center">
+        {/* Trust statement - animated */}
+        <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '400ms' }}>
           <div className="flex justify-center mb-4">
             <div className="flex items-center gap-2 text-[#d4af37]/60">
               <span className="w-12 h-[1px] bg-current" />

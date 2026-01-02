@@ -296,63 +296,108 @@ export function AnswerPageClient({
                                     </button>
                                 </div>
 
-                                {/* Timeline Panel */}
+                                {/* Timeline Panel - Elegant Historical Trace */}
                                 {activePanel === 'timeline' && (
-                                    <div className="space-y-4">
+                                    <div className="space-y-5">
+                                        {/* Panel intro */}
+                                        <p className="text-sm text-[#9a9285] italic border-b border-[#e8e4dc] pb-4">
+                                            Tracing this doctrine through {nodes.length} historical sources
+                                        </p>
+
                                         {eraGroups.map((group, groupIdx) => {
                                             const isCollapsed = collapsedEras.has(group.era.name);
                                             return (
-                                                <div key={groupIdx} ref={el => { nodeRefs.current[group.era.name] = el; }}>
+                                                <div
+                                                    key={groupIdx}
+                                                    ref={el => { nodeRefs.current[group.era.name] = el; }}
+                                                    className="animate-fade-in-up"
+                                                    style={{ animationDelay: `${groupIdx * 60}ms` }}
+                                                >
+                                                    {/* Era header button */}
                                                     <button
                                                         onClick={() => toggleEra(group.era.name)}
-                                                        className="w-full flex items-center gap-3 py-3 px-4 rounded-xl transition-all hover:shadow-sm"
+                                                        className="w-full flex items-center gap-3 py-3 px-4 rounded-xl transition-all hover:shadow-md group"
                                                         style={{
-                                                            backgroundColor: `${group.era.color}15`,
-                                                            border: `1px solid ${group.era.color}30`
+                                                            background: `linear-gradient(135deg, ${group.era.color}12, ${group.era.color}06)`,
+                                                            border: `1px solid ${group.era.color}25`
                                                         }}
                                                     >
-                                                        <div className="w-3 h-3 rotate-45" style={{ backgroundColor: group.era.color }} />
-                                                        <span className="font-semibold text-[#3d3529] flex-grow text-left">
+                                                        <div
+                                                            className="w-3 h-3 rotate-45 transition-transform group-hover:scale-110"
+                                                            style={{ backgroundColor: group.era.color }}
+                                                        />
+                                                        <span className="font-serif text-lg font-semibold text-[#3d3529] flex-grow text-left">
                                                             {group.era.name}
                                                         </span>
-                                                        <span className="text-base text-[#9a9285]">{group.nodes.length} sources</span>
-                                                        {isCollapsed ? <ChevronRight className="w-4 h-4 text-[#9a9285]" /> : <ChevronDown className="w-4 h-4 text-[#9a9285]" />}
+                                                        <span className="text-base text-[#8b7355]">{group.nodes.length} sources</span>
+                                                        {isCollapsed ? <ChevronRight className="w-5 h-5 text-[#9a9285]" /> : <ChevronDown className="w-5 h-5 text-[#9a9285]" />}
                                                     </button>
 
+                                                    {/* Era nodes */}
                                                     {!isCollapsed && (
-                                                        <div className="ml-4 pl-4 border-l-2 mt-2 space-y-3" style={{ borderColor: `${group.era.color}40` }}>
-                                                            {group.nodes.map((node) => {
+                                                        <div className="mt-3 space-y-4">
+                                                            {group.nodes.map((node, nodeIdx) => {
                                                                 const relation = getRelationStyle(node.relationType);
                                                                 return (
-                                                                    <div key={node.id} className="bg-white rounded-lg p-4 border border-[#e8e4dc]">
-                                                                        <div className="flex items-center justify-between mb-3">
-                                                                            <span className="text-sm font-semibold px-2.5 py-1 rounded-full" style={{ color: relation.color, backgroundColor: relation.bg }}>
-                                                                                {relation.label}
-                                                                            </span>
-                                                                            <span className="text-sm font-medium text-[#8b7355]">{node.date_range}</span>
-                                                                        </div>
-                                                                        <h4 className="font-serif text-lg text-[#3d3529] mb-2">{node.title}</h4>
+                                                                    <div
+                                                                        key={node.id}
+                                                                        className="group relative animate-fade-in-up"
+                                                                        style={{ animationDelay: `${nodeIdx * 50}ms` }}
+                                                                    >
+                                                                        {/* Decorative era-colored accent */}
+                                                                        <div
+                                                                            className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-40 group-hover:opacity-80 transition-opacity duration-500"
+                                                                            style={{
+                                                                                background: `linear-gradient(to bottom, ${group.era.color}, ${group.era.color}30)`
+                                                                            }}
+                                                                        />
 
-                                                                        {/* Scripture text display */}
-                                                                        {node.type === 'Scripture' && node.scriptureText && (
-                                                                            <div className="bg-[#faf8f5] rounded-lg p-4 mb-3 border border-[#e8e4dc]">
-                                                                                <blockquote className="font-serif text-base text-[#3d3529] leading-relaxed italic">
-                                                                                    "{node.scriptureText}"
-                                                                                </blockquote>
-                                                                                {node.scriptureTranslation && (
-                                                                                    <p className="text-xs text-[#9a9285] mt-2">
-                                                                                        — {node.scriptureTranslation}
-                                                                                    </p>
-                                                                                )}
+                                                                        <div className="ml-5 bg-gradient-to-br from-white to-[#faf8f5] rounded-xl p-5 border border-[#e8e4dc] shadow-sm hover:shadow-md transition-all duration-300">
+                                                                            {/* Header row */}
+                                                                            <div className="flex items-center justify-between mb-3">
+                                                                                <span
+                                                                                    className="text-sm font-semibold px-3 py-1 rounded-full"
+                                                                                    style={{ color: relation.color, backgroundColor: relation.bg }}
+                                                                                >
+                                                                                    {relation.label}
+                                                                                </span>
+                                                                                <span className="text-base font-medium text-[#8b7355]">{node.date_range}</span>
                                                                             </div>
-                                                                        )}
 
-                                                                        <p className="text-base text-[#6b6358] leading-relaxed">{node.summary}</p>
-                                                                        {node.source?.url && (
-                                                                            <a href={node.source.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 text-base text-[#8b7355] hover:text-[#3d3529] font-medium transition-colors">
-                                                                                Read source <ExternalLink className="w-4 h-4" />
-                                                                            </a>
-                                                                        )}
+                                                                            {/* Title */}
+                                                                            <h4 className="font-serif text-xl text-[#3d3529] mb-3">{node.title}</h4>
+
+                                                                            {/* Scripture text with elegant styling */}
+                                                                            {node.type === 'Scripture' && node.scriptureText && (
+                                                                                <div className="relative bg-gradient-to-br from-[#faf8f5] to-white rounded-xl p-5 mb-4 border border-[#e8e4dc]">
+                                                                                    <div className="absolute -top-2 left-4 text-4xl text-[#6b8e23]/30 font-serif select-none">"</div>
+                                                                                    <blockquote className="font-serif text-lg text-[#3d3529] leading-relaxed italic pt-2">
+                                                                                        {node.scriptureText}
+                                                                                    </blockquote>
+                                                                                    {node.scriptureTranslation && (
+                                                                                        <div className="flex items-center gap-2 mt-3">
+                                                                                            <div className="w-6 h-[1px] bg-[#6b8e23]/40" />
+                                                                                            <span className="text-sm text-[#8b7355]">{node.scriptureTranslation}</span>
+                                                                                        </div>
+                                                                                    )}
+                                                                                </div>
+                                                                            )}
+
+                                                                            {/* Summary */}
+                                                                            <p className="text-base text-[#5c5346] leading-relaxed">{node.summary}</p>
+
+                                                                            {/* Source link */}
+                                                                            {node.source?.url && (
+                                                                                <a
+                                                                                    href={node.source.url}
+                                                                                    target="_blank"
+                                                                                    rel="noopener noreferrer"
+                                                                                    className="inline-flex items-center gap-2 mt-4 text-base text-[#8b7355] hover:text-[#3d3529] font-medium transition-colors"
+                                                                                >
+                                                                                    Read primary source <ExternalLink className="w-4 h-4" />
+                                                                                </a>
+                                                                            )}
+                                                                        </div>
                                                                     </div>
                                                                 );
                                                             })}
@@ -366,19 +411,18 @@ export function AnswerPageClient({
 
                                 {/* Traditions Panel - Theological Lenses */}
                                 {activePanel === 'traditions' && (
-                                    <div className="space-y-4">
-                                        {/* Summary stats */}
-                                        <div className="flex items-center gap-3 text-sm">
-                                            <span className="text-[#2e7d32] font-semibold">{interpretations.length} perspectives</span>
-                                            <span className="text-[#9a9285]">across major Christian traditions</span>
-                                        </div>
+                                    <div className="space-y-6">
+                                        {/* Panel intro */}
+                                        <p className="text-sm text-[#9a9285] italic border-b border-[#e8e4dc] pb-4">
+                                            {interpretations.length} theological perspectives on this claim
+                                        </p>
 
-                                        {/* Lens tabs */}
-                                        <div className="flex flex-wrap gap-2 pb-3 border-b border-[#e8e4dc]">
+                                        {/* Lens pills with animation */}
+                                        <div className="flex flex-wrap gap-2 animate-fade-in">
                                             {interpretations.map((interp, i) => (
                                                 <span
                                                     key={i}
-                                                    className="px-3 py-1 text-xs font-medium rounded-full"
+                                                    className="px-3 py-1.5 text-sm font-medium rounded-full transition-all hover:scale-105"
                                                     style={{
                                                         backgroundColor: `${getTraditionColor(interp.lens)}15`,
                                                         color: getTraditionColor(interp.lens),
@@ -390,38 +434,59 @@ export function AnswerPageClient({
                                             ))}
                                         </div>
 
-                                        {/* Tradition cards */}
+                                        {/* Tradition cards with elegant styling */}
                                         {interpretations.map((interp, i) => (
                                             <div
                                                 key={i}
-                                                className="bg-white rounded-xl p-4 border border-[#e8e4dc]"
-                                                style={{ borderLeftWidth: '4px', borderLeftColor: getTraditionColor(interp.lens) }}
+                                                className="group relative animate-fade-in-up"
+                                                style={{ animationDelay: `${i * 80}ms` }}
                                             >
-                                                <div className="flex items-center justify-between mb-2">
-                                                    <h4 className="font-semibold text-[#3d3529]">
-                                                        {interp.lens === 'ZwinglianBaptistic' ? 'Baptist / Zwinglian' : interp.lens}
-                                                    </h4>
-                                                    {interp.lens === 'Consensus' && (
-                                                        <span className="text-xs px-2 py-0.5 rounded-full bg-[#2e7d32]/10 text-[#2e7d32]">
-                                                            Ecumenical consensus
-                                                        </span>
+                                                {/* Decorative vertical gradient accent */}
+                                                <div
+                                                    className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                                                    style={{
+                                                        background: `linear-gradient(to bottom, ${getTraditionColor(interp.lens)}, ${getTraditionColor(interp.lens)}40)`
+                                                    }}
+                                                />
+
+                                                <div className="ml-5 bg-gradient-to-br from-white to-[#faf8f5] rounded-xl p-5 border border-[#e8e4dc] shadow-sm hover:shadow-md transition-all duration-300">
+                                                    {/* Header with tradition name and badge */}
+                                                    <div className="flex items-center justify-between mb-3">
+                                                        <h4 className="font-serif text-lg font-semibold text-[#3d3529]">
+                                                            {interp.lens === 'ZwinglianBaptistic' ? 'Baptist / Zwinglian' : interp.lens}
+                                                        </h4>
+                                                        {interp.lens === 'Consensus' && (
+                                                            <span className="text-xs px-2.5 py-1 rounded-full bg-gradient-to-r from-[#2e7d32]/10 to-[#2e7d32]/5 text-[#2e7d32] font-medium">
+                                                                ✦ Ecumenical
+                                                            </span>
+                                                        )}
+                                                    </div>
+
+                                                    {/* Summary with larger text */}
+                                                    <p className="text-base text-[#5c5346] leading-relaxed mb-4">
+                                                        {interp.summary}
+                                                    </p>
+
+                                                    {/* Key points with refined styling */}
+                                                    {interp.keyPoints.length > 0 && (
+                                                        <div className="space-y-2.5 pt-3 border-t border-[#e8e4dc]/60">
+                                                            <span className="text-xs font-semibold text-[#9a9285] uppercase tracking-wide">
+                                                                Key Evidence
+                                                            </span>
+                                                            {interp.keyPoints.map((point, j) => (
+                                                                <div key={j} className="flex gap-3 text-sm group/point">
+                                                                    <span
+                                                                        className="mt-1 w-1.5 h-1.5 rounded-full shrink-0"
+                                                                        style={{ backgroundColor: getTraditionColor(interp.lens) }}
+                                                                    />
+                                                                    <span className="text-[#5c5346] group-hover/point:text-[#3d3529] transition-colors">
+                                                                        {point}
+                                                                    </span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
                                                     )}
                                                 </div>
-
-                                                <p className="text-sm text-[#6b6358] leading-relaxed mb-3">
-                                                    {interp.summary}
-                                                </p>
-
-                                                {interp.keyPoints.length > 0 && (
-                                                    <div className="space-y-2 pt-2 border-t border-[#e8e4dc]">
-                                                        {interp.keyPoints.map((point, j) => (
-                                                            <div key={j} className="flex gap-2 text-sm">
-                                                                <span className="text-[#2e7d32] mt-0.5">✓</span>
-                                                                <span className="text-[#5c5346]">{point}</span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                )}
                                             </div>
                                         ))}
 
@@ -504,40 +569,57 @@ export function AnswerPageClient({
                             </div>
                         </aside>
 
-                        {/* Mobile: Bottom Drawer */}
+                        {/* Mobile: Bottom Drawer - Elegant */}
                         <div className="lg:hidden fixed inset-0 z-40">
-                            <div className="absolute inset-0 bg-black/30" onClick={closePanel} />
-                            <div className="absolute bottom-0 left-0 right-0 max-h-[80vh] bg-white rounded-t-2xl shadow-xl overflow-hidden">
-                                <div className="sticky top-0 bg-white border-b border-[#e8e4dc] p-4 flex items-center justify-between">
-                                    <h2 className="font-serif text-lg text-[#3d3529]">
+                            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={closePanel} />
+                            <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] bg-gradient-to-br from-white to-[#faf8f5] rounded-t-3xl shadow-2xl overflow-hidden animate-slide-in-up">
+                                {/* Drawer handle */}
+                                <div className="flex justify-center pt-3 pb-1">
+                                    <div className="w-10 h-1 rounded-full bg-[#d4cfc4]" />
+                                </div>
+
+                                <div className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-[#e8e4dc] px-5 py-4 flex items-center justify-between">
+                                    <h2 className="font-serif text-xl text-[#3d3529]">
                                         {activePanel === 'timeline' && 'Historical Timeline'}
-                                        {activePanel === 'traditions' && 'Tradition Perspectives'}
+                                        {activePanel === 'traditions' && 'Theological Lenses'}
                                         {activePanel === 'quotes' && 'Key Quotes'}
                                     </h2>
-                                    <button onClick={closePanel} className="p-2 rounded-full hover:bg-[#f5f2ed]">
+                                    <button onClick={closePanel} className="p-2 rounded-full hover:bg-[#f5f2ed] transition-colors">
                                         <X className="w-5 h-5 text-[#6b6358]" />
                                     </button>
                                 </div>
-                                <div className="p-4 overflow-y-auto max-h-[calc(80vh-60px)]">
-                                    {/* Same content as desktop panels */}
+
+                                <div className="p-5 overflow-y-auto max-h-[calc(85vh-80px)]">
+                                    {/* Timeline drawer */}
                                     {activePanel === 'timeline' && (
-                                        <div className="space-y-3">
+                                        <div className="space-y-4">
                                             {eraGroups.map((group, idx) => (
-                                                <div key={idx} className="p-3 rounded-lg" style={{ backgroundColor: `${group.era.color}10` }}>
-                                                    <div className="flex items-center gap-2 mb-2">
-                                                        <div className="w-2.5 h-2.5 rotate-45" style={{ backgroundColor: group.era.color }} />
-                                                        <span className="font-semibold text-[#3d3529]">{group.era.name}</span>
-                                                        <span className="text-xs text-[#9a9285]">({group.nodes.length})</span>
+                                                <div
+                                                    key={idx}
+                                                    className="p-4 rounded-xl"
+                                                    style={{
+                                                        background: `linear-gradient(135deg, ${group.era.color}10, ${group.era.color}05)`,
+                                                        border: `1px solid ${group.era.color}20`
+                                                    }}
+                                                >
+                                                    <div className="flex items-center gap-2 mb-3">
+                                                        <div className="w-3 h-3 rotate-45" style={{ backgroundColor: group.era.color }} />
+                                                        <span className="font-serif text-lg font-semibold text-[#3d3529]">{group.era.name}</span>
+                                                        <span className="text-sm text-[#9a9285]">({group.nodes.length})</span>
                                                     </div>
                                                     {group.nodes.map(node => (
-                                                        <div key={node.id} className="ml-4 py-2 border-l-2 pl-3 mb-2" style={{ borderColor: group.era.color }}>
-                                                            <p className="font-medium text-[#3d3529] text-sm">{node.title}</p>
-                                                            <p className="text-xs text-[#9a9285] mb-1">{node.date_range}</p>
+                                                        <div
+                                                            key={node.id}
+                                                            className="ml-4 py-3 border-l-2 pl-4 mb-2"
+                                                            style={{ borderColor: group.era.color }}
+                                                        >
+                                                            <p className="font-medium text-[#3d3529] text-base">{node.title}</p>
+                                                            <p className="text-sm text-[#8b7355] mb-2">{node.date_range}</p>
                                                             {node.type === 'Scripture' && node.scriptureText && (
-                                                                <div className="bg-[#faf8f5] rounded p-2 mt-1 border border-[#e8e4dc]">
-                                                                    <p className="font-serif text-xs text-[#3d3529] italic">"{node.scriptureText}"</p>
+                                                                <div className="bg-white rounded-lg p-3 mt-2 border border-[#e8e4dc]">
+                                                                    <p className="font-serif text-sm text-[#3d3529] italic">"{node.scriptureText}"</p>
                                                                     {node.scriptureTranslation && (
-                                                                        <p className="text-[10px] text-[#9a9285] mt-1">— {node.scriptureTranslation}</p>
+                                                                        <p className="text-xs text-[#9a9285] mt-1">— {node.scriptureTranslation}</p>
                                                                     )}
                                                                 </div>
                                                             )}
@@ -547,33 +629,47 @@ export function AnswerPageClient({
                                             ))}
                                         </div>
                                     )}
+
+                                    {/* Traditions drawer */}
                                     {activePanel === 'traditions' && (
-                                        <div className="space-y-3">
+                                        <div className="space-y-4">
                                             {interpretations.map((interp, i) => (
                                                 <div
                                                     key={i}
-                                                    className="p-3 bg-white rounded-lg border border-[#e8e4dc]"
-                                                    style={{ borderLeftWidth: '4px', borderLeftColor: getTraditionColor(interp.lens) }}
+                                                    className="relative p-4 bg-white rounded-xl border border-[#e8e4dc]"
                                                 >
-                                                    <h4 className="font-semibold text-sm text-[#3d3529] mb-1">
+                                                    <div
+                                                        className="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl"
+                                                        style={{ backgroundColor: getTraditionColor(interp.lens) }}
+                                                    />
+                                                    <h4 className="font-serif text-lg font-semibold text-[#3d3529] mb-2 pl-2">
                                                         {interp.lens === 'ZwinglianBaptistic' ? 'Baptist / Zwinglian' : interp.lens}
                                                     </h4>
-                                                    <p className="text-xs text-[#6b6358] leading-relaxed">{interp.summary}</p>
+                                                    <p className="text-sm text-[#5c5346] leading-relaxed pl-2">{interp.summary}</p>
                                                 </div>
                                             ))}
                                             {interpretations.length === 0 && variants.map((v, i) => (
-                                                <div key={i} className="p-3 bg-[#f5f2ed] rounded-lg border-l-4 border-[#8b7355]">
-                                                    <p className="text-sm text-[#3d3529]">{v}</p>
+                                                <div key={i} className="p-4 bg-[#f5f2ed] rounded-xl border-l-4 border-[#8b7355]">
+                                                    <p className="text-base text-[#3d3529]">{v}</p>
                                                 </div>
                                             ))}
                                         </div>
                                     )}
+
+                                    {/* Quotes drawer */}
                                     {activePanel === 'quotes' && (
-                                        <div className="space-y-4">
+                                        <div className="space-y-5">
                                             {quotes.map((q, i) => (
-                                                <div key={i} className="p-4 bg-[#faf8f5] rounded-lg border border-[#e8e4dc]">
-                                                    <blockquote className="font-serif text-[#3d3529] mb-2">"{q.excerpt}"</blockquote>
-                                                    <p className="text-xs text-[#8b7355]">— {q.author}, {q.date}</p>
+                                                <div key={i} className="relative">
+                                                    <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-[#d4af37] to-[#d4af37]/30" />
+                                                    <div className="ml-4 p-4 bg-gradient-to-br from-white to-[#faf8f5] rounded-xl border border-[#e8e4dc]">
+                                                        <div className="text-3xl text-[#d4af37]/30 font-serif leading-none mb-1">"</div>
+                                                        <blockquote className="font-serif text-lg text-[#3d3529] leading-relaxed -mt-3">{q.excerpt}</blockquote>
+                                                        <div className="flex items-center gap-2 mt-3">
+                                                            <div className="w-6 h-[1px] bg-[#d4af37]/50" />
+                                                            <span className="text-sm font-medium text-[#5c5346]">{q.author}, {q.date}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>

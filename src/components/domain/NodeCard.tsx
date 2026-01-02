@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { TraceNode, ConfidenceLevel } from '@/lib/types';
 import { CitationList } from './CitationList';
 import { FileText, User, Scroll, Landmark, Calendar, BookOpen, Church, MapPin } from 'lucide-react';
@@ -146,18 +145,9 @@ export function NodeCard({ node }: { node: TraceNode }) {
                         <span className="text-[10px] text-white/30">{confidence} confidence</span>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <Link
-                            href={`/genealogy`}
-                            className="text-[10px] uppercase font-bold tracking-wider text-[#8b7355] hover:text-[#a08a6c] flex items-center gap-1 transition-colors"
-                        >
-                            Trace
-                            <span className="text-xs">→</span>
-                        </Link>
-                        {typeConfig.weight >= 4 && (
-                            <span className="text-[10px] text-white/30">Primary source</span>
-                        )}
-                    </div>
+                    {typeConfig.weight >= 4 && (
+                        <span className="text-[10px] text-white/30">Primary source</span>
+                    )}
                 </div>
             </div>
 

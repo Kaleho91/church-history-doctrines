@@ -3,6 +3,7 @@ import { Lora, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SourceProvider } from "@/components/SourceContext";
 import { FontSizeControl } from "@/components/FontSizeControl";
+import AskFAB from "@/components/ask/AskFAB";
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: '--font-sans' });
 const lora = Lora({ subsets: ["latin"], variable: '--font-serif' });
@@ -23,9 +24,9 @@ export default function RootLayout({
         <SourceProvider>
           {children}
           <FontSizeControl />
+          <AskFAB />
         </SourceProvider>
       </body>
     </html>
   );
 }
-

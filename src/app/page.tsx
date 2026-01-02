@@ -32,7 +32,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Header with subtle accent */}
       <header className="border-b border-[#e8e4dc] bg-[#faf8f5]/95 backdrop-blur-sm">
-        <div className="max-w-2xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <h1 className="font-serif text-xl text-[#5c5346]">
             Church History Explorer
           </h1>
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-2xl mx-auto px-6 py-12">
+      <main className="max-w-6xl mx-auto px-6 py-12">
         {/* Hero section - animated entrance */}
         <div className="text-center mb-16 animate-fade-in">
           {/* Decorative element */}
@@ -80,68 +80,67 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Topic cards - staggered animation */}
+        {/* Topic cards - Grid Layout */}
         <div className="space-y-4">
-          <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-4 text-center animate-fade-in">
+          <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-6 text-center animate-fade-in">
             Choose a Topic to Explore
           </h3>
 
-          {TOPICS.map((topic, index) => (
-            <Link
-              key={topic.slug}
-              href={`/topic/${topic.slug}`}
-              className="group relative block animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {/* Decorative accent bar */}
-              <div
-                className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-500"
-                style={{ backgroundColor: topic.color }}
-              />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {TOPICS.map((topic, index) => (
+              <Link
+                key={topic.slug}
+                href={`/topic/${topic.slug}`}
+                className="group relative block animate-fade-in-up h-full"
+                style={{ animationDelay: `${index * 100 + 150}ms` }}
+              >
+                {/* Card Background & Border */}
+                <div className="absolute inset-0 bg-[#fffaf5] rounded-xl border border-[#e8e4dc] shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition-all duration-500 ease-out group-hover:shadow-[0_12px_24px_rgba(139,115,85,0.1)] group-hover:border-[#d4cfc4] group-hover:-translate-y-1.5" />
 
-              <div className="ml-0 group-hover:ml-4 bg-gradient-to-br from-white to-[#faf8f5] rounded-2xl p-6 shadow-sm border border-[#e8e4dc] transition-all duration-300 hover-lift border-glow">
-                <div className="flex items-center gap-5">
-                  {/* Icon with colored background */}
+                {/* Content Container */}
+                <div className="relative p-8 flex flex-col items-center text-center h-full transition-transform duration-500 ease-out group-hover:-translate-y-1.5">
+                  {/* Icon with elegant styling */}
                   <div
-                    className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl transition-transform group-hover:scale-110 shadow-sm"
+                    className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-inner bg-white"
                     style={{
-                      background: `linear-gradient(135deg, ${topic.color}20, ${topic.color}08)`,
-                      border: `1px solid ${topic.color}25`
+                      color: topic.color,
+                      border: `1px solid ${topic.color}20`,
+                      boxShadow: `inset 0 2px 4px ${topic.color}05`
                     }}
                   >
                     {topic.emoji}
                   </div>
 
-                  <div className="flex-grow">
-                    <div className="flex items-center gap-3 mb-1">
-                      <h3 className="font-serif text-2xl text-[#3d3529] group-hover:text-[#2a2520] transition-colors">
-                        {topic.title}
-                      </h3>
-                      <span
-                        className="text-xs font-medium px-2 py-0.5 rounded-full"
-                        style={{
-                          color: topic.color,
-                          backgroundColor: `${topic.color}15`
-                        }}
-                      >
-                        {topic.sources} sources
-                      </span>
-                    </div>
-                    <p className="text-[#6b6358] text-lg leading-relaxed">
-                      {topic.subtitle}
-                    </p>
-                  </div>
+                  {/* Title & Sources */}
+                  <h3 className="font-serif text-2xl text-[#3d3529] mb-2 group-hover:text-[#8b7355] transition-colors duration-300">
+                    {topic.title}
+                  </h3>
 
-                  {/* Arrow indicator */}
-                  <div className="text-[#d4cfc4] group-hover:text-[#8b7355] group-hover:translate-x-1 transition-all duration-300">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <span className="text-[10px] uppercase tracking-widest text-[#9a9285] mb-4 font-medium border-b border-[#e8e4dc] pb-4 w-12 group-hover:border-[#8b7355]/30 transition-colors">
+                    {topic.sources} Sources
+                  </span>
+
+                  {/* Subtitle */}
+                  <p className="text-[#6b6358] text-sm leading-relaxed mb-8 text-opacity-90">
+                    {topic.subtitle}
+                  </p>
+
+                  {/* Call to Action - anchored at bottom */}
+                  <div className="mt-auto flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#9a9285] group-hover:text-[#8b7355] transition-colors">
+                    Begin Trace
+                    <svg
+                      className="w-3.5 h-3.5 transform transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Scripture Quick Access */}

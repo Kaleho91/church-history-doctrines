@@ -128,6 +128,110 @@
         ]
     },
     {
+        "id": "INT_C2_CONSENSUS",
+        "claim_id": "CLM_BR_C2",
+        "lens": "Consensus",
+        "summary": "Baptism has universally been associated with the washing away of sins, invoking the name of the Trinity for cleansing.",
+        "key_points": [
+            {
+                "text": "The Nicene Creed confesses 'one baptism for the remission of sins.'",
+                "citations": [
+                    "SRC_NICENE_CREED"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C2_CATHOLIC",
+        "claim_id": "CLM_BR_C2",
+        "lens": "Catholic",
+        "summary": "By baptism all sins are forgiven, original sin and all personal sins, as well as all punishment for sin.",
+        "key_points": [
+            {
+                "text": "CCC 1263: Baptism abolishes the guilt of original sin entirely.",
+                "citations": [
+                    "SRC_CCC_VATICAN_ART1"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C2_LUTHERAN",
+        "claim_id": "CLM_BR_C2",
+        "lens": "Lutheran",
+        "summary": "Baptism works forgiveness of sins, delivers from death and the devil, and gives eternal salvation to all who believe this.",
+        "key_points": [
+            {
+                "text": "Luther's Small Catechism clearly links baptism to forgiveness.",
+                "citations": [
+                    "SRC_LUTHER_SC_CPH"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C2_ZB",
+        "claim_id": "CLM_BR_C2",
+        "lens": "ZwinglianBaptistic",
+        "summary": "Baptism symbolizes the washing away of sins that has already occurred through faith in the blood of Christ; water itself does not cleanse.",
+        "key_points": [
+            {
+                "text": "Baptist confessions typically state baptism is a sign of fellowship, not a means of remission.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_C3_CONSENSUS",
+        "claim_id": "CLM_BR_C3",
+        "lens": "Consensus",
+        "summary": "Baptism is the rite of initiation into the visible church, marking the boundary between the world and the community of faith.",
+        "key_points": [
+            {
+                "text": "Acts 2:41 links baptism immediately with being 'added to their number.'",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_C3_REFORMED",
+        "claim_id": "CLM_BR_C3",
+        "lens": "Reformed",
+        "summary": "Baptism is a sign and seal of ingrafting into Christ, of regeneration, of remission of sins, and of giving up unto God.",
+        "key_points": [
+            {
+                "text": "Westminster Confession 28:1 defines it as the solemn admission into the visible Church.",
+                "citations": [
+                    "SRC_WCF28_REFORMEDWIKI"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_C4_CONSENSUS",
+        "claim_id": "CLM_BR_C4",
+        "lens": "Consensus",
+        "summary": "The grace signified by baptism requires faith for its fruitful reception, whether personal faith (adults) or the faith of the church (infants).",
+        "key_points": [
+            {
+                "text": "Augustine argued that the sacrament is valid even if faith is delayed, but fruit requires charity.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_C5_CONSENSUS",
+        "claim_id": "CLM_BR_C5",
+        "lens": "Consensus",
+        "summary": "The church has consistently rejected the idea that the rite works mechanically (magically) apart from God's will and the recipient's disposition.",
+        "key_points": [
+            {
+                "text": "Simony and magical use of sacraments were condemned throughout church history.",
+                "citations": []
+            }
+        ]
+    },
+    {
         "id": "INT_TR_C1_CONSENSUS",
         "claim_id": "CLM_TR_C1",
         "lens": "Consensus",

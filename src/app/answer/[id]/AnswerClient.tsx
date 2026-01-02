@@ -112,6 +112,7 @@ export function AnswerPageClient({
     interpretations,
 }: AnswerPageClientProps) {
     const [activePanel, setActivePanel] = useState<PanelType>(null);
+    const [activeLens, setActiveLens] = useState<string>('Consensus');
     const [collapsedEras, setCollapsedEras] = useState<Set<string>>(new Set());
     const nodeRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
@@ -444,84 +445,73 @@ export function AnswerPageClient({
                                                 {interpretations.length} theological perspectives on this claim
                                             </p>
 
-                                            {/* Lens pills with animation */}
-                                            <div className="flex flex-wrap gap-2 animate-fade-in">
-                                                {interpretations.map((interp, i) => (
-                                                    <span
-                                                        key={i}
-                                                        className="px-3 py-1.5 text-sm font-medium rounded-full transition-all hover:scale-105"
+                                            {/* Lens tabs */}
+                                            <div className="flex flex-wrap gap-2 mb-4 animate-fade-in">
+                                                {interpretations.map((interp) => (
+                                                    <button
+                                                        key={interp.lens}
+                                                        onClick={() => setActiveLens(interp.lens)}
+                                                        className={`text-xs px-3 py-1.5 rounded-full font-medium transition-all ${activeLens === interp.lens
+                                                            ? 'text-white shadow-md'
+                                                            : 'bg-white border border-[#e8e4dc] text-[#6b6358] hover:border-[#d4cfc4]'
+                                                            }`}
                                                         style={{
-                                                            backgroundColor: `${getTraditionColor(interp.lens)}15`,
-                                                            color: getTraditionColor(interp.lens),
-                                                            border: `1px solid ${getTraditionColor(interp.lens)}30`
+                                                            backgroundColor: activeLens === interp.lens
+                                                                ? getTraditionColor(interp.lens)
+                                                                : undefined,
                                                         }}
                                                     >
-                                                        {interp.lens === 'ZwinglianBaptistic' ? 'Baptist/Zwinglian' : interp.lens}
-                                                    </span>
+                                                        {interp.lens === 'ZwinglianBaptistic' ? 'Zwinglian' : interp.lens}
+                                                    </button>
                                                 ))}
                                             </div>
 
-                                            {/* Tradition cards with elegant styling */}
-                                            {interpretations.map((interp, i) => (
-                                                <div
-                                                    key={i}
-                                                    className="group relative animate-fade-in-up"
-                                                    style={{ animationDelay: `${i * 80}ms` }}
-                                                >
-                                                    {/* Decorative vertical gradient accent */}
+                                            {/* Active interpretation */}
+                                            {interpretations
+                                                .filter((i) => i.lens === activeLens)
+                                                .map((interp) => (
                                                     <div
-                                                        className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500"
-                                                        style={{
-                                                            background: `linear-gradient(to bottom, ${getTraditionColor(interp.lens)}, ${getTraditionColor(interp.lens)}40)`
-                                                        }}
-                                                    />
-
-                                                    <div className="ml-5 bg-gradient-to-br from-white to-[#faf8f5] rounded-xl p-5 border border-[#e8e4dc] shadow-sm hover:shadow-md transition-all duration-300">
-                                                        {/* Header with tradition name and badge */}
-                                                        <div className="flex items-center justify-between mb-3">
-                                                            <h4 className="font-serif text-lg font-semibold text-[#3d3529]">
-                                                                {interp.lens === 'ZwinglianBaptistic' ? 'Baptist / Zwinglian' : interp.lens}
-                                                            </h4>
-                                                            {interp.traditionCount && interp.traditionCount > 1 ? (
-                                                                <span className="text-xs px-2.5 py-1 rounded-full bg-gradient-to-r from-[#8b7355]/10 to-[#8b7355]/5 text-[#8b7355] font-medium">
-                                                                    {interp.traditionCount} traditions
+                                                        key={interp.lens}
+                                                        className="group relative animate-fade-in-up"
+                                                    >
+                                                        <div className="bg-white rounded-xl p-5 border border-[#e8e4dc] shadow-sm hover-lift">
+                                                            {/* Header */}
+                                                            <div className="flex items-center gap-2 mb-3">
+                                                                <span
+                                                                    className="w-2 h-2 rounded-full"
+                                                                    style={{ backgroundColor: getTraditionColor(interp.lens) }}
+                                                                />
+                                                                <span className="text-sm font-medium text-[#5c5346]">
+                                                                    {interp.lens === 'ZwinglianBaptistic' ? 'Zwinglian/Baptist' : interp.lens} View
                                                                 </span>
-                                                            ) : interp.lens === 'Consensus' ? (
-                                                                <span className="text-xs px-2.5 py-1 rounded-full bg-gradient-to-r from-[#2e7d32]/10 to-[#2e7d32]/5 text-[#2e7d32] font-medium">
-                                                                    ✦ Ecumenical
-                                                                </span>
-                                                            ) : null}
-                                                        </div>
-
-                                                        {/* Summary with larger text */}
-                                                        <p className="text-base text-[#5c5346] leading-relaxed mb-4">
-                                                            {interp.summary}
-                                                        </p>
-
-                                                        {/* Key points with refined styling */}
-                                                        {interp.keyPoints.length > 0 && (
-                                                            <div className="space-y-2.5 pt-3 border-t border-[#e8e4dc]/60">
-                                                                <span className="text-xs font-semibold text-[#9a9285] uppercase tracking-wide">
-                                                                    Key Evidence
-                                                                </span>
-                                                                {interp.keyPoints.map((point, j) => (
-                                                                    <div key={j} className="flex gap-3 text-sm group/point">
-                                                                        <span
-                                                                            className="mt-1 w-1.5 h-1.5 rounded-full shrink-0"
-                                                                            style={{ backgroundColor: getTraditionColor(interp.lens) }}
-                                                                        />
-                                                                        <span className="text-[#5c5346] group-hover/point:text-[#3d3529] transition-colors">
-                                                                            {point}
-                                                                        </span>
-                                                                    </div>
-                                                                ))}
                                                             </div>
-                                                        )}
-                                                    </div>
-                                                </div>
-                                            ))}
 
-                                            {/* Fallback to variants if no interpretations */}
+                                                            {/* Summary */}
+                                                            <p className="text-base text-[#5c5346] leading-relaxed mb-4">
+                                                                {interp.summary}
+                                                            </p>
+
+                                                            {/* Key Points */}
+                                                            {interp.keyPoints.length > 0 && (
+                                                                <div className="border-t border-[#e8e4dc] pt-4">
+                                                                    <h4 className="text-xs font-semibold text-[#9a9285] uppercase tracking-wide mb-2">
+                                                                        Key Points
+                                                                    </h4>
+                                                                    <ul className="space-y-2">
+                                                                        {interp.keyPoints.map((point, i) => (
+                                                                            <li key={i} className="flex gap-2 text-sm text-[#6b6358]">
+                                                                                <span className="text-[#d4af37]">•</span>
+                                                                                {point}
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    </div>
+                                                ))}
+
+                                            {/* Fallback */}
                                             {interpretations.length === 0 && variants.map((variant, i) => (
                                                 <div key={i} className="p-4 bg-[#f5f2ed] rounded-lg border-l-4 border-[#8b7355]">
                                                     <p className="text-[#3d3529] leading-relaxed">{variant}</p>

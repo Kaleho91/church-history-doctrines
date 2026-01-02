@@ -360,5 +360,119 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "INT_EU_C2_CATHOLIC",
+        "claim_id": "CLM_EU_C2",
+        "lens": "Catholic",
+        "summary": "Through the consecration, the substance of bread and wine becomes the substance of the body and blood of Christ; only the accidents (appearances) remain (Transubstantiation).",
+        "key_points": [
+            {
+                "text": "Council of Trent affirms transubstantiation as the fitting way to describe the real change.",
+                "citations": [
+                    "SRC_TRENT_EUCHARIST"
+                ]
+            },
+            {
+                "text": "Christ is present whole and entire under both species.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C2_LUTHERAN",
+        "claim_id": "CLM_EU_C2",
+        "lens": "Lutheran",
+        "summary": "The true body and blood of Christ are present 'in, with, and under' the bread and wine, which remain bread and wine. This is a sacramental union, not a change of substance.",
+        "key_points": [
+            {
+                "text": "Formula of Concord rejects transubstantiation but affirms the true presence of body/blood.",
+                "citations": [
+                    "SRC_FORMULA_CONCORD"
+                ]
+            },
+            {
+                "text": "The mandate 'This is my body' is taken literally but sacramentally.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C2_ZB",
+        "claim_id": "CLM_EU_C2",
+        "lens": "ZwinglianBaptistic",
+        "summary": "The bread and wine are symbols or memorials that represent Christ's body and blood but do not become them properly; the 'is' means 'signifies'.",
+        "key_points": [
+            {
+                "text": "Zwingli interpreted 'This is my body' as 'This signifies my body' (significatory view).",
+                "citations": [
+                    "SRC_ZWINGLI_BRITANNICA"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C2_REFORMED",
+        "claim_id": "CLM_EU_C2",
+        "lens": "Reformed",
+        "summary": "The elements remain bread and wine, but they are effective signs through which the Spirit lifts the believer to commune with Christ's body and blood in heaven.",
+        "key_points": [
+            {
+                "text": "Calvin affirms a real spiritual participation, not just a bare memorial.",
+                "citations": [
+                    "SRC_CALVIN_INSTITUTES"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C3_CATHOLIC",
+        "claim_id": "CLM_EU_C3",
+        "lens": "Catholic",
+        "summary": "The Mass is a true and proper sacrifice which is propitiatory for the living and the dead; it does not add to the Cross but re-presents its one oblation.",
+        "key_points": [
+            {
+                "text": "Council of Trent defined the Mass as a propitiatory sacrifice.",
+                "citations": [
+                    "SRC_TRENT_EUCHARIST"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C3_PROTESTANT",
+        "claim_id": "CLM_EU_C3",
+        "lens": "Reformed",
+        "summary": "The Eucharist is a 'sacrifice of praise and thanksgiving' (Eucharistia) offered by the church, but not a propitiatory sacrifice for sins.",
+        "key_points": [
+            {
+                "text": "The 39 Articles reject the 'sacrifices of masses' as blasphemous fables.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C4_CONSENSUS",
+        "claim_id": "CLM_EU_C4",
+        "lens": "Consensus",
+        "summary": "All traditions warn serious judgment upon those who receive the sacrament unworthily (without faith, repentance, or understanding).",
+        "key_points": [
+            {
+                "text": "1 Corinthians 11:29 is universally cited as the warning against unworthy reception.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C4_CATHOLIC",
+        "claim_id": "CLM_EU_C4",
+        "lens": "Catholic",
+        "summary": "Worthy reception requires proper disposition, including freedom from mortal sin (confession if necessary) and the Eucharistic fast.",
+        "key_points": [
+            {
+                "text": "Canon law requires the state of grace for reception of Holy Communion.",
+                "citations": []
+            }
+        ]
     }
 ]

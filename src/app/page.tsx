@@ -144,6 +144,50 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Scripture Quick Access */}
+        <div className="mt-16 animate-fade-in" style={{ animationDelay: '350ms' }}>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide">
+              Explore by Scripture
+            </h3>
+            <Link
+              href="/scripture"
+              className="text-sm text-[#8b7355] hover:text-[#6b5339] font-medium transition-colors"
+            >
+              View All →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {[
+              { ref: 'John 3:5', slug: 'john-3-5', claims: 1 },
+              { ref: 'John 1:1', slug: 'john-1-1', claims: 1 },
+              { ref: 'Matthew 28:19', slug: 'matthew-28-19', claims: 1 },
+              { ref: 'John 6:51-56', slug: 'john-6-51-56', claims: 1 },
+              { ref: 'Acts 2:38', slug: 'acts-2-38', claims: 1 },
+              { ref: '1 Peter 3:21', slug: '1-peter-3-21', claims: 1 },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`/scripture/${item.slug}`}
+                className="group bg-white rounded-lg p-3 border border-[#e8e4dc] hover:border-[#d4cfc4] hover:shadow-md transition-all"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">📖</span>
+                  <div>
+                    <span className="text-sm font-medium text-[#3d3529] group-hover:text-[#8b7355] transition-colors block">
+                      {item.ref}
+                    </span>
+                    <span className="text-xs text-[#9a9285]">
+                      {item.claims} {item.claims === 1 ? 'claim' : 'claims'}
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Trust statement - animated */}
         <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '400ms' }}>
           <div className="flex justify-center mb-4">

@@ -61,6 +61,14 @@ export interface Node {
   summary: string;
   citations: string[]; // Source IDs
 
+  // Scripture-specific fields (only for type: "Scripture")
+  scripture_ref?: string;  // e.g., "John 3:5"
+  book?: string;           // e.g., "John"
+  chapter?: number;        // e.g., 3
+  verse_start?: number;    // e.g., 5
+  verse_end?: number;      // e.g., 5
+  verse_text?: string;     // The actual verse text
+
   // Enrichment (optional)
   epistemicWeight?: number;  // 1-5 based on source type
 }

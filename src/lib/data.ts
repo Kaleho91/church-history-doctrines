@@ -79,3 +79,121 @@ export function searchContent(query: string) {
 
     return { claims: matchedClaims, nodes: matchedNodes };
 }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SCRIPTURE LOOKUP FUNCTIONS
+// ═══════════════════════════════════════════════════════════════════════════
+
+/**
+ * Normalize a Scripture reference for URL-safe slug
+ * "John 3:5" -> "john-3-5"
+ * "1 Corinthians 11:23-29" -> "1-corinthians-11-23-29"
+ */
+export function normalizeScriptureRef(ref: string): string {
+    return ref
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/:/g, '-')
+        .replace(/–/g, '-'); // em-dash
+}
+
+/**
+ * Parse a URL slug back to a displayable reference
+ * "john-3-5" -> "John 3:5"
+ */
+export function parseScriptureSlug(slug: string): string {
+    // Handle books with numbers (1-john, 1-corinthians, etc.)
+    const parts = slug.split('-');
+    let result: string[] = [];
+    let i = 0;
+
+    // Check if first part is a number (like "1" in "1-peter")
+    if (/^\d+$/.test(parts[0]) && parts.length > 1) {
+        result.push(parts[0]);
+        i = 1;
+    }
+
+    // Book name - capitalize
+    if (i < parts.length) {
+        result.push(parts[i].charAt(0).toUpperCase() + parts[i].slice(1));
+        i++;
+    }
+
+    // Chapter:verse
+    if (i < parts.length) {
+        const chapter = parts[i];
+        i++;
+        if (i < parts.length) {
+            const verseStart = parts[i];
+            i++;
+            if (i < parts.length) {
+                const verseEnd = parts[i];
+                result.push(`${chapter}:${verseStart}-${verseEnd}`);
+            } else {
+                result.push(`${chapter}:${verseStart}`);
+            }
+        } else {
+            result.push(chapter);
+        }
+    }
+
+    return result.join(' ');
+}
+
+/**
+ * Get all Scripture-type nodes
+ */
+export function getScriptureNodes(): Node[] {
+    return nodes.filter(n => n.type === 'Scripture');
+}
+
+/**
+ * Get a Scripture node by its reference (e.g., "John 3:5" or "john-3-5")
+ */
+export function getScriptureByRef(ref: string): Node | undefined {
+    const normalized = normalizeScriptureRef(ref);
+    return nodes.find(n =>
+        n.type === 'Scripture' &&
+        n.scripture_ref &&
+        normalizeScriptureRef(n.scripture_ref) === normalized
+    );
+}
+
+/**
+ * Get all claims that cite a specific Scripture node
+ */
+export function getClaimsForScripture(nodeId: string): Claim[] {
+    // Find all edges that connect to this node
+    const nodeEdges = edges.filter(e => e.node_id === nodeId);
+
+    // Get unique claim IDs
+    const claimIds = [...new Set(nodeEdges.map(e => e.claim_id))];
+
+    // Return the claims
+    return claimIds.map(id => claims.find(c => c.id === id)).filter((c): c is Claim => !!c);
+}
+
+/**
+ * Get edges for a specific Scripture node (includes relation details)
+ */
+export function getEdgesForNode(nodeId: string): Edge[] {
+    return edges.filter(e => e.node_id === nodeId);
+}
+
+/**
+ * Get Scripture nodes grouped by book
+ */
+export function getScripturesByBook(): Map<string, Node[]> {
+    const scriptureNodes = getScriptureNodes();
+    const byBook = new Map<string, Node[]>();
+
+    for (const node of scriptureNodes) {
+        const book = node.book || 'Unknown';
+        if (!byBook.has(book)) {
+            byBook.set(book, []);
+        }
+        byBook.get(book)!.push(node);
+    }
+
+    return byBook;
+}

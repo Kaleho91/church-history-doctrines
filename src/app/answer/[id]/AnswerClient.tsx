@@ -40,6 +40,8 @@ interface AnswerPageClientProps {
         lens: string;
         summary: string;
         keyPoints: string[];
+        traditionCount?: number;
+        dominantStance?: string;
     }>;
 }
 
@@ -71,6 +73,7 @@ function getTraditionColor(lens: string): string {
         'Consensus': '#6b8e23',
         'Catholic': '#d4af37',
         'Orthodox': '#c9a227',
+        'Coptic': '#8b4513',  // Sienna - distinct but warm
         'Lutheran': '#4a90d9',
         'Reformed': '#2e7d32',
         'ZwinglianBaptistic': '#8b7355',
@@ -479,11 +482,15 @@ export function AnswerPageClient({
                                                             <h4 className="font-serif text-lg font-semibold text-[#3d3529]">
                                                                 {interp.lens === 'ZwinglianBaptistic' ? 'Baptist / Zwinglian' : interp.lens}
                                                             </h4>
-                                                            {interp.lens === 'Consensus' && (
+                                                            {interp.traditionCount && interp.traditionCount > 1 ? (
+                                                                <span className="text-xs px-2.5 py-1 rounded-full bg-gradient-to-r from-[#8b7355]/10 to-[#8b7355]/5 text-[#8b7355] font-medium">
+                                                                    {interp.traditionCount} traditions
+                                                                </span>
+                                                            ) : interp.lens === 'Consensus' ? (
                                                                 <span className="text-xs px-2.5 py-1 rounded-full bg-gradient-to-r from-[#2e7d32]/10 to-[#2e7d32]/5 text-[#2e7d32] font-medium">
                                                                     ✦ Ecumenical
                                                                 </span>
-                                                            )}
+                                                            ) : null}
                                                         </div>
 
                                                         {/* Summary with larger text */}

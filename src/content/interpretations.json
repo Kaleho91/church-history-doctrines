@@ -112,6 +112,22 @@
         ]
     },
     {
+        "id": "INT_C1_COPTIC",
+        "claim_id": "CLM_BR_C1",
+        "lens": "Coptic",
+        "summary": "The Coptic Orthodox Church affirms baptismal regeneration as the door to all other sacraments, conferring new birth through water and the Spirit in continuity with Alexandrian patristic tradition.",
+        "key_points": [
+            {
+                "text": "Cyril of Alexandria taught that baptism truly regenerates through the Spirit.",
+                "citations": []
+            },
+            {
+                "text": "The Coptic baptismal rite includes triple immersion and chrismation as one initiatory act.",
+                "citations": []
+            }
+        ]
+    },
+    {
         "id": "INT_TR_C1_CONSENSUS",
         "claim_id": "CLM_TR_C1",
         "lens": "Consensus",
@@ -126,6 +142,54 @@
                 "citations": [
                     "SRC_NICENE_CREED"
                 ]
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C1_CATHOLIC",
+        "claim_id": "CLM_TR_C1",
+        "lens": "Catholic",
+        "summary": "The Son is eternally begotten of the Father, of one substance (homoousios) with the Father, true God from true God — a dogma defined at Nicaea and reaffirmed throughout Catholic tradition.",
+        "key_points": [
+            {
+                "text": "The Nicene-Constantinopolitan Creed is recited at every Mass affirming the Son's co-eternity.",
+                "citations": []
+            },
+            {
+                "text": "Thomas Aquinas developed the theology of eternal generation in the Summa.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C1_ORTHODOX",
+        "claim_id": "CLM_TR_C1",
+        "lens": "Orthodox",
+        "summary": "The Son is eternally begotten of the Father before all ages, sharing the same divine essence. This was the heart of the Nicene defense against Arianism, championed by Athanasius.",
+        "key_points": [
+            {
+                "text": "Athanasius of Alexandria was the great defender of the Son's co-eternity against Arius.",
+                "citations": []
+            },
+            {
+                "text": "The Orthodox Church maintains the original Nicene Creed without the filioque addition.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C1_COPTIC",
+        "claim_id": "CLM_TR_C1",
+        "lens": "Coptic",
+        "summary": "The Coptic Orthodox Church, heir to Athanasius's legacy, strongly affirms the Son's eternal co-equality with the Father as defined at Nicaea, which Athanasius attended as a deacon.",
+        "key_points": [
+            {
+                "text": "St. Athanasius the Great is a pillar of Coptic identity and Nicene orthodoxy.",
+                "citations": []
+            },
+            {
+                "text": "The Coptic liturgy explicitly confesses the Son as 'of one essence with the Father.'",
+                "citations": []
             }
         ]
     },
@@ -146,6 +210,34 @@
                 "citations": [
                     "SRC_ATHANASIAN_CREED"
                 ]
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C3_ORTHODOX",
+        "claim_id": "CLM_TR_C3",
+        "lens": "Orthodox",
+        "summary": "The Trinity is the central mystery of Orthodox faith: one God in three co-equal, co-eternal Persons. The Cappadocian Fathers provided the classical formulation of this doctrine.",
+        "key_points": [
+            {
+                "text": "The Cappadocians (Basil, Gregory of Nazianzus, Gregory of Nyssa) refined Trinitarian language.",
+                "citations": []
+            },
+            {
+                "text": "Orthodox theology emphasizes the monarchy of the Father as the source of the Trinity.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_TR_C3_COPTIC",
+        "claim_id": "CLM_TR_C3",
+        "lens": "Coptic",
+        "summary": "The Coptic Church confesses the Holy Trinity as one God in three Persons, drawing on the Alexandrian theological tradition of Athanasius and Cyril.",
+        "key_points": [
+            {
+                "text": "Coptic theology emphasizes the unity of the divine essence while distinguishing the three hypostases.",
+                "citations": []
             }
         ]
     },
@@ -187,6 +279,42 @@
                 "citations": [
                     "SRC_AQUINAS_EUCHARIST"
                 ]
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_ORTHODOX",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Orthodox",
+        "summary": "The bread and wine truly become the Body and Blood of Christ through the divine liturgy, particularly the epiclesis (invocation of the Holy Spirit). The mode is a divine mystery not fully defined.",
+        "key_points": [
+            {
+                "text": "The liturgy of St. John Chrysostom includes explicit epiclesis invoking the Spirit to change the gifts.",
+                "citations": []
+            },
+            {
+                "text": "Orthodox theology emphasizes mystery (μυστήριον) over precise philosophical definition.",
+                "citations": []
+            },
+            {
+                "text": "Early fathers like Cyril of Jerusalem describe the change in realistic terms.",
+                "citations": []
+            }
+        ]
+    },
+    {
+        "id": "INT_EU_C1_COPTIC",
+        "claim_id": "CLM_EU_C1",
+        "lens": "Coptic",
+        "summary": "The Coptic Orthodox Church holds that the bread and wine truly become Christ's Body and Blood, maintaining the ancient Alexandrian liturgical tradition with strong patristic foundations.",
+        "key_points": [
+            {
+                "text": "The Liturgy of St. Basil (primary Coptic liturgy) affirms real change through the epiclesis.",
+                "citations": []
+            },
+            {
+                "text": "Cyril of Alexandria, a key Coptic father, wrote extensively on the Eucharist as true communion with Christ.",
+                "citations": []
             }
         ]
     },

@@ -33,6 +33,13 @@ export interface ClaimScoring {
 // CORE ENTITIES
 // ═══════════════════════════════════════════════════════════════════════════
 
+export interface Topic {
+  id: string;
+  label: string;
+  description: string;
+  claims: string[]; // Claim IDs
+}
+
 export interface Claim {
   id: string;
   cluster: string;

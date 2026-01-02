@@ -36,12 +36,21 @@ const SCRIPTURE_TEXTS: Record<string, { text: string; translation: string }> = {
         text: 'I and the Father are one.',
         translation: 'English Standard Version (ESV)',
     },
+    // Eucharist texts - support both verse ranges
+    'John 6:51-56': {
+        text: 'I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh. Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. Whoever feeds on my flesh and drinks my blood has eternal life.',
+        translation: 'English Standard Version (ESV)',
+    },
     'John 6:53-56': {
         text: 'Jesus said to them, "Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day."',
         translation: 'English Standard Version (ESV)',
     },
     '1 Corinthians 11:23-26': {
         text: 'For I received from the Lord what I also delivered to you, that the Lord Jesus on the night when he was betrayed took bread, and when he had given thanks, he broke it, and said, "This is my body, which is for you. Do this in remembrance of me."',
+        translation: 'English Standard Version (ESV)',
+    },
+    '1 Corinthians 11:23-29': {
+        text: 'For I received from the Lord what I also delivered to you, that the Lord Jesus on the night when he was betrayed took bread, and when he had given thanks, he broke it, and said, "This is my body, which is for you. Do this in remembrance of me." In the same way also he took the cup, after supper, saying, "This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me." Whoever, therefore, eats the bread or drinks the cup of the Lord in an unworthy manner will be guilty concerning the body and blood of the Lord.',
         translation: 'English Standard Version (ESV)',
     },
 };

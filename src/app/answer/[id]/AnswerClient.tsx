@@ -315,7 +315,7 @@ export function AnswerPageClient({
                                                         <span className="font-semibold text-[#3d3529] flex-grow text-left">
                                                             {group.era.name}
                                                         </span>
-                                                        <span className="text-sm text-[#9a9285]">{group.nodes.length} sources</span>
+                                                        <span className="text-base text-[#9a9285]">{group.nodes.length} sources</span>
                                                         {isCollapsed ? <ChevronRight className="w-4 h-4 text-[#9a9285]" /> : <ChevronDown className="w-4 h-4 text-[#9a9285]" />}
                                                     </button>
 
@@ -325,11 +325,11 @@ export function AnswerPageClient({
                                                                 const relation = getRelationStyle(node.relationType);
                                                                 return (
                                                                     <div key={node.id} className="bg-white rounded-lg p-4 border border-[#e8e4dc]">
-                                                                        <div className="flex items-center justify-between mb-2">
-                                                                            <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ color: relation.color, backgroundColor: relation.bg }}>
+                                                                        <div className="flex items-center justify-between mb-3">
+                                                                            <span className="text-sm font-semibold px-2.5 py-1 rounded-full" style={{ color: relation.color, backgroundColor: relation.bg }}>
                                                                                 {relation.label}
                                                                             </span>
-                                                                            <span className="text-xs text-[#9a9285]">{node.date_range}</span>
+                                                                            <span className="text-sm font-medium text-[#8b7355]">{node.date_range}</span>
                                                                         </div>
                                                                         <h4 className="font-serif text-lg text-[#3d3529] mb-2">{node.title}</h4>
 
@@ -347,10 +347,10 @@ export function AnswerPageClient({
                                                                             </div>
                                                                         )}
 
-                                                                        <p className="text-sm text-[#6b6358] leading-relaxed">{node.summary}</p>
+                                                                        <p className="text-base text-[#6b6358] leading-relaxed">{node.summary}</p>
                                                                         {node.source?.url && (
-                                                                            <a href={node.source.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-2 text-sm text-[#8b7355] hover:text-[#3d3529]">
-                                                                                Read source <ExternalLink className="w-3 h-3" />
+                                                                            <a href={node.source.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 text-base text-[#8b7355] hover:text-[#3d3529] font-medium transition-colors">
+                                                                                Read source <ExternalLink className="w-4 h-4" />
                                                                             </a>
                                                                         )}
                                                                     </div>
@@ -434,24 +434,69 @@ export function AnswerPageClient({
                                     </div>
                                 )}
 
-                                {/* Quotes Panel */}
+                                {/* Quotes Panel - Elegant & Animated */}
                                 {activePanel === 'quotes' && (
-                                    <div className="space-y-5">
+                                    <div className="space-y-6">
+                                        {/* Panel intro */}
+                                        <p className="text-sm text-[#9a9285] italic border-b border-[#e8e4dc] pb-4">
+                                            Primary sources from {quotes.length} historical witnesses
+                                        </p>
+
                                         {quotes.map((quote, i) => (
-                                            <div key={i} className="relative bg-[#faf8f5] rounded-xl p-5 border border-[#e8e4dc]">
-                                                <div className="absolute -top-2 left-4 text-4xl text-[#d4af37]/40 font-serif">"</div>
-                                                <blockquote className="font-serif text-lg text-[#3d3529] leading-relaxed mb-3 pt-2">
-                                                    {quote.excerpt}
-                                                </blockquote>
-                                                <div className="flex items-center gap-2 text-sm text-[#8b7355] font-medium">
-                                                    <span className="w-6 h-[1px] bg-[#d4af37]/50" />
-                                                    {quote.author}, {quote.date}
+                                            <div
+                                                key={i}
+                                                className="group relative animate-fade-in-up"
+                                                style={{ animationDelay: `${i * 100}ms` }}
+                                            >
+                                                {/* Decorative vertical accent */}
+                                                <div
+                                                    className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-[#d4af37] via-[#8b7355] to-[#d4af37]/30 opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                                                />
+
+                                                <div className="ml-5 bg-gradient-to-br from-[#faf8f5] to-white rounded-xl p-6 border border-[#e8e4dc] shadow-sm hover:shadow-md transition-all duration-300">
+                                                    {/* Opening quote mark */}
+                                                    <div className="text-5xl text-[#d4af37]/30 font-serif leading-none mb-2 select-none">"</div>
+
+                                                    {/* Quote text - larger, more impactful */}
+                                                    <blockquote className="font-serif text-xl text-[#3d3529] leading-relaxed mb-4 -mt-4">
+                                                        {quote.excerpt}
+                                                    </blockquote>
+
+                                                    {/* Attribution with elegant separator */}
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="w-8 h-[2px] bg-gradient-to-r from-[#d4af37] to-transparent rounded-full" />
+                                                        <div className="flex flex-col">
+                                                            <span className="text-base font-semibold text-[#5c5346]">
+                                                                {quote.author}
+                                                            </span>
+                                                            <span className="text-sm text-[#9a9285]">
+                                                                {quote.date}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    {/* Significance - appears on hover with subtle animation */}
+                                                    {quote.significance && (
+                                                        <div className="mt-4 pt-4 border-t border-[#e8e4dc]/60">
+                                                            <p className="text-sm text-[#6b6358] leading-relaxed italic">
+                                                                <span className="text-[#8b7355] font-medium not-italic">Why this matters: </span>
+                                                                {quote.significance}
+                                                            </p>
+                                                        </div>
+                                                    )}
+
+                                                    {/* Source link */}
+                                                    {quote.url && (
+                                                        <a
+                                                            href={quote.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="inline-flex items-center gap-1.5 mt-3 text-sm text-[#8b7355] hover:text-[#3d3529] font-medium transition-colors"
+                                                        >
+                                                            Read full source <ExternalLink className="w-3.5 h-3.5" />
+                                                        </a>
+                                                    )}
                                                 </div>
-                                                {quote.significance && (
-                                                    <p className="mt-3 pt-3 border-t border-[#e8e4dc] text-sm text-[#6b6358]">
-                                                        {quote.significance}
-                                                    </p>
-                                                )}
                                             </div>
                                         ))}
                                     </div>

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Clock, ArrowRight, Layers } from 'lucide-react';
 
 interface Claim {
     id: string;
@@ -18,37 +17,12 @@ interface Doctrine {
     year: string;
 }
 
-function ClaimCardDark({ claim, gradient }: { claim: Claim; gradient: string }) {
-    return (
-        <Link
-            href={`/claim/${claim.id}`}
-            className="group block relative overflow-hidden rounded-2xl bg-white/[0.03] border border-white/10 p-6 hover:bg-white/[0.06] hover:border-white/20 transition-all duration-300"
-        >
-            <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br ${gradient}`} />
-
-            <div className="relative z-10">
-                <div className="flex items-center gap-2 mb-3">
-                    <Layers className="w-4 h-4 text-white/30" />
-                    <span className="text-xs text-white/30 font-medium uppercase tracking-wide">
-                        Claim
-                    </span>
-                </div>
-
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
-                    {claim.short_label}
-                </h3>
-
-                <p className="text-white/40 text-sm leading-relaxed mb-4 line-clamp-2">
-                    {claim.full_statement}
-                </p>
-
-                <div className="flex items-center text-sm font-semibold text-amber-400 group-hover:translate-x-2 transition-transform">
-                    Trace this claim <ArrowRight className="w-4 h-4 ml-1" />
-                </div>
-            </div>
-        </Link>
-    );
-}
+// Doctrine colors for elegant aesthetic
+const DOCTRINE_COLORS: Record<string, string> = {
+    'baptism-new-birth': '#4a90a4',
+    'trinity': '#7c6a9a',
+    'eucharist': '#8b7355',
+};
 
 export function DoctrinePageClient({
     doctrine,
@@ -59,71 +33,136 @@ export function DoctrinePageClient({
     claims: Claim[];
     slug: string
 }) {
+    const accentColor = DOCTRINE_COLORS[slug] || '#8b7355';
+
     return (
-        <div className="min-h-screen bg-[#0a0a0a]">
-            {/* Background decoration */}
-            <div className="fixed inset-0 opacity-30 pointer-events-none">
-                <div className={`absolute inset-0 bg-gradient-to-br ${doctrine.gradient} opacity-5`} />
-                <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
-            </div>
-
-            {/* Navigation */}
-            <nav className="relative z-10 border-b border-white/5 backdrop-blur-xl">
-                <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
-                        <ArrowLeft className="w-5 h-5" />
-                        <span className="text-sm font-medium">All Doctrines</span>
-                    </Link>
-                    <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center">
-                            <Clock className="w-4 h-4 text-white" />
-                        </div>
-                        <span className="font-bold text-lg tracking-tight">Trace</span>
-                    </div>
-                    <div className="w-24" />
-                </div>
-            </nav>
-
-            {/* Hero */}
-            <section className="relative z-10 pt-16 pb-12 px-6">
-                <div className="max-w-4xl mx-auto text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+        <div className="min-h-screen bg-[#faf8f5]">
+            {/* Header */}
+            <header className="border-b border-[#e8e4dc] bg-[#faf8f5]/95 backdrop-blur-sm sticky top-0 z-10">
+                <div className="max-w-4xl mx-auto px-6 py-4 flex items-center gap-4">
+                    <Link
+                        href="/"
+                        className="text-[#9a9285] hover:text-[#6b6358] transition-colors"
                     >
-                        <span className={`inline-block px-4 py-1.5 rounded-full bg-gradient-to-r ${doctrine.gradient} text-white text-xs font-bold mb-6`}>
-                            {doctrine.year} · {claims.length} Claims
-                        </span>
-
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6">
-                            {doctrine.name}
-                        </h1>
-
-                        <p className="text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
-                            {doctrine.description}
-                        </p>
-                    </motion.div>
+                        ← Home
+                    </Link>
+                    <span className="text-[#d4cfc4]">|</span>
+                    <h1 className="font-serif text-xl text-[#5c5346]">
+                        {doctrine.name}
+                    </h1>
                 </div>
-            </section>
+            </header>
 
-            {/* Claims Grid */}
-            <section className="relative z-10 px-6 pb-24">
-                <div className="max-w-5xl mx-auto">
-                    <div className="grid md:grid-cols-2 gap-4">
-                        {claims.map((claim, i) => (
-                            <motion.div
-                                key={claim.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: i * 0.1 }}
-                            >
-                                <ClaimCardDark claim={claim} gradient={doctrine.gradient} />
-                            </motion.div>
-                        ))}
+            <main className="max-w-4xl mx-auto px-6 py-12">
+                {/* Hero */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-center mb-12"
+                >
+                    {/* Decorative accent */}
+                    <div className="flex justify-center mb-4">
+                        <div className="flex items-center gap-2" style={{ color: accentColor }}>
+                            <span className="w-8 h-[1px] bg-current opacity-50" />
+                            <span className="text-sm">✦</span>
+                            <span className="w-8 h-[1px] bg-current opacity-50" />
+                        </div>
                     </div>
+
+                    <span
+                        className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wide mb-4"
+                        style={{
+                            backgroundColor: `${accentColor}15`,
+                            color: accentColor,
+                        }}
+                    >
+                        {doctrine.year} · {claims.length} Claims
+                    </span>
+
+                    <h2 className="font-serif text-4xl sm:text-5xl text-[#3d3529] mb-4">
+                        {doctrine.name}
+                    </h2>
+
+                    <p className="text-xl text-[#6b6358] max-w-2xl mx-auto leading-relaxed">
+                        {doctrine.description}
+                    </p>
+                </motion.div>
+
+                {/* Claims Grid */}
+                <div className="space-y-4">
+                    <h3 className="text-sm font-semibold text-[#9a9285] uppercase tracking-wide mb-4">
+                        Explore Claims
+                    </h3>
+
+                    {claims.map((claim, i) => (
+                        <motion.div
+                            key={claim.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: i * 0.05 }}
+                        >
+                            <Link
+                                href={`/claim/${claim.id}`}
+                                className="group block"
+                            >
+                                <div className="relative">
+                                    {/* Accent bar on hover */}
+                                    <div
+                                        className="absolute left-0 top-0 bottom-0 w-1 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-500"
+                                        style={{
+                                            background: `linear-gradient(to bottom, ${accentColor}, ${accentColor}40)`,
+                                        }}
+                                    />
+
+                                    <div className="ml-0 group-hover:ml-4 bg-white rounded-xl p-5 border border-[#e8e4dc] hover:border-[#d4cfc4] hover:shadow-md transition-all duration-300">
+                                        <div className="flex items-start justify-between gap-4">
+                                            <div className="flex-1">
+                                                <h4 className="font-serif text-xl text-[#3d3529] mb-2 group-hover:text-[#8b7355] transition-colors">
+                                                    {claim.short_label}
+                                                </h4>
+                                                <p className="text-[#6b6358] text-sm leading-relaxed line-clamp-2">
+                                                    {claim.full_statement}
+                                                </p>
+                                            </div>
+
+                                            {/* Arrow */}
+                                            <div className="text-[#d4cfc4] group-hover:text-[#8b7355] group-hover:translate-x-1 transition-all shrink-0 mt-1">
+                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-center gap-2 mt-3 text-sm font-medium" style={{ color: accentColor }}>
+                                            Trace this claim
+                                            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </motion.div>
+                    ))}
                 </div>
-            </section>
+
+                {/* Decorative footer */}
+                <div className="mt-16 text-center">
+                    <div className="flex justify-center mb-4">
+                        <div className="flex items-center gap-2 text-[#d4af37]/60">
+                            <span className="w-12 h-[1px] bg-current" />
+                            <span className="text-sm">✦</span>
+                            <span className="w-12 h-[1px] bg-current" />
+                        </div>
+                    </div>
+                    <p className="text-[#9a9285] text-sm">
+                        Each claim traces through history with primary sources.
+                        <Link href="/scripture" className="text-[#8b7355] hover:underline ml-1">
+                            Explore by Scripture →
+                        </Link>
+                    </p>
+                </div>
+            </main>
         </div>
     );
 }

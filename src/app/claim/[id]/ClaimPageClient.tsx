@@ -63,7 +63,7 @@ export default function ClaimPageClient({
     return (
         <div className="min-h-screen bg-[#faf8f5]">
             {/* Header */}
-            <header className="border-b border-[#e8e4dc] bg-[#faf8f5]/95 backdrop-blur-sm sticky top-0 z-10">
+            <header className="border-b border-[#e8e4dc] bg-[#faf8f5]/95 backdrop-blur-sm sticky top-0 z-50">
                 <div className="max-w-5xl mx-auto px-6 py-4 flex items-center gap-4">
                     <Link
                         href={`/doctrine/${doctrineSlug}`}

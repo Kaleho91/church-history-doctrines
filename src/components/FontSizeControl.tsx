@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-
+import { usePathname } from 'next/navigation';
 const FONT_SIZES = ['normal', 'large', 'larger'] as const;
 type FontSize = typeof FONT_SIZES[number];
 
@@ -14,6 +14,7 @@ const FONT_SIZE_CLASSES: Record<FontSize, string> = {
 export function FontSizeControl() {
     const [fontSize, setFontSize] = useState<FontSize>('normal');
     const [mounted, setMounted] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         setMounted(true);
@@ -44,7 +45,8 @@ export function FontSizeControl() {
         localStorage.setItem('fontSize', nextSize);
     }, [fontSize]);
 
-    if (!mounted) return null;
+    // Don't render on Ask page - it has its own clean interface
+    if (!mounted || pathname?.startsWith('/ask')) return null;
 
     return (
         <button

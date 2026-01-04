@@ -109,46 +109,79 @@ export default function Home() {
           <h1 className="font-serif text-xl text-[#5c5346]">
             Church History Explorer
           </h1>
-          <span className="text-xs text-[#9a9285] bg-[#f5f2ed] px-2 py-1 rounded-full">
-            30+ Sources
-          </span>
+          <Link
+            href="/ask"
+            className="text-sm text-[#8b7355] hover:text-[#6b5339] font-medium transition-colors flex items-center gap-1.5 bg-[#f5f2ed] hover:bg-[#ede8de] px-3 py-1.5 rounded-full"
+          >
+            <span className="text-[#d4af37]">✦</span>
+            Ask the Fathers
+          </Link>
         </div>
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* Hero section - animated entrance */}
+        {/* Hero section - animated entrance with clear value prop */}
         <div className="text-center mb-16 animate-fade-in">
-          {/* Decorative element */}
-          <div className="flex justify-center mb-6">
-            <div className="flex items-center gap-2 text-[#d4af37]">
-              <span className="w-8 h-[1px] bg-[#d4af37]/50" />
-              <span className="text-2xl decorative-star">✦</span>
-              <span className="w-8 h-[1px] bg-[#d4af37]/50" />
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#8b7355]/10 to-[#d4af37]/10 border border-[#d4af37]/20 rounded-full px-4 py-2 mb-8">
+            <span className="text-[#d4af37] text-sm">✦</span>
+            <span className="text-sm font-medium text-[#5c5346] tracking-wide">30+ Primary Sources • 6 Historical Eras</span>
+          </div>
+
+          <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#2c261e] mb-6 leading-[1.15] tracking-tight">
+            Your question.
+            <span className="block text-[#8b7355] mt-2">Their words.</span>
+          </h2>
+
+          <p className="text-xl text-[#6b6358] leading-relaxed mb-8 max-w-2xl mx-auto">
+            Trace any doctrine back through 2,000 years of church history.
+            <span className="block mt-2 text-[#8b7355]">
+              See what the early church fathers actually wrote—word for word.
+            </span>
+          </p>
+
+          {/* CTA + Visual Demo */}
+          <div className="flex flex-col items-center gap-8 mb-12">
+            <Link
+              href="/ask"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#8b7355] to-[#6b5339] text-white font-medium rounded-2xl hover:from-[#6b5339] hover:to-[#5c4d3c] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            >
+              <span className="text-lg">Ask a Question</span>
+              <span className="text-white/60 group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
+
+            {/* Visual journey indicator - hidden on mobile */}
+            <div className="hidden md:flex items-center gap-3 text-sm text-[#9a9285]">
+              <span className="flex items-center gap-2 bg-white border border-[#e8e4dc] rounded-full px-3 py-1.5 shadow-sm">
+                <span className="text-base">💭</span>
+                <span>Your Question</span>
+              </span>
+              <span className="text-[#d4af37]">→</span>
+              <span className="flex items-center gap-2 bg-white border border-[#e8e4dc] rounded-full px-3 py-1.5 shadow-sm">
+                <span className="text-base">📜</span>
+                <span>30+ Sources</span>
+              </span>
+              <span className="text-[#d4af37]">→</span>
+              <span className="flex items-center gap-2 bg-white border border-[#e8e4dc] rounded-full px-3 py-1.5 shadow-sm">
+                <span className="text-base">✨</span>
+                <span>Grounded Answer</span>
+              </span>
             </div>
           </div>
 
-          <h2 className="font-serif text-4xl sm:text-5xl text-[#3d3529] mb-4 leading-tight text-reveal">
-            What did the earliest <br className="hidden sm:block" />
-            Christians believe?
-          </h2>
-
-          <p className="text-xl text-[#6b6358] leading-relaxed mb-6 max-w-lg mx-auto">
-            Explore church history through primary sources—from Scripture to the Reformation.
-          </p>
-
-          {/* Stats bar */}
-          <div className="flex justify-center gap-6 text-sm text-[#9a9285]">
+          {/* Trust signals */}
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-[#9a9285] uppercase tracking-widest">
             <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#6b8e23]" />
-              6 Historical Eras
+              <span className="w-1.5 h-1.5 rounded-full bg-[#6b8e23]" />
+              No Modern Opinions
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#8b7355]" />
-              30+ Primary Sources
+              <span className="w-1.5 h-1.5 rounded-full bg-[#8b7355]" />
+              Primary Sources Only
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#7c6a9a]" />
-              Original Texts
+              <span className="w-1.5 h-1.5 rounded-full bg-[#7c6a9a]" />
+              Full Citations
             </span>
           </div>
         </div>

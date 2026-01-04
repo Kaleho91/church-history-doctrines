@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 // Custom Proprietary Icon - Library/Temple with Gradient
 const LibraryIcon = ({ className = "w-full h-full" }: { className?: string }) => (
@@ -31,6 +32,12 @@ const LibraryIcon = ({ className = "w-full h-full" }: { className?: string }) =>
 
 export default function AskFAB() {
     const [isHovered, setIsHovered] = useState(false);
+    const pathname = usePathname();
+
+    // Don't show on the Ask page - it has its own input
+    if (pathname?.startsWith('/ask')) {
+        return null;
+    }
 
     return (
         <Link

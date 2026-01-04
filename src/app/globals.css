@@ -607,11 +607,14 @@ html.text-scale-larger {
 /* === BREATHING DECORATIVE ELEMENTS === */
 /* Gentle pulse on decorative accents - barely perceptible */
 @keyframes breathe {
-  0%, 100% { 
+
+  0%,
+  100% {
     opacity: 0.5;
     transform: scale(1);
   }
-  50% { 
+
+  50% {
     opacity: 0.7;
     transform: scale(1.02);
   }
@@ -624,8 +627,15 @@ html.text-scale-larger {
 
 /* Gold accent lines gently shimmer */
 @keyframes goldShimmer {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
 }
 
 .accent-line {
@@ -640,6 +650,7 @@ html.text-scale-larger {
     filter: blur(4px);
     transform: translateY(4px);
   }
+
   to {
     opacity: 1;
     filter: blur(0);
@@ -652,32 +663,55 @@ html.text-scale-larger {
 }
 
 /* Staggered word reveal for headings */
-.word-reveal > span {
+.word-reveal>span {
   display: inline-block;
   opacity: 0;
   animation: inkReveal 0.5s var(--ease-out-expo) forwards;
 }
 
-.word-reveal > span:nth-child(1) { animation-delay: 0ms; }
-.word-reveal > span:nth-child(2) { animation-delay: 40ms; }
-.word-reveal > span:nth-child(3) { animation-delay: 80ms; }
-.word-reveal > span:nth-child(4) { animation-delay: 120ms; }
-.word-reveal > span:nth-child(5) { animation-delay: 160ms; }
-.word-reveal > span:nth-child(6) { animation-delay: 200ms; }
-.word-reveal > span:nth-child(7) { animation-delay: 240ms; }
-.word-reveal > span:nth-child(8) { animation-delay: 280ms; }
+.word-reveal>span:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.word-reveal>span:nth-child(2) {
+  animation-delay: 40ms;
+}
+
+.word-reveal>span:nth-child(3) {
+  animation-delay: 80ms;
+}
+
+.word-reveal>span:nth-child(4) {
+  animation-delay: 120ms;
+}
+
+.word-reveal>span:nth-child(5) {
+  animation-delay: 160ms;
+}
+
+.word-reveal>span:nth-child(6) {
+  animation-delay: 200ms;
+}
+
+.word-reveal>span:nth-child(7) {
+  animation-delay: 240ms;
+}
+
+.word-reveal>span:nth-child(8) {
+  animation-delay: 280ms;
+}
 
 /* === GENTLE HOVER LIFTS === */
 /* Cards lift with shadow bloom - almost imperceptible */
 .hover-lift {
-  transition: 
+  transition:
     transform 0.4s var(--ease-out-expo),
     box-shadow 0.4s var(--ease-out-expo);
 }
 
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     0 8px 30px -8px rgba(26, 22, 18, 0.12),
     0 4px 10px -4px rgba(184, 134, 11, 0.08);
 }
@@ -685,9 +719,17 @@ html.text-scale-larger {
 /* === FOCUS BLOOM === */
 /* Elements subtly bloom when receiving attention */
 @keyframes focusBloom {
-  0% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
-  50% { box-shadow: 0 0 0 4px rgba(184, 134, 11, 0.08); }
-  100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 134, 11, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px rgba(184, 134, 11, 0.08);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 134, 11, 0);
+  }
 }
 
 .focus-bloom:focus {
@@ -719,8 +761,15 @@ html.text-scale-larger {
 /* === QUOTE MARKS FLOAT === */
 /* Opening quote marks gently float */
 @keyframes quoteFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .quote-mark {
@@ -730,11 +779,14 @@ html.text-scale-larger {
 /* === DIAMOND MARKER PULSE === */
 /* Timeline markers pulse when in view */
 @keyframes diamondPulse {
-  0%, 100% { 
+
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.2);
     border-color: var(--text-tertiary);
   }
-  50% { 
+
+  50% {
     box-shadow: 0 0 8px 2px rgba(184, 134, 11, 0.15);
     border-color: var(--accent-secondary);
   }
@@ -751,6 +803,7 @@ html.text-scale-larger {
     opacity: 0;
     transform: translateX(16px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -780,7 +833,7 @@ html.text-scale-larger {
 .scroll-reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: 
+  transition:
     opacity 0.6s var(--ease-out-expo),
     transform 0.6s var(--ease-out-expo);
 }
@@ -810,7 +863,7 @@ html.text-scale-larger {
 /* === SMOOTH CONTENT TRANSITIONS === */
 /* Content areas transition smoothly */
 .content-transition {
-  transition: 
+  transition:
     opacity 0.3s ease-out,
     transform 0.3s var(--ease-out-expo);
 }
@@ -836,12 +889,10 @@ html.text-scale-larger {
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  background: linear-gradient(
-    135deg,
-    rgba(184, 134, 11, 0.15),
-    rgba(184, 134, 11, 0.05),
-    transparent
-  );
+  background: linear-gradient(135deg,
+      rgba(184, 134, 11, 0.15),
+      rgba(184, 134, 11, 0.05),
+      transparent);
   opacity: 0;
   transition: opacity 0.4s ease-out;
   pointer-events: none;
@@ -855,17 +906,20 @@ html.text-scale-larger {
 /* === LOADING SKELETON SHIMMER === */
 /* For loading states */
 @keyframes skeletonShimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: calc(200px + 100%) 0; }
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
 }
 
 .skeleton {
-  background: linear-gradient(
-    90deg,
-    var(--bg-secondary) 0%,
-    var(--bg-tertiary) 50%,
-    var(--bg-secondary) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--bg-secondary) 0%,
+      var(--bg-tertiary) 50%,
+      var(--bg-secondary) 100%);
   background-size: 200px 100%;
   animation: skeletonShimmer 1.5s ease-in-out infinite;
   border-radius: 4px;
@@ -876,7 +930,7 @@ html.text-scale-larger {
 .tooltip-fade {
   opacity: 0;
   transform: translateY(4px) scale(0.97);
-  transition: 
+  transition:
     opacity 0.2s ease-out,
     transform 0.2s var(--ease-out-expo);
   pointer-events: none;
@@ -888,8 +942,8 @@ html.text-scale-larger {
   pointer-events: auto;
 }
 
-/* === REDUCED MOTION OVERRIDES === */
 @media (prefers-reduced-motion: reduce) {
+
   .decorative-star,
   .accent-star,
   .accent-line,
@@ -897,18 +951,87 @@ html.text-scale-larger {
   .diamond-active {
     animation: none;
   }
-  
+
   .hover-lift:hover {
     transform: none;
   }
-  
+
   .ink-underline::after {
     transition: none;
     width: 100%;
     opacity: 0;
   }
-  
+
   .ink-underline:hover::after {
     opacity: 1;
   }
+}
+
+/* === EXTENDED THINKING ANIMATIONS === */
+/* Gentle bounce for thinking dots */
+@keyframes bounceGentle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 1.2s ease-in-out infinite;
+}
+
+/* Slow subtle ping for avatar */
+@keyframes pingSlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-ping-slow {
+  animation: pingSlow 2s ease-out infinite;
+}
+
+/* Shimmer effect for progress bar */
+@keyframes shimmerSlow {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shimmer-slow {
+  animation: shimmerSlow 2s ease-in-out infinite;
+}
+
+/* Card entrance animation */
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-appear {
+  animation: cardAppear 0.3s var(--ease-out-expo) forwards;
 }

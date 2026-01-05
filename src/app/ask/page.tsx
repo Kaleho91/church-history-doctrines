@@ -214,35 +214,31 @@ export default function AskPage() {
 
                                             {/* Citations */}
                                             {message.citations && message.citations.length > 0 && (
-                                                <div className="border-t border-[#e8e4dc] bg-gradient-to-b from-[#faf8f5] to-[#f5f2ed] p-4">
-                                                    <p className="text-xs font-bold uppercase tracking-widest text-[#8b7355] mb-3 flex items-center gap-2">
-                                                        <span className="text-sm">📜</span>
-                                                        Primary Sources ({message.citations.length})
+                                                <div className="border-t border-[#e8e4dc] bg-[#faf8f5]/50 px-5 py-4">
+                                                    <p className="text-xs font-medium uppercase tracking-wider text-[#9a9285] mb-3">
+                                                        Sources ({message.citations.length})
                                                     </p>
-                                                    <div className="space-y-3">
+                                                    <div className="space-y-2">
                                                         {message.citations.map((citation, idx) => (
                                                             <div
                                                                 key={citation.id}
-                                                                className="flex items-start gap-3 p-3 bg-white rounded-lg border border-[#e8e4dc] hover:border-[#d4af37]/30 hover:shadow-sm transition-all"
+                                                                className="flex items-start gap-2.5 text-sm group"
                                                             >
-                                                                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#d4af37] to-[#8b7355] text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                                                                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#e8e4dc] text-[#6b6358] text-xs font-medium flex items-center justify-center mt-0.5">
                                                                     {idx + 1}
                                                                 </span>
                                                                 <div className="flex-1 min-w-0">
-                                                                    <div className="text-sm">
-                                                                        <span className="font-semibold text-[#3d3529]">{citation.author}</span>
-                                                                        <span className="text-[#9a9285]"> — </span>
-                                                                        <span className="italic text-[#6b6358]">{citation.work}</span>
-                                                                    </div>
+                                                                    <span className="font-medium text-[#3d3529]">{citation.author}</span>
+                                                                    <span className="text-[#9a9285]">, </span>
+                                                                    <span className="italic text-[#6b6358]">{citation.work}</span>
                                                                     {citation.url && (
                                                                         <a
                                                                             href={citation.url}
                                                                             target="_blank"
                                                                             rel="noopener noreferrer"
-                                                                            className="inline-flex items-center gap-1.5 mt-2 px-3 py-1.5 text-xs font-medium text-white bg-gradient-to-r from-[#8b7355] to-[#6b5339] rounded-lg hover:from-[#6b5339] hover:to-[#5c4d3c] transition-all shadow-sm"
+                                                                            className="ml-2 text-[#8b7355] hover:text-[#6b5339] hover:underline transition-colors"
                                                                         >
-                                                                            <span>View Primary Source</span>
-                                                                            <span>→</span>
+                                                                            View →
                                                                         </a>
                                                                     )}
                                                                 </div>

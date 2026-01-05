@@ -21,7 +21,7 @@ function ElegantConstellation() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const mouseRef = useRef({ x: -1000, y: -1000 });
     const particlesRef = useRef<Particle[]>([]);
-    const animationRef = useRef<number>();
+    const animationRef = useRef<number | undefined>(undefined);
     const timeRef = useRef(0);
 
     const initParticles = useCallback((width: number, height: number) => {
